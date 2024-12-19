@@ -1,5 +1,6 @@
 package Tests;
 
+import java.io.File;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -50,6 +51,10 @@ public class PracticeFormTest {
         WebElement mobileNumberField = driver.findElement(By.cssSelector("input[placeholder='Mobile Number']"));
         String mobileNumberValue = "0723456789";
         mobileNumberField.sendKeys(mobileNumberValue);
+
+        WebElement pictureElement = driver.findElement(By.id("uploadPicture"));
+        File file = new File("src/test/resources/Pixar-Wall-E.webp");
+        pictureElement.sendKeys(file.getAbsolutePath());
 
     }
 }
