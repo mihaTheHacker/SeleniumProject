@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7850fae8-c0be-4e42-8498-b5ab3eb1a331" name="Changes" comment="- created WebTableTest">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/Pixar-Wall-E.webp" afterDir="false" />
+    <list default="true" id="7850fae8-c0be-4e42-8498-b5ab3eb1a331" name="Changes" comment="- moved resources folder from Main to Tests package&#10;- added an image to the resources folder   &#10;- declared a new element(pictureElement)&#10;- imported class File&#10;- created a File instance in order to get the absolute path">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests/PracticeFormTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/PracticeFormTest.java" afterDir="false" />
     </list>
@@ -33,29 +32,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "TestNG.PracticeFormTest.automationMethod.executor": "Run",
-    "TestNG.PracticeFormTest.executor": "Run",
-    "TestNG.WebTableTest.automationMethod.executor": "Run",
-    "TestNG.WebTableTest.executor": "Run",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/mibudeanu/IdeaProjects/SeleniumProject/src/test/resources",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/mibudeanu/IdeaProjects/SeleniumProject/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;TestNG.PracticeFormTest.automationMethod (1).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.PracticeFormTest.automationMethod.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.PracticeFormTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.WebTableTest.automationMethod.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.WebTableTest.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/mibudeanu/IdeaProjects/SeleniumProject/src/test/resources&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/mibudeanu/IdeaProjects/SeleniumProject/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\mibudeanu\IdeaProjects\SeleniumProject\src\test\resources" />
@@ -76,6 +76,24 @@
       <option name="PACKAGE_NAME" value="Tests" />
       <option name="MAIN_CLASS_NAME" value="Tests.PracticeFormTest" />
       <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PracticeFormTest.automationMethod (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.PracticeFormTest" />
+      <option name="METHOD_NAME" value="automationMethod" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -139,6 +157,7 @@
       <list>
         <item itemvalue="TestNG.PracticeFormTest.automationMethod" />
         <item itemvalue="TestNG.PracticeFormTest" />
+        <item itemvalue="TestNG.PracticeFormTest.automationMethod (1)" />
         <item itemvalue="TestNG.WebTableTest" />
         <item itemvalue="TestNG.WebTableTest.automationMethod" />
       </list>
@@ -163,7 +182,8 @@
       <workItem from="1733170025342" duration="4725000" />
       <workItem from="1733412361576" duration="7796000" />
       <workItem from="1733832645678" duration="3362000" />
-      <workItem from="1734607594903" duration="4987000" />
+      <workItem from="1734607594903" duration="16416000" />
+      <workItem from="1734688320792" duration="3045000" />
     </task>
     <task id="LOCAL-00001" summary="- created Selenium Project">
       <option name="closed" value="true" />
@@ -189,7 +209,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734608305953</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="- moved resources folder from Main to Tests package&#10;- added an image to the resources folder   &#10;- declared a new element(pictureElement)&#10;- imported class File&#10;- created a File instance in order to get the absolute path">
+      <option name="closed" value="true" />
+      <created>1734612841491</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1734612841491</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,6 +226,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="- created Selenium Project" />
     <MESSAGE value="- created WebTableTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="- created WebTableTest" />
+    <MESSAGE value="- moved resources folder from Main to Tests package&#10;- added an image to the resources folder   &#10;- declared a new element(pictureElement)&#10;- imported class File&#10;- created a File instance in order to get the absolute path" />
+    <option name="LAST_COMMIT_MESSAGE" value="- moved resources folder from Main to Tests package&#10;- added an image to the resources folder   &#10;- declared a new element(pictureElement)&#10;- imported class File&#10;- created a File instance in order to get the absolute path" />
   </component>
 </project>

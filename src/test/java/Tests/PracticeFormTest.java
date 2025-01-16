@@ -3,6 +3,7 @@ package Tests;
 import java.io.File;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -47,6 +48,10 @@ public class PracticeFormTest {
         WebElement userEmailField = driver.findElement(By.id("userEmail"));
         String userEmailValue = "mihaela@popescu.com";
         userEmailField.sendKeys(userEmailValue);
+
+        WebElement subjectsField = driver.findElement(By.id("subjectsInput"));
+        String subjectsValue = "Math";
+        subjectsField.sendKeys(subjectsValue);
 
         WebElement mobileNumberField = driver.findElement(By.cssSelector("input[placeholder='Mobile Number']"));
         String mobileNumberValue = "0723456789";
