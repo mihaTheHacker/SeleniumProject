@@ -36,8 +36,11 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "TestNG.PracticeFormTest.automationMethod (1).executor": "Run",
+    "TestNG.PracticeFormTest.automationMethod (1).executor": "Debug",
     "TestNG.PracticeFormTest.automationMethod (2).executor": "Run",
+    "TestNG.PracticeFormTest.automationMethod (3).executor": "Run",
+    "TestNG.PracticeFormTest.automationMethod (4).executor": "Run",
+    "TestNG.PracticeFormTest.automationMethod (5).executor": "Run",
     "TestNG.PracticeFormTest.automationMethod.executor": "Run",
     "TestNG.PracticeFormTest.executor": "Run",
     "TestNG.WebTableTest.automationMethod.executor": "Run",
@@ -65,7 +68,7 @@
       <recent name="C:\Users\mibudeanu\IdeaProjects\SeleniumProject\src\test" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.PracticeFormTest.automationMethod (4)">
+  <component name="RunManager" selected="TestNG.PracticeFormTest.automationMethod">
     <configuration name="PracticeFormTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumProject" />
       <extension name="coverage">
@@ -83,7 +86,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PracticeFormTest.automationMethod (2)" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="PracticeFormTest.automationMethod (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumProject" />
       <extension name="coverage">
         <pattern>
@@ -157,19 +160,19 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.PracticeFormTest.automationMethod" />
+        <item itemvalue="TestNG.PracticeFormTest.automationMethod (1)" />
+        <item itemvalue="TestNG.PracticeFormTest" />
         <item itemvalue="TestNG.PracticeFormTest.automationMethod (4)" />
         <item itemvalue="TestNG.PracticeFormTest.automationMethod (3)" />
-        <item itemvalue="TestNG.PracticeFormTest.automationMethod (2)" />
-        <item itemvalue="TestNG.PracticeFormTest" />
-        <item itemvalue="TestNG.PracticeFormTest.automationMethod" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.218" />
-        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-IU-243.22562.218" />
+        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.23654.153" />
+        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-IU-243.23654.153" />
       </set>
     </attachedChunks>
   </component>
@@ -190,6 +193,7 @@
       <workItem from="1737127672517" duration="6000" />
       <workItem from="1737553823764" duration="628000" />
       <workItem from="1737558766721" duration="3355000" />
+      <workItem from="1737982713442" duration="7165000" />
     </task>
     <task id="LOCAL-00001" summary="- created Selenium Project">
       <option name="closed" value="true" />

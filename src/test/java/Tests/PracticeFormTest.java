@@ -50,8 +50,9 @@ public class PracticeFormTest {
         userEmailField.sendKeys(userEmailValue);
 
         WebElement subjectsField = driver.findElement(By.id("subjectsInput"));
-        String subjectsValue = "Math";
+        String subjectsValue = "Social Studies";
         subjectsField.sendKeys(subjectsValue);
+        subjectsField.sendKeys(Keys.ENTER);
 
         WebElement mobileNumberField = driver.findElement(By.cssSelector("input[placeholder='Mobile Number']"));
         String mobileNumberValue = "0723456789";
@@ -67,14 +68,24 @@ public class PracticeFormTest {
 
         String genderValue = "Other";
 
-        if (genderValue.equals("Female")) {
+        if (femaleElement.getText().equals(genderValue)) {
             femaleElement.click();
-        } else if (genderValue.equals("Male")) {
+        } else if (maleElement.getText().equals(genderValue)) {
             maleElement.click();
-        } else if (genderValue.equals("Other")) {
+        } else if (otherElement.getText().equals(genderValue)) {
             otherElement.click();
         }
+        WebElement stateElement = driver.findElement(By.id("react-select-3-input"));
+        js.executeScript("arguments[0].click();", stateElement);
+        stateElement.sendKeys("NCR");
+        stateElement.sendKeys(Keys.ENTER);
 
+        WebElement cityElement = driver.findElement(By.id("react-select-4-input"));
+        js.executeScript("arguments[0].click();", cityElement);
+        cityElement.sendKeys("Delhi");
+        cityElement.sendKeys(Keys.ENTER);
 
     }
+
+
 }
