@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7850fae8-c0be-4e42-8498-b5ab3eb1a331" name="Changes" comment="- created new class parcurgereLista">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/MacysWebsitePracticeTest.java" afterDir="false" />
+    <list default="true" id="7850fae8-c0be-4e42-8498-b5ab3eb1a331" name="Changes" comment="- created new class MacysWebsitePracticeTest.java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/MacysWebsitePracticeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/MacysWebsitePracticeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,39 +32,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "TestNG.MacysWebsitePracticeTest.automationMethod.executor": "Run",
-    "TestNG.MacysWebsitePracticeTest.executor": "Run",
-    "TestNG.MacysWebsitePracticeTest.macysAddToCartAutomationMethod.executor": "Run",
-    "TestNG.PracticeFormTest.automationMethod (1).executor": "Debug",
-    "TestNG.PracticeFormTest.automationMethod (2).executor": "Run",
-    "TestNG.PracticeFormTest.automationMethod (3).executor": "Run",
-    "TestNG.PracticeFormTest.automationMethod (4).executor": "Run",
-    "TestNG.PracticeFormTest.automationMethod (5).executor": "Run",
-    "TestNG.PracticeFormTest.automationMethod.executor": "Run",
-    "TestNG.PracticeFormTest.executor": "Run",
-    "TestNG.Recursivitate.executor": "Run",
-    "TestNG.Recursivitate.parcurgereLista.executor": "Run",
-    "TestNG.WebTableTest.automationMethod.executor": "Run",
-    "TestNG.WebTableTest.executor": "Run",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/mibudeanu/IdeaProjects/SeleniumProject/src/test/resources",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/mibudeanu/IdeaProjects/SeleniumProject/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;TestNG.MacysWebsitePracticeTest.automationMethod.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.MacysWebsitePracticeTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.MacysWebsitePracticeTest.macysAddToCartAutomationMethod (1).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.MacysWebsitePracticeTest.macysAddToCartAutomationMethod (2).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.MacysWebsitePracticeTest.macysAddToCartAutomationMethod (3).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.MacysWebsitePracticeTest.macysAddToCartAutomationMethod (4).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.MacysWebsitePracticeTest.macysAddToCartAutomationMethod.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.PracticeFormTest.automationMethod (1).executor&quot;: &quot;Debug&quot;,
+    &quot;TestNG.PracticeFormTest.automationMethod (2).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.PracticeFormTest.automationMethod (3).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.PracticeFormTest.automationMethod (4).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.PracticeFormTest.automationMethod (5).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.PracticeFormTest.automationMethod.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.PracticeFormTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.Recursivitate.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.Recursivitate.parcurgereLista.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.WebTableTest.automationMethod.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.WebTableTest.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/mibudeanu/IdeaProjects/SeleniumProject/src/test/resources&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/mibudeanu/IdeaProjects/SeleniumProject/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\mibudeanu\IdeaProjects\SeleniumProject\src\test\resources" />
@@ -73,8 +77,8 @@
       <recent name="C:\Users\mibudeanu\IdeaProjects\SeleniumProject\src\test" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.MacysWebsitePracticeTest">
-    <configuration name="MacysWebsitePracticeTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.MacysWebsitePracticeTest.macysAddToCartAutomationMethod (3)">
+    <configuration name="MacysWebsitePracticeTest.macysAddToCartAutomationMethod (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumProject" />
       <extension name="coverage">
         <pattern>
@@ -84,14 +88,15 @@
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
       <option name="MAIN_CLASS_NAME" value="Tests.MacysWebsitePracticeTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="METHOD_NAME" value="macysAddToCartAutomationMethod" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MacysWebsitePracticeTest.automationMethod" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="MacysWebsitePracticeTest.macysAddToCartAutomationMethod (2)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumProject" />
       <extension name="coverage">
         <pattern>
@@ -101,7 +106,43 @@
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
       <option name="MAIN_CLASS_NAME" value="Tests.MacysWebsitePracticeTest" />
-      <option name="METHOD_NAME" value="automationMethod" />
+      <option name="METHOD_NAME" value="macysAddToCartAutomationMethod" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MacysWebsitePracticeTest.macysAddToCartAutomationMethod (3)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.MacysWebsitePracticeTest" />
+      <option name="METHOD_NAME" value="macysAddToCartAutomationMethod" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MacysWebsitePracticeTest.macysAddToCartAutomationMethod (4)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.MacysWebsitePracticeTest" />
+      <option name="METHOD_NAME" value="macysAddToCartAutomationMethod" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -127,48 +168,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Recursivitate" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.Recursivitate" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Recursivitate.parcurgereLista" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.Recursivitate" />
-      <option name="METHOD_NAME" value="parcurgereLista" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.MacysWebsitePracticeTest" />
+        <item itemvalue="TestNG.MacysWebsitePracticeTest.macysAddToCartAutomationMethod (3)" />
+        <item itemvalue="TestNG.MacysWebsitePracticeTest.macysAddToCartAutomationMethod (2)" />
         <item itemvalue="TestNG.MacysWebsitePracticeTest.macysAddToCartAutomationMethod" />
-        <item itemvalue="TestNG.MacysWebsitePracticeTest.automationMethod" />
-        <item itemvalue="TestNG.Recursivitate" />
-        <item itemvalue="TestNG.Recursivitate.parcurgereLista" />
+        <item itemvalue="TestNG.MacysWebsitePracticeTest.macysAddToCartAutomationMethod (1)" />
+        <item itemvalue="TestNG.MacysWebsitePracticeTest.macysAddToCartAutomationMethod (4)" />
       </list>
     </recent_temporary>
   </component>
@@ -198,7 +204,10 @@
       <workItem from="1737553823764" duration="628000" />
       <workItem from="1737558766721" duration="3355000" />
       <workItem from="1737982713442" duration="7165000" />
-      <workItem from="1738176498334" duration="24403000" />
+      <workItem from="1738176498334" duration="33078000" />
+      <workItem from="1738858035993" duration="72000" />
+      <workItem from="1738858139548" duration="73000" />
+      <workItem from="1738858248696" duration="1655000" />
     </task>
     <task id="LOCAL-00001" summary="- created Selenium Project">
       <option name="closed" value="true" />
@@ -256,7 +265,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738836018238</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="- created new class MacysWebsitePracticeTest.java">
+      <option name="closed" value="true" />
+      <created>1738848680099</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1738848680099</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,6 +297,7 @@
     <MESSAGE value="- created a new PracticeFormTest.java &#10;- opened a chrome browser&#10;- maximized browser&#10;- scrolled down on the web page&#10;- declared multiple elements" />
     <MESSAGE value="- declared new elements&#10;- used javascript executor to click on element&#10;- used sendKeys Enter method" />
     <MESSAGE value="- created new class parcurgereLista" />
-    <option name="LAST_COMMIT_MESSAGE" value="- created new class parcurgereLista" />
+    <MESSAGE value="- created new class MacysWebsitePracticeTest.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="- created new class MacysWebsitePracticeTest.java" />
   </component>
 </project>
