@@ -9,6 +9,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -38,7 +39,7 @@ public class BarnesAndNobleWebsitePractice {
         acceptCookiesButton.click();
 
         //verificam daca lista de sectiuni din navigation bar este afisata
-        List<String> expectedNavigationBarSections = List.of("Books", "Fiction", "Nonfiction", "eBooks", "Audiobooks", "Teens & YA", "Teens", "Kids", "Toys & Games", "Stationery & Gifts", "Music & Movies");
+        List<String> expectedNavigationBarSections = List.of("Books", "Fiction", "Nonfiction", "eBooks", "Audiobooks", "Teens & YA", "Kids", "Toys & Games", "Stationery & Gifts", "Music & Movies");
         List<String> actualNavigationBarSections = new ArrayList<>();
         List<WebElement> navigationBarSections = driver.findElements(By.cssSelector(".booksNav > li"));
         for (int i = 0; i < navigationBarSections.size(); i++) {
@@ -48,5 +49,12 @@ public class BarnesAndNobleWebsitePractice {
 
         assert actualNavigationBarSections.equals(expectedNavigationBarSections);
 
+        //dam hover pe sectiunea de Books
+        Actions actions = new Actions(driver);
+        WebElement booksSection = driver.findElement(By.id("rhfCategoryFlyout_Books"));
+        actions.moveToElement(booksSection).perform();
+
+
     }
+
 }
