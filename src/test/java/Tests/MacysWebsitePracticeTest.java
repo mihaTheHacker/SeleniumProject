@@ -23,13 +23,14 @@ public class MacysWebsitePracticeTest {
         //Set up Chrome options
         ChromeOptions options = new ChromeOptions();
 //        options.addArguments("--headless");
-        options.addArguments(
-                "user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36");
+        options.addArguments("--incognito");
+//        options.addArguments(
+//                "user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36");
         //initialize the WebDriver with the ChromeOptions
         driver = new ChromeDriver(options);
 
         //accesam o pagina web
-        driver.get("https://www.macys.com/");
+        driver.get("https://www.barnesandnoble.com/");
 
         //facem browserul in modul maximize
         driver.manage().window().maximize();
@@ -41,11 +42,11 @@ public class MacysWebsitePracticeTest {
 //        WebElement cookiePreferencesButton = driver.findElement(By.id("onetrust-pc-btn-handler"));
 //        cookiePreferencesButton.click();
 //
-        WebElement rejectCookiesButton = driver.findElement(By.id("onetrust-reject-all-handler"));
-        rejectCookiesButton.click();
+//        WebElement rejectCookiesButton = driver.findElement(By.id("onetrust-reject-all-handler"));
+//        rejectCookiesButton.click();
 
-//        WebElement acceptCookiesButton = driver.findElement(By.id("onetrust-accept-btn-handler"));
-//        acceptCookiesButton.click();
+        WebElement acceptCookiesButton = driver.findElement(By.id("onetrust-accept-btn-handler"));
+        acceptCookiesButton.click();
 
         //facem scroll up
         js.executeScript("window.scrollBy(0,-400)");
@@ -58,11 +59,14 @@ public class MacysWebsitePracticeTest {
         Actions actions = new Actions(driver);
         WebElement womenSection = driver.findElement(By.id("fob-Women"));
         actions.moveToElement(womenSection).perform();
+//        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+//        wait.until(ExpectedConditions.elementToBeClickable(womenSection));
+//        womenSection.getText();
 
         //asteptam ca linkul pe care vrem sa dam click sa fie vizibil
         Duration duration = Duration.ofSeconds(10);
         WebDriverWait wait = new WebDriverWait(driver, duration);
-        WebElement cashmereLink = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("[data-tracking*=cashmere]")));
+        WebElement cashmereLink = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("a[data-tracking*=cashmere]")));
 
         //dam click pe link-ul Cashmere
 //        WebElement cashmereLink = driver.findElement(By.cssSelector("[data-tracking*=cashmere]"));
