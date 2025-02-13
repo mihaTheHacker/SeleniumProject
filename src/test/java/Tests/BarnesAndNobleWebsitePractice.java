@@ -13,6 +13,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -61,8 +62,16 @@ public class BarnesAndNobleWebsitePractice {
         //dam click pe sectiunea B&N Monthly Picks
         Duration duration = Duration.ofSeconds(10);
         WebDriverWait wait = new WebDriverWait(driver, duration);
-        WebElement bnMonthlyPicksSection = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("")));
+        WebElement bnMonthlyPicksSection = wait.until(ExpectedConditions.visibilityOfElementLocated(
+                By.cssSelector("[aria-labelledby='rhfCategoryFlyout_Books'] .dropdown-item[href*='barnes-noble-monthly-picks']")));
         bnMonthlyPicksSection.click();
+
+        //verificam daca suntem pe pagina B&N Monthly Picks
+        String actualPageTitle = driver.getTitle();
+        String expectedPageTitle = "Our Monthly Picks | Barnes & Noble®";
+        Assert.assertEquals(actualPageTitle, expectedPageTitle, "The page title is not as expected");
+
+
     }
 
 }

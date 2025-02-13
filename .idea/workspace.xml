@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7850fae8-c0be-4e42-8498-b5ab3eb1a331" name="Changes" comment="- created new class MacysWebsitePracticeTest.java">
+    <list default="true" id="7850fae8-c0be-4e42-8498-b5ab3eb1a331" name="Changes" comment="BarnesAndNobleHomeworkExercise&#10;- created a new branch BarnesAndNobleWebsitePractice&#10;- created a new class BarnesAndNobleWebsitePractice.java&#10;- Work in progress">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/MacysWebsitePracticeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/MacysWebsitePracticeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/BarnesAndNobleWebsitePractice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/BarnesAndNobleWebsitePractice.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +21,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="LetCodeFormsLocatorsPractice" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
@@ -36,6 +41,19 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;TestNG.BarnesAndNobleWebsitePractice.barnesAndNobleAddToCartAutomationMethod (1).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.BarnesAndNobleWebsitePractice.barnesAndNobleAddToCartAutomationMethod (2).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.BarnesAndNobleWebsitePractice.barnesAndNobleAddToCartAutomationMethod (3).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.BarnesAndNobleWebsitePractice.barnesAndNobleAddToCartAutomationMethod (4).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.BarnesAndNobleWebsitePractice.barnesAndNobleAddToCartAutomationMethod.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.BarnesAndNobleWebsitePractice.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LetCodeFormsLocatorsPractice.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LetCodeFormsLocatorsPractice.findLocators (1).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LetCodeFormsLocatorsPractice.findLocators (2).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LetCodeFormsLocatorsPractice.findLocators (3).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LetCodeFormsLocatorsPractice.findLocators (4).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LetCodeFormsLocatorsPractice.findLocators (5).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LetCodeFormsLocatorsPractice.findLocators.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.MacysWebsitePracticeTest.automationMethod.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.MacysWebsitePracticeTest.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.MacysWebsitePracticeTest.macysAddToCartAutomationMethod (1).executor&quot;: &quot;Run&quot;,
@@ -54,7 +72,7 @@
     &quot;TestNG.Recursivitate.parcurgereLista.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.WebTableTest.automationMethod.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.WebTableTest.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;BarnesAndNoblePractice&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/mibudeanu/IdeaProjects/SeleniumProject/src/test/resources&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -77,8 +95,8 @@
       <recent name="C:\Users\mibudeanu\IdeaProjects\SeleniumProject\src\test" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.MacysWebsitePracticeTest.macysAddToCartAutomationMethod (3)">
-    <configuration name="MacysWebsitePracticeTest.macysAddToCartAutomationMethod (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.BarnesAndNobleWebsitePractice.barnesAndNobleAddToCartAutomationMethod">
+    <configuration name="BarnesAndNobleWebsitePractice" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumProject" />
       <extension name="coverage">
         <pattern>
@@ -87,8 +105,25 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.MacysWebsitePracticeTest" />
-      <option name="METHOD_NAME" value="macysAddToCartAutomationMethod" />
+      <option name="MAIN_CLASS_NAME" value="Tests.BarnesAndNobleWebsitePractice" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BarnesAndNobleWebsitePractice.barnesAndNobleAddToCartAutomationMethod (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.BarnesAndNobleWebsitePractice" />
+      <option name="METHOD_NAME" value="barnesAndNobleAddToCartAutomationMethod" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -96,7 +131,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MacysWebsitePracticeTest.macysAddToCartAutomationMethod (2)" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="BarnesAndNobleWebsitePractice.barnesAndNobleAddToCartAutomationMethod (3)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumProject" />
       <extension name="coverage">
         <pattern>
@@ -105,8 +140,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.MacysWebsitePracticeTest" />
-      <option name="METHOD_NAME" value="macysAddToCartAutomationMethod" />
+      <option name="MAIN_CLASS_NAME" value="Tests.BarnesAndNobleWebsitePractice" />
+      <option name="METHOD_NAME" value="barnesAndNobleAddToCartAutomationMethod" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -114,7 +149,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MacysWebsitePracticeTest.macysAddToCartAutomationMethod (3)" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="BarnesAndNobleWebsitePractice.barnesAndNobleAddToCartAutomationMethod (4)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumProject" />
       <extension name="coverage">
         <pattern>
@@ -123,8 +158,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.MacysWebsitePracticeTest" />
-      <option name="METHOD_NAME" value="macysAddToCartAutomationMethod" />
+      <option name="MAIN_CLASS_NAME" value="Tests.BarnesAndNobleWebsitePractice" />
+      <option name="METHOD_NAME" value="barnesAndNobleAddToCartAutomationMethod" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -132,7 +167,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MacysWebsitePracticeTest.macysAddToCartAutomationMethod (4)" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="BarnesAndNobleWebsitePractice.barnesAndNobleAddToCartAutomationMethod" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumProject" />
       <extension name="coverage">
         <pattern>
@@ -141,26 +176,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.MacysWebsitePracticeTest" />
-      <option name="METHOD_NAME" value="macysAddToCartAutomationMethod" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MacysWebsitePracticeTest.macysAddToCartAutomationMethod" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.MacysWebsitePracticeTest" />
-      <option name="METHOD_NAME" value="macysAddToCartAutomationMethod" />
+      <option name="MAIN_CLASS_NAME" value="Tests.BarnesAndNobleWebsitePractice" />
+      <option name="METHOD_NAME" value="barnesAndNobleAddToCartAutomationMethod" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -170,11 +187,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.MacysWebsitePracticeTest.macysAddToCartAutomationMethod (3)" />
-        <item itemvalue="TestNG.MacysWebsitePracticeTest.macysAddToCartAutomationMethod (2)" />
-        <item itemvalue="TestNG.MacysWebsitePracticeTest.macysAddToCartAutomationMethod" />
-        <item itemvalue="TestNG.MacysWebsitePracticeTest.macysAddToCartAutomationMethod (1)" />
-        <item itemvalue="TestNG.MacysWebsitePracticeTest.macysAddToCartAutomationMethod (4)" />
+        <item itemvalue="TestNG.BarnesAndNobleWebsitePractice.barnesAndNobleAddToCartAutomationMethod" />
+        <item itemvalue="TestNG.BarnesAndNobleWebsitePractice.barnesAndNobleAddToCartAutomationMethod (1)" />
+        <item itemvalue="TestNG.BarnesAndNobleWebsitePractice.barnesAndNobleAddToCartAutomationMethod (4)" />
+        <item itemvalue="TestNG.BarnesAndNobleWebsitePractice.barnesAndNobleAddToCartAutomationMethod (3)" />
+        <item itemvalue="TestNG.BarnesAndNobleWebsitePractice" />
       </list>
     </recent_temporary>
   </component>
@@ -207,7 +224,10 @@
       <workItem from="1738176498334" duration="33078000" />
       <workItem from="1738858035993" duration="72000" />
       <workItem from="1738858139548" duration="73000" />
-      <workItem from="1738858248696" duration="1655000" />
+      <workItem from="1738858248696" duration="11641000" />
+      <workItem from="1739171240358" duration="26039000" />
+      <workItem from="1739428642727" duration="600000" />
+      <workItem from="1739448089914" duration="9444000" />
     </task>
     <task id="LOCAL-00001" summary="- created Selenium Project">
       <option name="closed" value="true" />
@@ -273,7 +293,47 @@
       <option name="project" value="LOCAL" />
       <updated>1738848680099</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="- work in progress">
+      <option name="closed" value="true" />
+      <created>1738860553349</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1738860553349</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Resolved LetCodeFormsLocators exercise&#10;- created a new branch LetCodeFormsLocatorsPractice&#10;- created a new class LetCodeFormsLocatorsPractice.java&#10;- found the locators for the 2 WebElements countryCodeDropdown and CountryDropdown&#10;- Iterated trough both dropdown lists, selected the chosen value and then validated with the assert methods that the chosen values were selected &#10;- I also found other elements on the page">
+      <option name="closed" value="true" />
+      <created>1739384567028</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1739384567028</updated>
+    </task>
+    <task id="LOCAL-00011" summary="BarnesAndNobleHomeworkExercise&#10;- created a new branch BarnesAndNobleWebsitePractice&#10;- created a new class BarnesAndNobleWebsitePractice.java&#10;- Work in progress">
+      <option name="closed" value="true" />
+      <created>1739385004544</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1739385004544</updated>
+    </task>
+    <task id="LOCAL-00012" summary="BarnesAndNobleHomeworkExercise&#10;- created a new branch BarnesAndNobleWebsitePractice&#10;- created a new class BarnesAndNobleWebsitePractice.java&#10;- Work in progress">
+      <option name="closed" value="true" />
+      <created>1739452922733</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1739452922733</updated>
+    </task>
+    <task id="LOCAL-00013" summary="BarnesAndNobleHomeworkExercise&#10;- created a new branch BarnesAndNobleWebsitePractice&#10;- created a new class BarnesAndNobleWebsitePractice.java&#10;- Work in progress">
+      <option name="closed" value="true" />
+      <created>1739452933691</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1739452933691</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -298,6 +358,9 @@
     <MESSAGE value="- declared new elements&#10;- used javascript executor to click on element&#10;- used sendKeys Enter method" />
     <MESSAGE value="- created new class parcurgereLista" />
     <MESSAGE value="- created new class MacysWebsitePracticeTest.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="- created new class MacysWebsitePracticeTest.java" />
+    <MESSAGE value="- work in progress" />
+    <MESSAGE value="Resolved LetCodeFormsLocators exercise&#10;- created a new branch LetCodeFormsLocatorsPractice&#10;- created a new class LetCodeFormsLocatorsPractice.java&#10;- found the locators for the 2 WebElements countryCodeDropdown and CountryDropdown&#10;- Iterated trough both dropdown lists, selected the chosen value and then validated with the assert methods that the chosen values were selected &#10;- I also found other elements on the page" />
+    <MESSAGE value="BarnesAndNobleHomeworkExercise&#10;- created a new branch BarnesAndNobleWebsitePractice&#10;- created a new class BarnesAndNobleWebsitePractice.java&#10;- Work in progress" />
+    <option name="LAST_COMMIT_MESSAGE" value="BarnesAndNobleHomeworkExercise&#10;- created a new branch BarnesAndNobleWebsitePractice&#10;- created a new class BarnesAndNobleWebsitePractice.java&#10;- Work in progress" />
   </component>
 </project>
