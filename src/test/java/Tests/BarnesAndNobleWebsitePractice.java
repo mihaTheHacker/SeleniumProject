@@ -1,6 +1,7 @@
 package Tests;
 
 import java.io.File;
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 import org.openqa.selenium.By;
@@ -10,6 +11,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -39,7 +42,8 @@ public class BarnesAndNobleWebsitePractice {
         acceptCookiesButton.click();
 
         //verificam daca lista de sectiuni din navigation bar este afisata
-        List<String> expectedNavigationBarSections = List.of("Books", "Fiction", "Nonfiction", "eBooks", "Audiobooks", "Teens & YA", "Kids", "Toys & Games", "Stationery & Gifts", "Music & Movies");
+        List<String> expectedNavigationBarSections = List.of("Books", "Fiction", "Nonfiction", "eBooks", "Audiobooks", "Teens & YA", "Kids",
+                "Toys & Games", "Stationery & Gifts", "Music & Movies");
         List<String> actualNavigationBarSections = new ArrayList<>();
         List<WebElement> navigationBarSections = driver.findElements(By.cssSelector(".booksNav > li"));
         for (int i = 0; i < navigationBarSections.size(); i++) {
@@ -54,7 +58,11 @@ public class BarnesAndNobleWebsitePractice {
         WebElement booksSection = driver.findElement(By.id("rhfCategoryFlyout_Books"));
         actions.moveToElement(booksSection).perform();
 
-
+        //dam click pe sectiunea B&N Monthly Picks
+        Duration duration = Duration.ofSeconds(10);
+        WebDriverWait wait = new WebDriverWait(driver, duration);
+        WebElement bnMonthlyPicksSection = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("")));
+        bnMonthlyPicksSection.click();
     }
 
 }
