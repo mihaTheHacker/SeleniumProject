@@ -3,7 +3,6 @@ package Airbnb;
 import java.time.Duration;
 import java.util.List;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -42,6 +41,27 @@ public class AirbnbHomework {
         //6. Wait for the cookies popup to disappear
         wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector("[data-testid=\"main-cookies-banner-container\"]")));
         Assert.assertTrue(driver.findElements(By.cssSelector("[data-testid=\"main-cookies-banner-container\"]")).isEmpty());
+
+        //7. Locate the categories description bar
+        WebElement airbnbCategoriesCarousel = driver.findElement(By.cssSelector("[data-testid=\"content-scroller\"]"));
+
+        //8. Get the list of categories
+        List<WebElement> airbnbCategoriesButtons = airbnbCategoriesCarousel.findElements(
+                By.cssSelector("#category-bar-description + div + div label"));
+        Assert.assertEquals(airbnbCategoriesButtons.size(), 62, "The count does not match the expected value");
+
+        //9. Print the list of categories
+        for (WebElement category : airbnbCategoriesButtons) {
+            System.out.println(category.getText());
+
+            //10. Click on the Beachfront category
+            if (category.getText().equals("Beachfront")) {
+                category.click();
+                break;
+            }
+        }
+        //assert that the Beachfront category is selected
+        Assert.assertTrue(driver.findElement(By.cssSelector("[data-testid=\"category-item--Beachfront--checked\"]")).isDisplayed());
 
     }
 
