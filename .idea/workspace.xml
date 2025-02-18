@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7850fae8-c0be-4e42-8498-b5ab3eb1a331" name="Changes" comment="BarnesAndNobleHomeworkExercise&#10;- created a new branch BarnesAndNobleWebsitePractice&#10;- created a new class BarnesAndNobleWebsitePractice.java&#10;- Work in progress">
+    <list default="true" id="7850fae8-c0be-4e42-8498-b5ab3eb1a331" name="Changes" comment="AirbnbHomework&#10;- created a new package&#10;- created a new branch and new class AirbnbHomework.java&#10;- started my homework with finding the cookies container and buttons, asserted they are displayed and then asserted they are no longer displayed. &#10;- work in progress">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/BarnesAndNobleWebsitePractice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/BarnesAndNobleWebsitePractice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Airbnb/AirbnbHomework.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Airbnb/AirbnbHomework.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="LetCodeFormsLocatorsPractice" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -41,6 +41,10 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;TestNG.AirbnbHomework.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AirbnbHomework.findAnAirbnb (1).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AirbnbHomework.findAnAirbnb (2).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.AirbnbHomework.findAnAirbnb.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.BarnesAndNobleWebsitePractice.barnesAndNobleAddToCartAutomationMethod (1).executor&quot;: &quot;Run&quot;,
     &quot;TestNG.BarnesAndNobleWebsitePractice.barnesAndNobleAddToCartAutomationMethod (2).executor&quot;: &quot;Run&quot;,
     &quot;TestNG.BarnesAndNobleWebsitePractice.barnesAndNobleAddToCartAutomationMethod (3).executor&quot;: &quot;Run&quot;,
@@ -72,7 +76,7 @@
     &quot;TestNG.Recursivitate.parcurgereLista.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.WebTableTest.automationMethod.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.WebTableTest.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;BarnesAndNoblePractice&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;AirBnBhomework&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/mibudeanu/IdeaProjects/SeleniumProject/src/test/resources&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -95,17 +99,17 @@
       <recent name="C:\Users\mibudeanu\IdeaProjects\SeleniumProject\src\test" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.BarnesAndNobleWebsitePractice.barnesAndNobleAddToCartAutomationMethod">
-    <configuration name="BarnesAndNobleWebsitePractice" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.AirbnbHomework">
+    <configuration name="AirbnbHomework" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Tests.*" />
+          <option name="PATTERN" value="Airbnb.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.BarnesAndNobleWebsitePractice" />
+      <option name="PACKAGE_NAME" value="Airbnb" />
+      <option name="MAIN_CLASS_NAME" value="Airbnb.AirbnbHomework" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -113,17 +117,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BarnesAndNobleWebsitePractice.barnesAndNobleAddToCartAutomationMethod (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="AirbnbHomework.findAnAirbnb (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Tests.*" />
+          <option name="PATTERN" value="Airbnb.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.BarnesAndNobleWebsitePractice" />
-      <option name="METHOD_NAME" value="barnesAndNobleAddToCartAutomationMethod" />
+      <option name="PACKAGE_NAME" value="Airbnb" />
+      <option name="MAIN_CLASS_NAME" value="Airbnb.AirbnbHomework" />
+      <option name="METHOD_NAME" value="findAnAirbnb" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -131,17 +135,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BarnesAndNobleWebsitePractice.barnesAndNobleAddToCartAutomationMethod (3)" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="AirbnbHomework.findAnAirbnb (2)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Tests.*" />
+          <option name="PATTERN" value="Airbnb.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.BarnesAndNobleWebsitePractice" />
-      <option name="METHOD_NAME" value="barnesAndNobleAddToCartAutomationMethod" />
+      <option name="PACKAGE_NAME" value="Airbnb" />
+      <option name="MAIN_CLASS_NAME" value="Airbnb.AirbnbHomework" />
+      <option name="METHOD_NAME" value="findAnAirbnb" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -149,17 +153,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BarnesAndNobleWebsitePractice.barnesAndNobleAddToCartAutomationMethod (4)" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="AirbnbHomework.findAnAirbnb" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Tests.*" />
+          <option name="PATTERN" value="Airbnb.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.BarnesAndNobleWebsitePractice" />
-      <option name="METHOD_NAME" value="barnesAndNobleAddToCartAutomationMethod" />
+      <option name="PACKAGE_NAME" value="Airbnb" />
+      <option name="MAIN_CLASS_NAME" value="Airbnb.AirbnbHomework" />
+      <option name="METHOD_NAME" value="findAnAirbnb" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -167,7 +171,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BarnesAndNobleWebsitePractice.barnesAndNobleAddToCartAutomationMethod" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="MacysWebsitePracticeTest.macysAddToCartAutomationMethod (4)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumProject" />
       <extension name="coverage">
         <pattern>
@@ -176,8 +180,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.BarnesAndNobleWebsitePractice" />
-      <option name="METHOD_NAME" value="barnesAndNobleAddToCartAutomationMethod" />
+      <option name="MAIN_CLASS_NAME" value="Tests.MacysWebsitePracticeTest" />
+      <option name="METHOD_NAME" value="macysAddToCartAutomationMethod" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -187,19 +191,19 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.BarnesAndNobleWebsitePractice.barnesAndNobleAddToCartAutomationMethod" />
-        <item itemvalue="TestNG.BarnesAndNobleWebsitePractice.barnesAndNobleAddToCartAutomationMethod (1)" />
-        <item itemvalue="TestNG.BarnesAndNobleWebsitePractice.barnesAndNobleAddToCartAutomationMethod (4)" />
-        <item itemvalue="TestNG.BarnesAndNobleWebsitePractice.barnesAndNobleAddToCartAutomationMethod (3)" />
-        <item itemvalue="TestNG.BarnesAndNobleWebsitePractice" />
+        <item itemvalue="TestNG.AirbnbHomework" />
+        <item itemvalue="TestNG.AirbnbHomework.findAnAirbnb" />
+        <item itemvalue="TestNG.AirbnbHomework.findAnAirbnb (2)" />
+        <item itemvalue="TestNG.AirbnbHomework.findAnAirbnb (1)" />
+        <item itemvalue="TestNG.MacysWebsitePracticeTest.macysAddToCartAutomationMethod (4)" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.23654.153" />
-        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-IU-243.23654.153" />
+        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.23654.189" />
+        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-IU-243.23654.189" />
       </set>
     </attachedChunks>
   </component>
@@ -227,7 +231,8 @@
       <workItem from="1738858248696" duration="11641000" />
       <workItem from="1739171240358" duration="26039000" />
       <workItem from="1739428642727" duration="600000" />
-      <workItem from="1739448089914" duration="9444000" />
+      <workItem from="1739448089914" duration="25596000" />
+      <workItem from="1739801899302" duration="5426000" />
     </task>
     <task id="LOCAL-00001" summary="- created Selenium Project">
       <option name="closed" value="true" />
@@ -333,7 +338,23 @@
       <option name="project" value="LOCAL" />
       <updated>1739452933691</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="BarnesAndNobleHomeworkExercise&#10;- added an assert to verify that we are on the selected page">
+      <option name="closed" value="true" />
+      <created>1739463429891</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1739463429891</updated>
+    </task>
+    <task id="LOCAL-00015" summary="AirbnbHomework&#10;- created a new package&#10;- created a new branch and new class AirbnbHomework.java&#10;- started my homework with finding the cookies container and buttons, asserted they are displayed and then asserted they are no longer displayed. &#10;- work in progress">
+      <option name="closed" value="true" />
+      <created>1739517112618</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1739517112618</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -361,6 +382,8 @@
     <MESSAGE value="- work in progress" />
     <MESSAGE value="Resolved LetCodeFormsLocators exercise&#10;- created a new branch LetCodeFormsLocatorsPractice&#10;- created a new class LetCodeFormsLocatorsPractice.java&#10;- found the locators for the 2 WebElements countryCodeDropdown and CountryDropdown&#10;- Iterated trough both dropdown lists, selected the chosen value and then validated with the assert methods that the chosen values were selected &#10;- I also found other elements on the page" />
     <MESSAGE value="BarnesAndNobleHomeworkExercise&#10;- created a new branch BarnesAndNobleWebsitePractice&#10;- created a new class BarnesAndNobleWebsitePractice.java&#10;- Work in progress" />
-    <option name="LAST_COMMIT_MESSAGE" value="BarnesAndNobleHomeworkExercise&#10;- created a new branch BarnesAndNobleWebsitePractice&#10;- created a new class BarnesAndNobleWebsitePractice.java&#10;- Work in progress" />
+    <MESSAGE value="BarnesAndNobleHomeworkExercise&#10;- added an assert to verify that we are on the selected page" />
+    <MESSAGE value="AirbnbHomework&#10;- created a new package&#10;- created a new branch and new class AirbnbHomework.java&#10;- started my homework with finding the cookies container and buttons, asserted they are displayed and then asserted they are no longer displayed. &#10;- work in progress" />
+    <option name="LAST_COMMIT_MESSAGE" value="AirbnbHomework&#10;- created a new package&#10;- created a new branch and new class AirbnbHomework.java&#10;- started my homework with finding the cookies container and buttons, asserted they are displayed and then asserted they are no longer displayed. &#10;- work in progress" />
   </component>
 </project>
