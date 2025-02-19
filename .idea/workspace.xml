@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7850fae8-c0be-4e42-8498-b5ab3eb1a331" name="Changes" comment="AirbnbHomework&#10;- created a new package&#10;- created a new branch and new class AirbnbHomework.java&#10;- started my homework with finding the cookies container and buttons, asserted they are displayed and then asserted they are no longer displayed. &#10;- work in progress">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Airbnb/AirbnbHomework.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Airbnb/AirbnbHomework.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/WebTableTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/WebTableTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="AirBnBhomework" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -37,60 +37,60 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;TestNG.AirbnbHomework.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.AirbnbHomework.findAnAirbnb (1).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.AirbnbHomework.findAnAirbnb (2).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.AirbnbHomework.findAnAirbnb.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.BarnesAndNobleWebsitePractice.barnesAndNobleAddToCartAutomationMethod (1).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.BarnesAndNobleWebsitePractice.barnesAndNobleAddToCartAutomationMethod (2).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.BarnesAndNobleWebsitePractice.barnesAndNobleAddToCartAutomationMethod (3).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.BarnesAndNobleWebsitePractice.barnesAndNobleAddToCartAutomationMethod (4).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.BarnesAndNobleWebsitePractice.barnesAndNobleAddToCartAutomationMethod.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.BarnesAndNobleWebsitePractice.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.LetCodeFormsLocatorsPractice.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.LetCodeFormsLocatorsPractice.findLocators (1).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.LetCodeFormsLocatorsPractice.findLocators (2).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.LetCodeFormsLocatorsPractice.findLocators (3).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.LetCodeFormsLocatorsPractice.findLocators (4).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.LetCodeFormsLocatorsPractice.findLocators (5).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.LetCodeFormsLocatorsPractice.findLocators.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.MacysWebsitePracticeTest.automationMethod.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.MacysWebsitePracticeTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.MacysWebsitePracticeTest.macysAddToCartAutomationMethod (1).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.MacysWebsitePracticeTest.macysAddToCartAutomationMethod (2).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.MacysWebsitePracticeTest.macysAddToCartAutomationMethod (3).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.MacysWebsitePracticeTest.macysAddToCartAutomationMethod (4).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.MacysWebsitePracticeTest.macysAddToCartAutomationMethod.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.PracticeFormTest.automationMethod (1).executor&quot;: &quot;Debug&quot;,
-    &quot;TestNG.PracticeFormTest.automationMethod (2).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.PracticeFormTest.automationMethod (3).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.PracticeFormTest.automationMethod (4).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.PracticeFormTest.automationMethod (5).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.PracticeFormTest.automationMethod.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.PracticeFormTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.Recursivitate.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.Recursivitate.parcurgereLista.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.WebTableTest.automationMethod.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.WebTableTest.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;AirBnBhomework&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/mibudeanu/IdeaProjects/SeleniumProject/src/test/resources&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/mibudeanu/IdeaProjects/SeleniumProject/src/main/java/org/example/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "TestNG.AirbnbHomework.executor": "Run",
+    "TestNG.AirbnbHomework.findAnAirbnb (1).executor": "Run",
+    "TestNG.AirbnbHomework.findAnAirbnb (2).executor": "Run",
+    "TestNG.AirbnbHomework.findAnAirbnb.executor": "Run",
+    "TestNG.BarnesAndNobleWebsitePractice.barnesAndNobleAddToCartAutomationMethod (1).executor": "Run",
+    "TestNG.BarnesAndNobleWebsitePractice.barnesAndNobleAddToCartAutomationMethod (2).executor": "Run",
+    "TestNG.BarnesAndNobleWebsitePractice.barnesAndNobleAddToCartAutomationMethod (3).executor": "Run",
+    "TestNG.BarnesAndNobleWebsitePractice.barnesAndNobleAddToCartAutomationMethod (4).executor": "Run",
+    "TestNG.BarnesAndNobleWebsitePractice.barnesAndNobleAddToCartAutomationMethod.executor": "Run",
+    "TestNG.BarnesAndNobleWebsitePractice.executor": "Run",
+    "TestNG.LetCodeFormsLocatorsPractice.executor": "Run",
+    "TestNG.LetCodeFormsLocatorsPractice.findLocators (1).executor": "Run",
+    "TestNG.LetCodeFormsLocatorsPractice.findLocators (2).executor": "Run",
+    "TestNG.LetCodeFormsLocatorsPractice.findLocators (3).executor": "Run",
+    "TestNG.LetCodeFormsLocatorsPractice.findLocators (4).executor": "Run",
+    "TestNG.LetCodeFormsLocatorsPractice.findLocators (5).executor": "Run",
+    "TestNG.LetCodeFormsLocatorsPractice.findLocators.executor": "Run",
+    "TestNG.MacysWebsitePracticeTest.automationMethod.executor": "Run",
+    "TestNG.MacysWebsitePracticeTest.executor": "Run",
+    "TestNG.MacysWebsitePracticeTest.macysAddToCartAutomationMethod (1).executor": "Run",
+    "TestNG.MacysWebsitePracticeTest.macysAddToCartAutomationMethod (2).executor": "Run",
+    "TestNG.MacysWebsitePracticeTest.macysAddToCartAutomationMethod (3).executor": "Run",
+    "TestNG.MacysWebsitePracticeTest.macysAddToCartAutomationMethod (4).executor": "Run",
+    "TestNG.MacysWebsitePracticeTest.macysAddToCartAutomationMethod.executor": "Run",
+    "TestNG.PracticeFormTest.automationMethod (1).executor": "Debug",
+    "TestNG.PracticeFormTest.automationMethod (2).executor": "Run",
+    "TestNG.PracticeFormTest.automationMethod (3).executor": "Run",
+    "TestNG.PracticeFormTest.automationMethod (4).executor": "Run",
+    "TestNG.PracticeFormTest.automationMethod (5).executor": "Run",
+    "TestNG.PracticeFormTest.automationMethod.executor": "Run",
+    "TestNG.PracticeFormTest.executor": "Run",
+    "TestNG.Recursivitate.executor": "Run",
+    "TestNG.Recursivitate.parcurgereLista.executor": "Run",
+    "TestNG.WebTableTest.automationMethod.executor": "Run",
+    "TestNG.WebTableTest.executor": "Run",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/mibudeanu/IdeaProjects/SeleniumProject/src/test/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/mibudeanu/IdeaProjects/SeleniumProject/src/main/java/org/example/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\mibudeanu\IdeaProjects\SeleniumProject\src\test\resources" />
@@ -99,79 +99,8 @@
       <recent name="C:\Users\mibudeanu\IdeaProjects\SeleniumProject\src\test" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.AirbnbHomework">
-    <configuration name="AirbnbHomework" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Airbnb.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Airbnb" />
-      <option name="MAIN_CLASS_NAME" value="Airbnb.AirbnbHomework" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AirbnbHomework.findAnAirbnb (1)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Airbnb.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Airbnb" />
-      <option name="MAIN_CLASS_NAME" value="Airbnb.AirbnbHomework" />
-      <option name="METHOD_NAME" value="findAnAirbnb" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AirbnbHomework.findAnAirbnb (2)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Airbnb.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Airbnb" />
-      <option name="MAIN_CLASS_NAME" value="Airbnb.AirbnbHomework" />
-      <option name="METHOD_NAME" value="findAnAirbnb" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AirbnbHomework.findAnAirbnb" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Airbnb.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Airbnb" />
-      <option name="MAIN_CLASS_NAME" value="Airbnb.AirbnbHomework" />
-      <option name="METHOD_NAME" value="findAnAirbnb" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MacysWebsitePracticeTest.macysAddToCartAutomationMethod (4)" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.WebTableTest">
+    <configuration name="BarnesAndNobleWebsitePractice.barnesAndNobleAddToCartAutomationMethod (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumProject" />
       <extension name="coverage">
         <pattern>
@@ -180,8 +109,79 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.MacysWebsitePracticeTest" />
-      <option name="METHOD_NAME" value="macysAddToCartAutomationMethod" />
+      <option name="MAIN_CLASS_NAME" value="Tests.BarnesAndNobleWebsitePractice" />
+      <option name="METHOD_NAME" value="barnesAndNobleAddToCartAutomationMethod" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BarnesAndNobleWebsitePractice.barnesAndNobleAddToCartAutomationMethod (3)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.BarnesAndNobleWebsitePractice" />
+      <option name="METHOD_NAME" value="barnesAndNobleAddToCartAutomationMethod" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BarnesAndNobleWebsitePractice.barnesAndNobleAddToCartAutomationMethod (4)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.BarnesAndNobleWebsitePractice" />
+      <option name="METHOD_NAME" value="barnesAndNobleAddToCartAutomationMethod" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebTableTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.WebTableTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebTableTest.automationMethod" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.WebTableTest" />
+      <option name="METHOD_NAME" value="automationMethod" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -191,11 +191,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.AirbnbHomework" />
-        <item itemvalue="TestNG.AirbnbHomework.findAnAirbnb" />
-        <item itemvalue="TestNG.AirbnbHomework.findAnAirbnb (2)" />
-        <item itemvalue="TestNG.AirbnbHomework.findAnAirbnb (1)" />
-        <item itemvalue="TestNG.MacysWebsitePracticeTest.macysAddToCartAutomationMethod (4)" />
+        <item itemvalue="TestNG.WebTableTest" />
+        <item itemvalue="TestNG.WebTableTest.automationMethod" />
+        <item itemvalue="TestNG.BarnesAndNobleWebsitePractice.barnesAndNobleAddToCartAutomationMethod (4)" />
+        <item itemvalue="TestNG.BarnesAndNobleWebsitePractice.barnesAndNobleAddToCartAutomationMethod (3)" />
+        <item itemvalue="TestNG.BarnesAndNobleWebsitePractice.barnesAndNobleAddToCartAutomationMethod (1)" />
       </list>
     </recent_temporary>
   </component>
