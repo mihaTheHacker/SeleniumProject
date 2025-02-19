@@ -17,6 +17,16 @@ public class PracticeFormTest {
     @Test
     public void automationMethod() {
 
+        int x = 5; if (x > 2){
+
+            System.out.println("Greater");
+
+        }
+
+        else
+
+        { System.out.println("Smaller");}
+
         //deschidem un browser de Chrome
         driver = new ChromeDriver();
 
@@ -25,7 +35,8 @@ public class PracticeFormTest {
 
         //facem browserul in modul maximize
         driver.manage().window().maximize();
-
+        driver.switchTo().alert().accept();
+        driver.switchTo().alert().dismiss();
         //facem un scroll in jos
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollBy(0,400)");
@@ -84,6 +95,9 @@ public class PracticeFormTest {
         js.executeScript("arguments[0].click();", cityElement);
         cityElement.sendKeys("Delhi");
         cityElement.sendKeys(Keys.ENTER);
+
+        WebElement submitButtonElement = driver.findElement(By.id("submit"));
+        js.executeScript("arguments[0].click();", submitButtonElement);
 
     }
 

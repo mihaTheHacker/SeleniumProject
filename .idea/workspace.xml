@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7850fae8-c0be-4e42-8498-b5ab3eb1a331" name="Changes" comment="AirbnbHomework&#10;- created a new package&#10;- created a new branch and new class AirbnbHomework.java&#10;- started my homework with finding the cookies container and buttons, asserted they are displayed and then asserted they are no longer displayed. &#10;- work in progress">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/WebTableTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/WebTableTest.java" afterDir="false" />
+    <list default="true" id="7850fae8-c0be-4e42-8498-b5ab3eb1a331" name="Changes" comment="- assert lesson">
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/PracticeFormTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/PracticeFormTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,25 +98,7 @@
       <recent name="C:\Users\mibudeanu\IdeaProjects\SeleniumProject\src\test" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.WebTableTest">
-    <configuration name="BarnesAndNobleWebsitePractice.barnesAndNobleAddToCartAutomationMethod (1)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.BarnesAndNobleWebsitePractice" />
-      <option name="METHOD_NAME" value="barnesAndNobleAddToCartAutomationMethod" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.PracticeFormTest.automationMethod">
     <configuration name="BarnesAndNobleWebsitePractice.barnesAndNobleAddToCartAutomationMethod (3)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumProject" />
       <extension name="coverage">
@@ -147,6 +128,24 @@
       <option name="PACKAGE_NAME" value="Tests" />
       <option name="MAIN_CLASS_NAME" value="Tests.BarnesAndNobleWebsitePractice" />
       <option name="METHOD_NAME" value="barnesAndNobleAddToCartAutomationMethod" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PracticeFormTest.automationMethod" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.PracticeFormTest" />
+      <option name="METHOD_NAME" value="automationMethod" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -191,11 +190,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.PracticeFormTest.automationMethod" />
         <item itemvalue="TestNG.WebTableTest" />
         <item itemvalue="TestNG.WebTableTest.automationMethod" />
         <item itemvalue="TestNG.BarnesAndNobleWebsitePractice.barnesAndNobleAddToCartAutomationMethod (4)" />
         <item itemvalue="TestNG.BarnesAndNobleWebsitePractice.barnesAndNobleAddToCartAutomationMethod (3)" />
-        <item itemvalue="TestNG.BarnesAndNobleWebsitePractice.barnesAndNobleAddToCartAutomationMethod (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -354,7 +353,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739517112618</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="- assert lesson">
+      <option name="closed" value="true" />
+      <created>1739970756677</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1739970756677</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -384,6 +391,7 @@
     <MESSAGE value="BarnesAndNobleHomeworkExercise&#10;- created a new branch BarnesAndNobleWebsitePractice&#10;- created a new class BarnesAndNobleWebsitePractice.java&#10;- Work in progress" />
     <MESSAGE value="BarnesAndNobleHomeworkExercise&#10;- added an assert to verify that we are on the selected page" />
     <MESSAGE value="AirbnbHomework&#10;- created a new package&#10;- created a new branch and new class AirbnbHomework.java&#10;- started my homework with finding the cookies container and buttons, asserted they are displayed and then asserted they are no longer displayed. &#10;- work in progress" />
-    <option name="LAST_COMMIT_MESSAGE" value="AirbnbHomework&#10;- created a new package&#10;- created a new branch and new class AirbnbHomework.java&#10;- started my homework with finding the cookies container and buttons, asserted they are displayed and then asserted they are no longer displayed. &#10;- work in progress" />
+    <MESSAGE value="- assert lesson" />
+    <option name="LAST_COMMIT_MESSAGE" value="- assert lesson" />
   </component>
 </project>
