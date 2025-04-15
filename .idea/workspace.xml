@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7850fae8-c0be-4e42-8498-b5ab3eb1a331" name="Changes" comment="- assert lesson">
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/PracticeFormTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/PracticeFormTest.java" afterDir="false" />
+    <list default="true" id="7850fae8-c0be-4e42-8498-b5ab3eb1a331" name="Changes" comment="- deleted some practice lines">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/AlertTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +45,9 @@
     "TestNG.AirbnbHomework.findAnAirbnb (1).executor": "Run",
     "TestNG.AirbnbHomework.findAnAirbnb (2).executor": "Run",
     "TestNG.AirbnbHomework.findAnAirbnb.executor": "Run",
+    "TestNG.AlertTest.automationMethod (1).executor": "Run",
+    "TestNG.AlertTest.automationMethod.executor": "Run",
+    "TestNG.AlertTest.executor": "Run",
     "TestNG.BarnesAndNobleWebsitePractice.barnesAndNobleAddToCartAutomationMethod (1).executor": "Run",
     "TestNG.BarnesAndNobleWebsitePractice.barnesAndNobleAddToCartAutomationMethod (2).executor": "Run",
     "TestNG.BarnesAndNobleWebsitePractice.barnesAndNobleAddToCartAutomationMethod (3).executor": "Run",
@@ -98,8 +102,8 @@
       <recent name="C:\Users\mibudeanu\IdeaProjects\SeleniumProject\src\test" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.PracticeFormTest.automationMethod">
-    <configuration name="BarnesAndNobleWebsitePractice.barnesAndNobleAddToCartAutomationMethod (3)" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.AlertTest.automationMethod">
+    <configuration name="AlertTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumProject" />
       <extension name="coverage">
         <pattern>
@@ -108,8 +112,25 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.BarnesAndNobleWebsitePractice" />
-      <option name="METHOD_NAME" value="barnesAndNobleAddToCartAutomationMethod" />
+      <option name="MAIN_CLASS_NAME" value="Tests.AlertTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AlertTest.automationMethod (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.AlertTest" />
+      <option name="METHOD_NAME" value="automationMethod" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -117,7 +138,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BarnesAndNobleWebsitePractice.barnesAndNobleAddToCartAutomationMethod (4)" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="AlertTest.automationMethod" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumProject" />
       <extension name="coverage">
         <pattern>
@@ -126,8 +147,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.BarnesAndNobleWebsitePractice" />
-      <option name="METHOD_NAME" value="barnesAndNobleAddToCartAutomationMethod" />
+      <option name="MAIN_CLASS_NAME" value="Tests.AlertTest" />
+      <option name="METHOD_NAME" value="automationMethod" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -170,39 +191,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WebTableTest.automationMethod" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.WebTableTest" />
-      <option name="METHOD_NAME" value="automationMethod" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.AlertTest.automationMethod" />
+        <item itemvalue="TestNG.AlertTest.automationMethod (1)" />
+        <item itemvalue="TestNG.AlertTest" />
         <item itemvalue="TestNG.PracticeFormTest.automationMethod" />
         <item itemvalue="TestNG.WebTableTest" />
-        <item itemvalue="TestNG.WebTableTest.automationMethod" />
-        <item itemvalue="TestNG.BarnesAndNobleWebsitePractice.barnesAndNobleAddToCartAutomationMethod (4)" />
-        <item itemvalue="TestNG.BarnesAndNobleWebsitePractice.barnesAndNobleAddToCartAutomationMethod (3)" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.23654.189" />
-        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-IU-243.23654.189" />
+        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.26053.27" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.26053.27" />
       </set>
     </attachedChunks>
   </component>
@@ -232,6 +235,14 @@
       <workItem from="1739428642727" duration="600000" />
       <workItem from="1739448089914" duration="25596000" />
       <workItem from="1739801899302" duration="5426000" />
+      <workItem from="1741856476265" duration="599000" />
+      <workItem from="1742564565912" duration="71000" />
+      <workItem from="1742568094013" duration="725000" />
+      <workItem from="1743055145204" duration="1174000" />
+      <workItem from="1743145364480" duration="587000" />
+      <workItem from="1743449200861" duration="5000" />
+      <workItem from="1744382514714" duration="872000" />
+      <workItem from="1744622971676" duration="2651000" />
     </task>
     <task id="LOCAL-00001" summary="- created Selenium Project">
       <option name="closed" value="true" />
@@ -361,7 +372,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739970756677</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="- deleted some practice lines">
+      <option name="closed" value="true" />
+      <created>1742568184885</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1742568184885</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -392,6 +411,7 @@
     <MESSAGE value="BarnesAndNobleHomeworkExercise&#10;- added an assert to verify that we are on the selected page" />
     <MESSAGE value="AirbnbHomework&#10;- created a new package&#10;- created a new branch and new class AirbnbHomework.java&#10;- started my homework with finding the cookies container and buttons, asserted they are displayed and then asserted they are no longer displayed. &#10;- work in progress" />
     <MESSAGE value="- assert lesson" />
-    <option name="LAST_COMMIT_MESSAGE" value="- assert lesson" />
+    <MESSAGE value="- deleted some practice lines" />
+    <option name="LAST_COMMIT_MESSAGE" value="- deleted some practice lines" />
   </component>
 </project>
