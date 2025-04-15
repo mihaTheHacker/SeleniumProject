@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7850fae8-c0be-4e42-8498-b5ab3eb1a331" name="Changes" comment="- created AlertTest class&#10;- defined implicit wait&#10;- defined explicit wait">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/BrowserWindowsTab.java" afterDir="false" />
+    <list default="true" id="7850fae8-c0be-4e42-8498-b5ab3eb1a331" name="Changes" comment="- created BrowserWindowsTab class">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/Frames.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,6 +58,7 @@
     "TestNG.BrowserWindowsTab.automationMethod (2).executor": "Run",
     "TestNG.BrowserWindowsTab.automationMethod (3).executor": "Run",
     "TestNG.BrowserWindowsTab.automationMethod.executor": "Run",
+    "TestNG.Frames.automationMethod.executor": "Run",
     "TestNG.LetCodeFormsLocatorsPractice.executor": "Run",
     "TestNG.LetCodeFormsLocatorsPractice.findLocators (1).executor": "Run",
     "TestNG.LetCodeFormsLocatorsPractice.findLocators (2).executor": "Run",
@@ -106,25 +107,7 @@
       <recent name="C:\Users\mibudeanu\IdeaProjects\SeleniumProject\src\test" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.BrowserWindowsTab.automationMethod (3)">
-    <configuration name="AlertTest.automationMethod" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.AlertTest" />
-      <option name="METHOD_NAME" value="automationMethod" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.Frames.automationMethod">
     <configuration name="BrowserWindowsTab.automationMethod (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumProject" />
       <extension name="coverage">
@@ -197,13 +180,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Frames.automationMethod" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.Frames" />
+      <option name="METHOD_NAME" value="automationMethod" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.Frames.automationMethod" />
         <item itemvalue="TestNG.BrowserWindowsTab.automationMethod (3)" />
         <item itemvalue="TestNG.BrowserWindowsTab.automationMethod" />
         <item itemvalue="TestNG.BrowserWindowsTab.automationMethod (2)" />
         <item itemvalue="TestNG.BrowserWindowsTab.automationMethod (1)" />
-        <item itemvalue="TestNG.AlertTest.automationMethod" />
       </list>
     </recent_temporary>
   </component>
@@ -248,7 +249,7 @@
       <workItem from="1743145364480" duration="587000" />
       <workItem from="1743449200861" duration="5000" />
       <workItem from="1744382514714" duration="872000" />
-      <workItem from="1744622971676" duration="5111000" />
+      <workItem from="1744622971676" duration="6305000" />
     </task>
     <task id="LOCAL-00001" summary="- created Selenium Project">
       <option name="closed" value="true" />
@@ -394,7 +395,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744725541327</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="- created BrowserWindowsTab class">
+      <option name="closed" value="true" />
+      <created>1744728201034</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1744728201034</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -427,6 +436,7 @@
     <MESSAGE value="- assert lesson" />
     <MESSAGE value="- deleted some practice lines" />
     <MESSAGE value="- created AlertTest class&#10;- defined implicit wait&#10;- defined explicit wait" />
-    <option name="LAST_COMMIT_MESSAGE" value="- created AlertTest class&#10;- defined implicit wait&#10;- defined explicit wait" />
+    <MESSAGE value="- created BrowserWindowsTab class" />
+    <option name="LAST_COMMIT_MESSAGE" value="- created BrowserWindowsTab class" />
   </component>
 </project>
