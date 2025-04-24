@@ -1,5 +1,7 @@
 package Tests;
 
+import HelperMethods.AlertMethods;
+import HelperMethods.ElementsMethods;
 import java.time.Duration;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
@@ -14,48 +16,42 @@ import org.testng.annotations.Test;
 public class AlertTest {
 
     public WebDriver driver;
-
+    public ElementsMethods elementMethods;
+    public AlertMethods alertMethods;
 
     @Test
     public void automationMethod() {
-
         //deschidem un browser de Chrome
         driver = new ChromeDriver();
-
         //accesam o pagina web
         driver.get("https://demoqa.com/");
         //definim un wait implicit pentru un interval maxim de timp
-
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-
         //facem browserul in modul maximize
         driver.manage().window().maximize();
+        elementMethods = new ElementsMethods(driver);
+        alertMethods = new AlertMethods(driver);
 
         //facem un scroll in jos
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollBy(0,400)");
 
         WebElement alertFrameWindowElement = driver.findElement(By.xpath("//h5[text()='Alerts, Frame & Windows']"));
-        alertFrameWindowElement.click();
+        elementMethods.clickElement(alertFrameWindowElement);
 
         WebElement alertElement = driver.findElement(By.xpath("//span[text()='Alerts']"));
-        alertElement.click();
+        elementMethods.clickElement(alertElement);
 
         WebElement alertOkElement = driver.findElement(By.id("alertButton"));
-        alertOkElement.click();
+        elementMethods.clickElement(alertOkElement);
 
-        Alert alertOk = driver.switchTo().alert();
-        //ne mutam cu focusul pe alerta
-        alertOk.accept();
+        alertMethods.interractWithAlertOK();
 
         WebElement alertDelayOkElement = driver.findElement(By.id("timerAlertButton"));
-        alertDelayOkElement.click();
+        elementMethods.clickElement(alertDelayOkElement);
 
         //definim un wait explicit ca sa astepte dupa alerta
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        wait.until(ExpectedConditions.alertIsPresent());
-        Alert alertDelayOk = driver.switchTo().alert();
-        alertDelayOk.accept();
+        alertMethods.interractWithDelayAlert();
 
         WebElement alertConfirmationElement = driver.findElement(By.id("confirmButton"));
         alertConfirmationElement.click();
