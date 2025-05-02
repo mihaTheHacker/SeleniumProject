@@ -1,10 +1,10 @@
 package Tests;
 
-import java.time.Duration;
+import HelperMethods.ElementsMethods;
+import HelperMethods.JavascriptMethods;
 import java.util.ArrayList;
 import java.util.List;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -13,13 +13,16 @@ import org.testng.annotations.Test;
 public class BrowserWindowsTab {
 
     public WebDriver driver;
-
+    public JavascriptMethods javascriptMethods;
+    public ElementsMethods elementsMethods;
 
     @Test
     public void automationMethod() {
 
         //deschidem un browser de Chrome
         driver = new ChromeDriver();
+        javascriptMethods = new JavascriptMethods(driver);
+        elementsMethods = new ElementsMethods(driver);
 
         //accesam o pagina web
         driver.get("https://demoqa.com/");
@@ -28,17 +31,16 @@ public class BrowserWindowsTab {
         driver.manage().window().maximize();
 
         //facem un scroll in jos
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("window.scrollBy(0,400)");
+        javascriptMethods.jsScrollDown();
 
         WebElement alertFrameWindowElement = driver.findElement(By.xpath("//h5[text()='Alerts, Frame & Windows']"));
-        alertFrameWindowElement.click();
+        elementsMethods.clickElement(alertFrameWindowElement);
 
         WebElement browserWindowsElement = driver.findElement(By.xpath("//span[text()='Browser Windows']"));
-        browserWindowsElement.click();
+        elementsMethods.clickElement(browserWindowsElement);
 
         WebElement tabElement = driver.findElement(By.id("tabButton"));
-        tabElement.click();
+        elementsMethods.clickElement(tabElement);
 
         List<String> tabList = new ArrayList<>(driver.getWindowHandles());
         driver.switchTo().window(tabList.get(1));

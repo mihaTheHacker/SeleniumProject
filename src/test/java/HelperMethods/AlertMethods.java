@@ -32,4 +32,8 @@ public class AlertMethods {
         alertDelayOk.accept();
 
     }
+    public void interractWithAlertDismiss() {
+        Alert alertConfirmation = driver.switchTo().alert();
+        alertConfirmation.dismiss();
+    }
 }

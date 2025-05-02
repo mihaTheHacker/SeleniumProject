@@ -2,15 +2,13 @@ package Tests;
 
 import HelperMethods.AlertMethods;
 import HelperMethods.ElementsMethods;
+import HelperMethods.JavascriptMethods;
 import java.time.Duration;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 public class AlertTest {
@@ -18,6 +16,7 @@ public class AlertTest {
     public WebDriver driver;
     public ElementsMethods elementMethods;
     public AlertMethods alertMethods;
+    public JavascriptMethods javascriptMethods;
 
     @Test
     public void automationMethod() {
@@ -31,10 +30,10 @@ public class AlertTest {
         driver.manage().window().maximize();
         elementMethods = new ElementsMethods(driver);
         alertMethods = new AlertMethods(driver);
+        javascriptMethods = new JavascriptMethods(driver);
 
         //facem un scroll in jos
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("window.scrollBy(0,400)");
+        javascriptMethods.jsScrollDown();
 
         WebElement alertFrameWindowElement = driver.findElement(By.xpath("//h5[text()='Alerts, Frame & Windows']"));
         elementMethods.clickElement(alertFrameWindowElement);
@@ -54,7 +53,7 @@ public class AlertTest {
         alertMethods.interractWithDelayAlert();
 
         WebElement alertConfirmationElement = driver.findElement(By.id("confirmButton"));
-        alertConfirmationElement.click();
+        elementMethods.clickElement(alertConfirmationElement);
 
         Alert alertConfirmation = driver.switchTo().alert();
         alertConfirmation.dismiss();

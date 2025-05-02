@@ -1,5 +1,6 @@
 package Tests;
 
+import HelperMethods.JavascriptMethods;
 import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -11,12 +12,14 @@ import org.testng.annotations.Test;
 public class Frames {
 
     public WebDriver driver;
+    public JavascriptMethods javascriptMethods;
 
     @Test
     public void automationMethod() {
 
         //deschidem un browser de Chrome
         driver = new ChromeDriver();
+        javascriptMethods = new JavascriptMethods(driver);
 
         //accesam o pagina web
         driver.get("https://demoqa.com/");
@@ -28,6 +31,7 @@ public class Frames {
         driver.manage().window().maximize();
 
         //facem un scroll in jos
+        javascriptMethods.jsScrollDown();
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollBy(0,400)");
 
