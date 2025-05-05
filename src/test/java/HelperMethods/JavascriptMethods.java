@@ -24,8 +24,8 @@ public class JavascriptMethods {
     public void jsClickElement(WebElement element) {
         js.executeScript("arguments[0].click();", element);
     }
-    public void jsScrollDown() {
-        js.executeScript("window.scrollBy(0, 400)");
+    public void jsScrollDown(int x, int y) {
+        js.executeScript("window.scrollBy(arguments[0], arguments[1])", x, y);
     }
 }
 

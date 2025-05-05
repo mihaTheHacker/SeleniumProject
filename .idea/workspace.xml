@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7850fae8-c0be-4e42-8498-b5ab3eb1a331" name="Changes" comment="- created Helper methods package&#10;- refactoring alertMethods and ElementsMethods">
-      <change afterPath="$PROJECT_DIR$/src/test/java/HelperMethods/JavascriptMethods.java" afterDir="false" />
+    <list default="true" id="7850fae8-c0be-4e42-8498-b5ab3eb1a331" name="Changes" comment="- created Helper methods package and classes &#10;- did my homework, in class PracticeFormTest.java I went through the list of 6 elements using the helper method &quot;selectElementFromListByText&quot; from ElementsMethods.java class&#10;- I'm working on my homework by refactoring the code using helper method classes and reusable helper methods&#10;- work in progress">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/HelperMethods/AlertMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HelperMethods/AlertMethods.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/HelperMethods/ElementsMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HelperMethods/ElementsMethods.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/HelperMethods/FramesMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HelperMethods/FramesMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/HelperMethods/JavascriptMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HelperMethods/JavascriptMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/HelperMethods/WindowsMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HelperMethods/WindowsMethods.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests/AlertTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/AlertTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests/BrowserWindowsTab.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/BrowserWindowsTab.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests/Frames.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/Frames.java" afterDir="false" />
@@ -44,69 +45,71 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;TestNG.AirbnbHomework.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.AirbnbHomework.findAnAirbnb (1).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.AirbnbHomework.findAnAirbnb (2).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.AirbnbHomework.findAnAirbnb.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.AlertTest.automationMethod (1).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.AlertTest.automationMethod.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.AlertTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.BarnesAndNobleWebsitePractice.barnesAndNobleAddToCartAutomationMethod (1).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.BarnesAndNobleWebsitePractice.barnesAndNobleAddToCartAutomationMethod (2).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.BarnesAndNobleWebsitePractice.barnesAndNobleAddToCartAutomationMethod (3).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.BarnesAndNobleWebsitePractice.barnesAndNobleAddToCartAutomationMethod (4).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.BarnesAndNobleWebsitePractice.barnesAndNobleAddToCartAutomationMethod.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.BarnesAndNobleWebsitePractice.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.BrowserWindowsTab.automationMethod (1).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.BrowserWindowsTab.automationMethod (2).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.BrowserWindowsTab.automationMethod (3).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.BrowserWindowsTab.automationMethod.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.Frames.automationMethod.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.LetCodeFormsLocatorsPractice.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.LetCodeFormsLocatorsPractice.findLocators (1).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.LetCodeFormsLocatorsPractice.findLocators (2).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.LetCodeFormsLocatorsPractice.findLocators (3).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.LetCodeFormsLocatorsPractice.findLocators (4).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.LetCodeFormsLocatorsPractice.findLocators (5).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.LetCodeFormsLocatorsPractice.findLocators.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.MacysWebsitePracticeTest.automationMethod.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.MacysWebsitePracticeTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.MacysWebsitePracticeTest.macysAddToCartAutomationMethod (1).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.MacysWebsitePracticeTest.macysAddToCartAutomationMethod (2).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.MacysWebsitePracticeTest.macysAddToCartAutomationMethod (3).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.MacysWebsitePracticeTest.macysAddToCartAutomationMethod (4).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.MacysWebsitePracticeTest.macysAddToCartAutomationMethod.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.PracticeFormTest.automationMethod (1).executor&quot;: &quot;Debug&quot;,
-    &quot;TestNG.PracticeFormTest.automationMethod (2).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.PracticeFormTest.automationMethod (3).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.PracticeFormTest.automationMethod (4).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.PracticeFormTest.automationMethod (5).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.PracticeFormTest.automationMethod.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.PracticeFormTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.Recursivitate.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.Recursivitate.parcurgereLista.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.WebTableTest.automationMethod.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.WebTableTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.WebTablesTest.automationMethod.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;HelperMethods&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/mibudeanu/IdeaProjects/SeleniumProject/src/test/resources&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/mibudeanu/IdeaProjects/SeleniumProject/src/main/java/org/example/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "TestNG.AirbnbHomework.executor": "Run",
+    "TestNG.AirbnbHomework.findAnAirbnb (1).executor": "Run",
+    "TestNG.AirbnbHomework.findAnAirbnb (2).executor": "Run",
+    "TestNG.AirbnbHomework.findAnAirbnb.executor": "Run",
+    "TestNG.AlertTest.automationMethod (1).executor": "Run",
+    "TestNG.AlertTest.automationMethod.executor": "Run",
+    "TestNG.AlertTest.executor": "Run",
+    "TestNG.BarnesAndNobleWebsitePractice.barnesAndNobleAddToCartAutomationMethod (1).executor": "Run",
+    "TestNG.BarnesAndNobleWebsitePractice.barnesAndNobleAddToCartAutomationMethod (2).executor": "Run",
+    "TestNG.BarnesAndNobleWebsitePractice.barnesAndNobleAddToCartAutomationMethod (3).executor": "Run",
+    "TestNG.BarnesAndNobleWebsitePractice.barnesAndNobleAddToCartAutomationMethod (4).executor": "Run",
+    "TestNG.BarnesAndNobleWebsitePractice.barnesAndNobleAddToCartAutomationMethod.executor": "Run",
+    "TestNG.BarnesAndNobleWebsitePractice.executor": "Run",
+    "TestNG.BrowserWindowsTab.automationMethod (1).executor": "Run",
+    "TestNG.BrowserWindowsTab.automationMethod (2).executor": "Run",
+    "TestNG.BrowserWindowsTab.automationMethod (3).executor": "Run",
+    "TestNG.BrowserWindowsTab.automationMethod.executor": "Run",
+    "TestNG.BrowserWindowsTab.executor": "Run",
+    "TestNG.Frames.automationMethod.executor": "Run",
+    "TestNG.Frames.executor": "Run",
+    "TestNG.LetCodeFormsLocatorsPractice.executor": "Run",
+    "TestNG.LetCodeFormsLocatorsPractice.findLocators (1).executor": "Run",
+    "TestNG.LetCodeFormsLocatorsPractice.findLocators (2).executor": "Run",
+    "TestNG.LetCodeFormsLocatorsPractice.findLocators (3).executor": "Run",
+    "TestNG.LetCodeFormsLocatorsPractice.findLocators (4).executor": "Run",
+    "TestNG.LetCodeFormsLocatorsPractice.findLocators (5).executor": "Run",
+    "TestNG.LetCodeFormsLocatorsPractice.findLocators.executor": "Run",
+    "TestNG.MacysWebsitePracticeTest.automationMethod.executor": "Run",
+    "TestNG.MacysWebsitePracticeTest.executor": "Run",
+    "TestNG.MacysWebsitePracticeTest.macysAddToCartAutomationMethod (1).executor": "Run",
+    "TestNG.MacysWebsitePracticeTest.macysAddToCartAutomationMethod (2).executor": "Run",
+    "TestNG.MacysWebsitePracticeTest.macysAddToCartAutomationMethod (3).executor": "Run",
+    "TestNG.MacysWebsitePracticeTest.macysAddToCartAutomationMethod (4).executor": "Run",
+    "TestNG.MacysWebsitePracticeTest.macysAddToCartAutomationMethod.executor": "Run",
+    "TestNG.PracticeFormTest.automationMethod (1).executor": "Debug",
+    "TestNG.PracticeFormTest.automationMethod (2).executor": "Run",
+    "TestNG.PracticeFormTest.automationMethod (3).executor": "Run",
+    "TestNG.PracticeFormTest.automationMethod (4).executor": "Run",
+    "TestNG.PracticeFormTest.automationMethod (5).executor": "Run",
+    "TestNG.PracticeFormTest.automationMethod.executor": "Run",
+    "TestNG.PracticeFormTest.executor": "Run",
+    "TestNG.Recursivitate.executor": "Run",
+    "TestNG.Recursivitate.parcurgereLista.executor": "Run",
+    "TestNG.WebTableTest.automationMethod.executor": "Run",
+    "TestNG.WebTableTest.executor": "Run",
+    "TestNG.WebTablesTest.automationMethod.executor": "Run",
+    "git-widget-placeholder": "HelperMethods",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/mibudeanu/IdeaProjects/SeleniumProject/src/test/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/mibudeanu/IdeaProjects/SeleniumProject/src/main/java/org/example/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\mibudeanu\IdeaProjects\SeleniumProject\src\test\resources" />
@@ -115,7 +118,7 @@
       <recent name="C:\Users\mibudeanu\IdeaProjects\SeleniumProject\src\test" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.WebTableTest.automationMethod">
+  <component name="RunManager" selected="TestNG.Frames">
     <configuration name="AlertTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumProject" />
       <extension name="coverage">
@@ -133,7 +136,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AlertTest.automationMethod" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="BrowserWindowsTab" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumProject" />
       <extension name="coverage">
         <pattern>
@@ -142,43 +145,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.AlertTest" />
-      <option name="METHOD_NAME" value="automationMethod" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PracticeFormTest.automationMethod" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.PracticeFormTest" />
-      <option name="METHOD_NAME" value="automationMethod" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WebTableTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.WebTableTest" />
+      <option name="MAIN_CLASS_NAME" value="Tests.BrowserWindowsTab" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -186,7 +153,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WebTableTest.automationMethod" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="BrowserWindowsTab.automationMethod" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumProject" />
       <extension name="coverage">
         <pattern>
@@ -195,7 +162,42 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.WebTableTest" />
+      <option name="MAIN_CLASS_NAME" value="Tests.BrowserWindowsTab" />
+      <option name="METHOD_NAME" value="automationMethod" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Frames" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.Frames" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Frames.automationMethod" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.Frames" />
       <option name="METHOD_NAME" value="automationMethod" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -206,11 +208,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.WebTableTest.automationMethod" />
-        <item itemvalue="TestNG.WebTableTest" />
+        <item itemvalue="TestNG.Frames" />
+        <item itemvalue="TestNG.BrowserWindowsTab" />
         <item itemvalue="TestNG.AlertTest" />
-        <item itemvalue="TestNG.AlertTest.automationMethod" />
-        <item itemvalue="TestNG.PracticeFormTest.automationMethod" />
+        <item itemvalue="TestNG.Frames.automationMethod" />
+        <item itemvalue="TestNG.BrowserWindowsTab.automationMethod" />
       </list>
     </recent_temporary>
   </component>
@@ -260,7 +262,7 @@
       <workItem from="1745320136324" duration="42000" />
       <workItem from="1745414718495" duration="42845000" />
       <workItem from="1745840334807" duration="17302000" />
-      <workItem from="1746186326137" duration="5016000" />
+      <workItem from="1746186326137" duration="20687000" />
     </task>
     <task id="LOCAL-00001" summary="- created Selenium Project">
       <option name="closed" value="true" />
@@ -430,7 +432,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745487313838</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="- created Helper methods package and classes &#10;- did my homework, in class PracticeFormTest.java I went through the list of 6 elements using the helper method &quot;selectElementFromListByText&quot; from ElementsMethods.java class&#10;- I'm working on my homework by refactoring the code using helper method classes and reusable helper methods&#10;- work in progress">
+      <option name="closed" value="true" />
+      <created>1746192897124</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1746192897124</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -466,7 +476,8 @@
     <MESSAGE value="- created BrowserWindowsTab class" />
     <MESSAGE value="- created Frames class" />
     <MESSAGE value="- created Helper methods package&#10;- refactoring alertMethods and ElementsMethods" />
-    <option name="LAST_COMMIT_MESSAGE" value="- created Helper methods package&#10;- refactoring alertMethods and ElementsMethods" />
+    <MESSAGE value="- created Helper methods package and classes &#10;- did my homework, in class PracticeFormTest.java I went through the list of 6 elements using the helper method &quot;selectElementFromListByText&quot; from ElementsMethods.java class&#10;- I'm working on my homework by refactoring the code using helper method classes and reusable helper methods&#10;- work in progress" />
+    <option name="LAST_COMMIT_MESSAGE" value="- created Helper methods package and classes &#10;- did my homework, in class PracticeFormTest.java I went through the list of 6 elements using the helper method &quot;selectElementFromListByText&quot; from ElementsMethods.java class&#10;- I'm working on my homework by refactoring the code using helper method classes and reusable helper methods&#10;- work in progress" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

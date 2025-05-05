@@ -4,7 +4,6 @@ import HelperMethods.AlertMethods;
 import HelperMethods.ElementsMethods;
 import HelperMethods.JavascriptMethods;
 import java.time.Duration;
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -33,7 +32,7 @@ public class AlertTest {
         javascriptMethods = new JavascriptMethods(driver);
 
         //facem un scroll in jos
-        javascriptMethods.jsScrollDown();
+        javascriptMethods.jsScrollDown(0, 400);
 
         WebElement alertFrameWindowElement = driver.findElement(By.xpath("//h5[text()='Alerts, Frame & Windows']"));
         elementMethods.clickElement(alertFrameWindowElement);
@@ -44,26 +43,25 @@ public class AlertTest {
         WebElement alertOkElement = driver.findElement(By.id("alertButton"));
         elementMethods.clickElement(alertOkElement);
 
-        alertMethods.interractWithAlertOK();
+        alertMethods.interactWithAlertOK();
 
         WebElement alertDelayOkElement = driver.findElement(By.id("timerAlertButton"));
         elementMethods.clickElement(alertDelayOkElement);
 
         //definim un wait explicit ca sa astepte dupa alerta
-        alertMethods.interractWithDelayAlert();
+        alertMethods.interactWithDelayAlert();
 
         WebElement alertConfirmationElement = driver.findElement(By.id("confirmButton"));
         elementMethods.clickElement(alertConfirmationElement);
 
-        Alert alertConfirmation = driver.switchTo().alert();
-        alertConfirmation.dismiss();
+        //alertConfirmation.dismiss();
+        alertMethods.interactWithAlertDismiss();
 
         WebElement alertPromtElement = driver.findElement(By.id("promtButton"));
-        alertPromtElement.click();
+        elementMethods.clickElement(alertPromtElement);
 
-        Alert alertPromt = driver.switchTo().alert();
-        alertPromt.sendKeys("Mihaela");
-        alertPromt.accept();
+        //trimitem textul in alerta si acceptam promptul
+        alertMethods.interactWithAlertSendKeys("Mihaela");
 
     }
 }

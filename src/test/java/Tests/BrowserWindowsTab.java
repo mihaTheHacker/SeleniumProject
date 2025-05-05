@@ -2,6 +2,7 @@ package Tests;
 
 import HelperMethods.ElementsMethods;
 import HelperMethods.JavascriptMethods;
+import HelperMethods.WindowsMethods;
 import java.util.ArrayList;
 import java.util.List;
 import org.openqa.selenium.By;
@@ -15,6 +16,7 @@ public class BrowserWindowsTab {
     public WebDriver driver;
     public JavascriptMethods javascriptMethods;
     public ElementsMethods elementsMethods;
+    public WindowsMethods windowsMethods;
 
     @Test
     public void automationMethod() {
@@ -23,6 +25,7 @@ public class BrowserWindowsTab {
         driver = new ChromeDriver();
         javascriptMethods = new JavascriptMethods(driver);
         elementsMethods = new ElementsMethods(driver);
+        windowsMethods = new WindowsMethods(driver);
 
         //accesam o pagina web
         driver.get("https://demoqa.com/");
@@ -31,7 +34,7 @@ public class BrowserWindowsTab {
         driver.manage().window().maximize();
 
         //facem un scroll in jos
-        javascriptMethods.jsScrollDown();
+        javascriptMethods.jsScrollDown(0,400);
 
         WebElement alertFrameWindowElement = driver.findElement(By.xpath("//h5[text()='Alerts, Frame & Windows']"));
         elementsMethods.clickElement(alertFrameWindowElement);
@@ -47,18 +50,19 @@ public class BrowserWindowsTab {
 
         WebElement sampleHeadingElement = driver.findElement(By.id("sampleHeading"));
         System.out.println("Textul din new tab este:  " + sampleHeadingElement.getText());
-        driver.close();
+        windowsMethods.closeWindow();
 
         driver.switchTo().window(tabList.get(0));
         WebElement windowButtonElement = driver.findElement(By.id("windowButton"));
-        windowButtonElement.click();
+        elementsMethods.clickElement(windowButtonElement);
 
-        List<String> windowList = new ArrayList<>(driver.getWindowHandles());
-        driver.switchTo().window(windowList.get(1));
+//        List<String> windowList = new ArrayList<>(driver.getWindowHandles());
+//        driver.switchTo().window(windowList.get(1));
+        windowsMethods.switchToWindowByIndex(1);
 
         WebElement sampleHeadingWindowElement = driver.findElement(By.id("sampleHeading"));
         System.out.println("Textul din new window este:  " + sampleHeadingWindowElement.getText());
-        driver.close();
-        driver.switchTo().window(windowList.get(0));
+        windowsMethods.closeWindow();
+        windowsMethods.switchToWindowByIndex(2);
     }
 }

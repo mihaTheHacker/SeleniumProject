@@ -36,7 +36,7 @@ public class WebTableTest {
         driver.manage().window().maximize();
 
         //facem un scroll in jos
-        javascriptMethods.jsScrollDown();
+        javascriptMethods.jsScrollDown(0,400);
 
         //declaram un element
         WebElement elementsField = driver.findElement(By.xpath("//h5[text()='Elements']"));

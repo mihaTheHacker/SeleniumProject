@@ -15,7 +15,9 @@ public class PracticeFormTest {
 
     //am declarat variabila WebDriver de tip driver
     public WebDriver driver;
+    // am declarat variabila de tip elementsMethods
     public ElementsMethods elementsMethods;
+    // am declarat variabila de tip JavascriptMethods
     public JavascriptMethods javascriptMethods;
 
 
@@ -34,8 +36,8 @@ public class PracticeFormTest {
         //initializam obiectul elementsMethods
         javascriptMethods = new JavascriptMethods(driver);
 
-        //facem un scroll in jos
-        javascriptMethods.jsScrollDown();
+        //facem un scroll in jos apeland metoda jsScrollDown() din clasa JavascriptMethods
+        javascriptMethods.jsScrollDown(0, 400);
 
         // am trecut prin lista de elemente folosindu-ma de metoda ajutatoare selectElementFromListByText, am cautat si am dat click pe Forms
         List<WebElement> list = driver.findElements(By.xpath("//div[@class='category-cards']//div[@class=\"card mt-4 top-card\"]"));
@@ -72,6 +74,8 @@ public class PracticeFormTest {
         genderElement.add(maleElement);
         genderElement.add(otherElement);
         elementsMethods.selectElementFromListByText(genderElement, "Female");
+        elementsMethods.selectElementFromListByText(genderElement, "Male");
+        elementsMethods.selectElementFromListByText(genderElement, "Other");
 
         WebElement stateElement = driver.findElement(By.id("react-select-3-input"));
         javascriptMethods.sendKeys("NCR", stateElement);

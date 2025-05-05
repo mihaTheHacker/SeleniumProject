@@ -14,7 +14,7 @@ public class AlertMethods {
         this.driver = driver;
     }
 
-    public void interractWithAlertOK() {
+    public void interactWithAlertOK() {
         Alert alertOk = driver.switchTo().alert();
         alertOk.accept();
 
@@ -26,14 +26,20 @@ public class AlertMethods {
         wait.until(ExpectedConditions.alertIsPresent());
     }
 
-    public void interractWithDelayAlert() {
+    public void interactWithDelayAlert() {
         explicitAlertWait();
         Alert alertDelayOk = driver.switchTo().alert();
         alertDelayOk.accept();
 
     }
-    public void interractWithAlertDismiss() {
+    public void interactWithAlertDismiss() {
         Alert alertConfirmation = driver.switchTo().alert();
         alertConfirmation.dismiss();
+    }
+
+    public void interactWithAlertSendKeys(String keys) {
+        Alert alertPromt = driver.switchTo().alert();
+        alertPromt.sendKeys(keys);
+        alertPromt.accept();
     }
 }
