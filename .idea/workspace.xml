@@ -4,18 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7850fae8-c0be-4e42-8498-b5ab3eb1a331" name="Changes" comment="- created Helper methods package and classes &#10;- did my homework, in class PracticeFormTest.java I went through the list of 6 elements using the helper method &quot;selectElementFromListByText&quot; from ElementsMethods.java class&#10;- I'm working on my homework by refactoring the code using helper method classes and reusable helper methods&#10;- work in progress">
+    <list default="true" id="7850fae8-c0be-4e42-8498-b5ab3eb1a331" name="Changes" comment="&#10;- finished my homework by refactoring the code using helper method classes and reusable helper methods">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/HelperMethods/AlertMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HelperMethods/AlertMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/HelperMethods/ElementsMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HelperMethods/ElementsMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/HelperMethods/FramesMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HelperMethods/FramesMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/HelperMethods/JavascriptMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HelperMethods/JavascriptMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/HelperMethods/WindowsMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HelperMethods/WindowsMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/AlertTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/AlertTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/BrowserWindowsTab.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/BrowserWindowsTab.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/Frames.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/Frames.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests/PracticeFormTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/PracticeFormTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/WebTableTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/WebTableTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +109,7 @@
       <recent name="C:\Users\mibudeanu\IdeaProjects\SeleniumProject\src\test" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.Frames">
+  <component name="RunManager" selected="TestNG.PracticeFormTest">
     <configuration name="AlertTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumProject" />
       <extension name="coverage">
@@ -153,24 +144,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BrowserWindowsTab.automationMethod" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.BrowserWindowsTab" />
-      <option name="METHOD_NAME" value="automationMethod" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Frames" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumProject" />
       <extension name="coverage">
@@ -188,7 +161,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Frames.automationMethod" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="PracticeFormTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumProject" />
       <extension name="coverage">
         <pattern>
@@ -197,7 +170,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.Frames" />
+      <option name="MAIN_CLASS_NAME" value="Tests.PracticeFormTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PracticeFormTest.automationMethod" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.PracticeFormTest" />
       <option name="METHOD_NAME" value="automationMethod" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -208,11 +198,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.PracticeFormTest" />
+        <item itemvalue="TestNG.PracticeFormTest.automationMethod" />
         <item itemvalue="TestNG.Frames" />
         <item itemvalue="TestNG.BrowserWindowsTab" />
         <item itemvalue="TestNG.AlertTest" />
-        <item itemvalue="TestNG.Frames.automationMethod" />
-        <item itemvalue="TestNG.BrowserWindowsTab.automationMethod" />
       </list>
     </recent_temporary>
   </component>
@@ -262,7 +252,7 @@
       <workItem from="1745320136324" duration="42000" />
       <workItem from="1745414718495" duration="42845000" />
       <workItem from="1745840334807" duration="17302000" />
-      <workItem from="1746186326137" duration="20687000" />
+      <workItem from="1746186326137" duration="21636000" />
     </task>
     <task id="LOCAL-00001" summary="- created Selenium Project">
       <option name="closed" value="true" />
@@ -440,7 +430,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746192897124</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="&#10;- finished my homework by refactoring the code using helper method classes and reusable helper methods">
+      <option name="closed" value="true" />
+      <created>1746453715858</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1746453715858</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -477,7 +475,8 @@
     <MESSAGE value="- created Frames class" />
     <MESSAGE value="- created Helper methods package&#10;- refactoring alertMethods and ElementsMethods" />
     <MESSAGE value="- created Helper methods package and classes &#10;- did my homework, in class PracticeFormTest.java I went through the list of 6 elements using the helper method &quot;selectElementFromListByText&quot; from ElementsMethods.java class&#10;- I'm working on my homework by refactoring the code using helper method classes and reusable helper methods&#10;- work in progress" />
-    <option name="LAST_COMMIT_MESSAGE" value="- created Helper methods package and classes &#10;- did my homework, in class PracticeFormTest.java I went through the list of 6 elements using the helper method &quot;selectElementFromListByText&quot; from ElementsMethods.java class&#10;- I'm working on my homework by refactoring the code using helper method classes and reusable helper methods&#10;- work in progress" />
+    <MESSAGE value="&#10;- finished my homework by refactoring the code using helper method classes and reusable helper methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="&#10;- finished my homework by refactoring the code using helper method classes and reusable helper methods" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

@@ -74,8 +74,6 @@ public class PracticeFormTest {
         genderElement.add(maleElement);
         genderElement.add(otherElement);
         elementsMethods.selectElementFromListByText(genderElement, "Female");
-        elementsMethods.selectElementFromListByText(genderElement, "Male");
-        elementsMethods.selectElementFromListByText(genderElement, "Other");
 
         WebElement stateElement = driver.findElement(By.id("react-select-3-input"));
         javascriptMethods.sendKeys("NCR", stateElement);
