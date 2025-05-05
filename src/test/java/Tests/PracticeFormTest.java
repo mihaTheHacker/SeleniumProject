@@ -1,8 +1,10 @@
 package Tests;
 
-import java.io.File;
+import HelperMethods.ElementsMethods;
+import HelperMethods.JavascriptMethods;
+import java.util.ArrayList;
+import java.util.List;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,43 +13,47 @@ import org.testng.annotations.Test;
 
 public class PracticeFormTest {
 
+    //am declarat variabila WebDriver de tip driver
     public WebDriver driver;
+    // am declarat variabila de tip elementsMethods
+    public ElementsMethods elementsMethods;
+    // am declarat variabila de tip JavascriptMethods
+    public JavascriptMethods javascriptMethods;
 
 
     @Test
     public void automationMethod() {
-
         //deschidem un browser de Chrome
         driver = new ChromeDriver();
 
         //accesam o pagina web
         driver.get("https://demoqa.com/");
 
-        //facem browserul in modul maximize
+        //am apelat metoda maximize() pentru a deschide browserul in modul maximize
         driver.manage().window().maximize();
+        //initializam obiectul javascriptMethods
+        elementsMethods = new ElementsMethods(driver);
+        //initializam obiectul elementsMethods
+        javascriptMethods = new JavascriptMethods(driver);
 
-        //facem un scroll in jos
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("window.scrollBy(0,400)");
+        //facem un scroll in jos apeland metoda jsScrollDown() din clasa JavascriptMethods
+        javascriptMethods.jsScrollDown(0, 400);
 
-        //declaram un element
-        WebElement formElement = driver.findElement(By.xpath("//h5[text()='Forms']"));
-        formElement.click();
+        // am trecut prin lista de elemente folosindu-ma de metoda ajutatoare selectElementFromListByText, am cautat si am dat click pe Forms
+        List<WebElement> list = driver.findElements(By.xpath("//div[@class='category-cards']//div[@class=\"card mt-4 top-card\"]"));
+        elementsMethods.selectElementFromListByText(list, "Forms");
 
         WebElement practiceFormElement = driver.findElement(By.xpath("//span[text()='Practice Form']"));
-        practiceFormElement.click();
+        elementsMethods.clickElement(practiceFormElement);
 
         WebElement firstNameField = driver.findElement(By.id("firstName"));
-        String firstNameValue = "Mihaela";
-        firstNameField.sendKeys(firstNameValue);
+        elementsMethods.fillElement(firstNameField, "Mihaela");
 
         WebElement lastNameField = driver.findElement(By.id("lastName"));
-        String lastNameValue = "Test";
-        lastNameField.sendKeys(lastNameValue);
+        elementsMethods.fillElement(lastNameField, "Test");
 
         WebElement userEmailField = driver.findElement(By.id("userEmail"));
-        String userEmailValue = "mihaela@popescu.com";
-        userEmailField.sendKeys(userEmailValue);
+        elementsMethods.fillElement(userEmailField, "mihaela@popescu.com");
 
         WebElement subjectsField = driver.findElement(By.id("subjectsInput"));
         String subjectsValue = "Social Studies";
@@ -55,38 +61,28 @@ public class PracticeFormTest {
         subjectsField.sendKeys(Keys.ENTER);
 
         WebElement mobileNumberField = driver.findElement(By.cssSelector("input[placeholder='Mobile Number']"));
-        String mobileNumberValue = "0723456789";
-        mobileNumberField.sendKeys(mobileNumberValue);
+        elementsMethods.fillElement(mobileNumberField, "0723456789");
 
         WebElement pictureElement = driver.findElement(By.id("uploadPicture"));
-        File file = new File("src/test/resources/Pixar-Wall-E.webp");
-        pictureElement.sendKeys(file.getAbsolutePath());
+        elementsMethods.uploadPicture(pictureElement);
 
         WebElement maleElement = driver.findElement(By.xpath("//label[@for='gender-radio-1']"));
         WebElement femaleElement = driver.findElement(By.xpath("//label[@for='gender-radio-2']"));
         WebElement otherElement = driver.findElement(By.xpath("//label[@for='gender-radio-3']"));
+        List<WebElement> genderElement = new ArrayList<WebElement>();
+        genderElement.add(femaleElement);
+        genderElement.add(maleElement);
+        genderElement.add(otherElement);
+        elementsMethods.selectElementFromListByText(genderElement, "Female");
 
-        String genderValue = "Other";
-
-        if (femaleElement.getText().equals(genderValue)) {
-            femaleElement.click();
-        } else if (maleElement.getText().equals(genderValue)) {
-            maleElement.click();
-        } else if (otherElement.getText().equals(genderValue)) {
-            otherElement.click();
-        }
         WebElement stateElement = driver.findElement(By.id("react-select-3-input"));
-        js.executeScript("arguments[0].click();", stateElement);
-        stateElement.sendKeys("NCR");
-        stateElement.sendKeys(Keys.ENTER);
+        javascriptMethods.sendKeys("NCR", stateElement);
 
         WebElement cityElement = driver.findElement(By.id("react-select-4-input"));
-        js.executeScript("arguments[0].click();", cityElement);
-        cityElement.sendKeys("Delhi");
-        cityElement.sendKeys(Keys.ENTER);
+        javascriptMethods.sendKeys("Delhi", cityElement);
 
         WebElement submitButtonElement = driver.findElement(By.id("submit"));
-        js.executeScript("arguments[0].click();", submitButtonElement);
+        javascriptMethods.jsClickElement(submitButtonElement);
 
     }
 

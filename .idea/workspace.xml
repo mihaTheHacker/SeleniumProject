@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7850fae8-c0be-4e42-8498-b5ab3eb1a331" name="Changes" comment="- created BrowserWindowsTab class">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/Frames.java" afterDir="false" />
+    <list default="true" id="7850fae8-c0be-4e42-8498-b5ab3eb1a331" name="Changes" comment="&#10;- finished my homework by refactoring the code using helper method classes and reusable helper methods">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/PracticeFormTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/PracticeFormTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="AirBnBhomework" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -32,7 +32,6 @@
   &quot;associatedIndex&quot;: 1
 }</component>
   <component name="ProjectId" id="2pfvcCYP3KF0AKVRRisiqwmxnO4" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -58,7 +57,9 @@
     "TestNG.BrowserWindowsTab.automationMethod (2).executor": "Run",
     "TestNG.BrowserWindowsTab.automationMethod (3).executor": "Run",
     "TestNG.BrowserWindowsTab.automationMethod.executor": "Run",
+    "TestNG.BrowserWindowsTab.executor": "Run",
     "TestNG.Frames.automationMethod.executor": "Run",
+    "TestNG.Frames.executor": "Run",
     "TestNG.LetCodeFormsLocatorsPractice.executor": "Run",
     "TestNG.LetCodeFormsLocatorsPractice.findLocators (1).executor": "Run",
     "TestNG.LetCodeFormsLocatorsPractice.findLocators (2).executor": "Run",
@@ -84,7 +85,8 @@
     "TestNG.Recursivitate.parcurgereLista.executor": "Run",
     "TestNG.WebTableTest.automationMethod.executor": "Run",
     "TestNG.WebTableTest.executor": "Run",
-    "git-widget-placeholder": "master",
+    "TestNG.WebTablesTest.automationMethod.executor": "Run",
+    "git-widget-placeholder": "HelperMethods",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/mibudeanu/IdeaProjects/SeleniumProject/src/test/resources",
     "node.js.detected.package.eslint": "true",
@@ -107,8 +109,25 @@
       <recent name="C:\Users\mibudeanu\IdeaProjects\SeleniumProject\src\test" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.Frames.automationMethod">
-    <configuration name="BrowserWindowsTab.automationMethod (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.PracticeFormTest">
+    <configuration name="AlertTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.AlertTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BrowserWindowsTab" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumProject" />
       <extension name="coverage">
         <pattern>
@@ -118,69 +137,14 @@
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
       <option name="MAIN_CLASS_NAME" value="Tests.BrowserWindowsTab" />
-      <option name="METHOD_NAME" value="automationMethod" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BrowserWindowsTab.automationMethod (2)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.BrowserWindowsTab" />
-      <option name="METHOD_NAME" value="automationMethod" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BrowserWindowsTab.automationMethod (3)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.BrowserWindowsTab" />
-      <option name="METHOD_NAME" value="automationMethod" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BrowserWindowsTab.automationMethod" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.BrowserWindowsTab" />
-      <option name="METHOD_NAME" value="automationMethod" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Frames.automationMethod" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Frames" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumProject" />
       <extension name="coverage">
         <pattern>
@@ -190,6 +154,40 @@
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
       <option name="MAIN_CLASS_NAME" value="Tests.Frames" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PracticeFormTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.PracticeFormTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PracticeFormTest.automationMethod" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.PracticeFormTest" />
       <option name="METHOD_NAME" value="automationMethod" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -200,19 +198,19 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.Frames.automationMethod" />
-        <item itemvalue="TestNG.BrowserWindowsTab.automationMethod (3)" />
-        <item itemvalue="TestNG.BrowserWindowsTab.automationMethod" />
-        <item itemvalue="TestNG.BrowserWindowsTab.automationMethod (2)" />
-        <item itemvalue="TestNG.BrowserWindowsTab.automationMethod (1)" />
+        <item itemvalue="TestNG.PracticeFormTest" />
+        <item itemvalue="TestNG.PracticeFormTest.automationMethod" />
+        <item itemvalue="TestNG.Frames" />
+        <item itemvalue="TestNG.BrowserWindowsTab" />
+        <item itemvalue="TestNG.AlertTest" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.26053.27" />
-        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.26053.27" />
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.23774.435" />
+        <option value="bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-IU-251.23774.435" />
       </set>
     </attachedChunks>
   </component>
@@ -249,7 +247,12 @@
       <workItem from="1743145364480" duration="587000" />
       <workItem from="1743449200861" duration="5000" />
       <workItem from="1744382514714" duration="872000" />
-      <workItem from="1744622971676" duration="6305000" />
+      <workItem from="1744622971676" duration="8163000" />
+      <workItem from="1745311299728" duration="589000" />
+      <workItem from="1745320136324" duration="42000" />
+      <workItem from="1745414718495" duration="42845000" />
+      <workItem from="1745840334807" duration="17302000" />
+      <workItem from="1746186326137" duration="21636000" />
     </task>
     <task id="LOCAL-00001" summary="- created Selenium Project">
       <option name="closed" value="true" />
@@ -403,7 +406,39 @@
       <option name="project" value="LOCAL" />
       <updated>1744728201034</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="- created Frames class">
+      <option name="closed" value="true" />
+      <created>1744729296009</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1744729296009</updated>
+    </task>
+    <task id="LOCAL-00021" summary="- created Helper methods package&#10;- refactoring alertMethods and ElementsMethods">
+      <option name="closed" value="true" />
+      <created>1745487313838</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1745487313838</updated>
+    </task>
+    <task id="LOCAL-00022" summary="- created Helper methods package and classes &#10;- did my homework, in class PracticeFormTest.java I went through the list of 6 elements using the helper method &quot;selectElementFromListByText&quot; from ElementsMethods.java class&#10;- I'm working on my homework by refactoring the code using helper method classes and reusable helper methods&#10;- work in progress">
+      <option name="closed" value="true" />
+      <created>1746192897124</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1746192897124</updated>
+    </task>
+    <task id="LOCAL-00023" summary="&#10;- finished my homework by refactoring the code using helper method classes and reusable helper methods">
+      <option name="closed" value="true" />
+      <created>1746453715858</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1746453715858</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -437,6 +472,17 @@
     <MESSAGE value="- deleted some practice lines" />
     <MESSAGE value="- created AlertTest class&#10;- defined implicit wait&#10;- defined explicit wait" />
     <MESSAGE value="- created BrowserWindowsTab class" />
-    <option name="LAST_COMMIT_MESSAGE" value="- created BrowserWindowsTab class" />
+    <MESSAGE value="- created Frames class" />
+    <MESSAGE value="- created Helper methods package&#10;- refactoring alertMethods and ElementsMethods" />
+    <MESSAGE value="- created Helper methods package and classes &#10;- did my homework, in class PracticeFormTest.java I went through the list of 6 elements using the helper method &quot;selectElementFromListByText&quot; from ElementsMethods.java class&#10;- I'm working on my homework by refactoring the code using helper method classes and reusable helper methods&#10;- work in progress" />
+    <MESSAGE value="&#10;- finished my homework by refactoring the code using helper method classes and reusable helper methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="&#10;- finished my homework by refactoring the code using helper method classes and reusable helper methods" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="TestNG">
+        <watch expression="list.get(i).getText()" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

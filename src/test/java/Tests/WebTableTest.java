@@ -1,9 +1,9 @@
 package Tests;
 
+import HelperMethods.ElementsMethods;
+import HelperMethods.JavascriptMethods;
 import java.util.List;
-import net.bytebuddy.asm.Advice.AssignReturned;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -11,14 +11,23 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class WebTableTest {
-
+    //am declarat driverul de tip WebDriver
     public WebDriver driver;
+    // am declarat variabila de tip JavascriptMethods
+    public JavascriptMethods javascriptMethods;
+    //am declarat variabila de tip ElementsMethods
+    public ElementsMethods elementsMethods;
 
     @Test
     public void automationMethod(){
 
         //deschidem un browser de Chrome
+        //initializam obiectul driver
         driver = new ChromeDriver();
+        //initializam obiectul javascriptMethods
+        javascriptMethods = new JavascriptMethods(driver);
+        //initializam obiectul elementsMethods
+        elementsMethods = new ElementsMethods(driver);
 
         //accesam o pagina web
         driver.get("https://demoqa.com/");
@@ -27,21 +36,20 @@ public class WebTableTest {
         driver.manage().window().maximize();
 
         //facem un scroll in jos
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("window.scrollBy(0,400)");
+        javascriptMethods.jsScrollDown(0,400);
 
         //declaram un element
         WebElement elementsField = driver.findElement(By.xpath("//h5[text()='Elements']"));
-        elementsField.click();
+        elementsMethods.clickElement(elementsField);
 
         WebElement webTableField = driver.findElement(By.xpath("//span[text()='Web Tables']"));
-        webTableField.click();
+        elementsMethods.clickElement(webTableField);
 
         List<WebElement> tableElements = driver.findElements(By.xpath("//div[@class='rt-body']/div/div[@class='rt-tr -even' or @class='rt-tr -odd']"));
         Integer actualTableSize = tableElements.size();
 
         WebElement addNewRecordButtonField = driver.findElement(By.id("addNewRecordButton"));
-        addNewRecordButtonField.click();
+        elementsMethods.clickElement(addNewRecordButtonField);
 
         WebElement firstNameField = driver.findElement(By.id("firstName"));
         String firstNameValue = "Mihaela";
@@ -68,7 +76,7 @@ public class WebTableTest {
         departmentField.sendKeys(departmentValue);
 
         WebElement submitButtonField = driver.findElement(By.id("submit"));
-        submitButtonField.click();
+        elementsMethods.clickElement(submitButtonField);
 
         List<WebElement> expectedTableElements = driver.findElements(By.xpath("//div[@class='rt-body']/div/div[@class='rt-tr -even' or @class='rt-tr -odd']"));
 
