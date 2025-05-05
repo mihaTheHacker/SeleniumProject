@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7850fae8-c0be-4e42-8498-b5ab3eb1a331" name="Changes" comment="&#10;- finished my homework by refactoring the code using helper method classes and reusable helper methods">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/PracticeFormTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/PracticeFormTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="7850fae8-c0be-4e42-8498-b5ab3eb1a331" name="Changes" comment="&#10;- removed extra lines of code" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -252,7 +249,7 @@
       <workItem from="1745320136324" duration="42000" />
       <workItem from="1745414718495" duration="42845000" />
       <workItem from="1745840334807" duration="17302000" />
-      <workItem from="1746186326137" duration="21636000" />
+      <workItem from="1746186326137" duration="23028000" />
     </task>
     <task id="LOCAL-00001" summary="- created Selenium Project">
       <option name="closed" value="true" />
@@ -438,7 +435,23 @@
       <option name="project" value="LOCAL" />
       <updated>1746453715858</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="&#10;- removed extra lines of code">
+      <option name="closed" value="true" />
+      <created>1746454741645</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1746454741645</updated>
+    </task>
+    <task id="LOCAL-00025" summary="&#10;- removed extra lines of code">
+      <option name="closed" value="true" />
+      <created>1746455521641</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1746455521641</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -476,7 +489,8 @@
     <MESSAGE value="- created Helper methods package&#10;- refactoring alertMethods and ElementsMethods" />
     <MESSAGE value="- created Helper methods package and classes &#10;- did my homework, in class PracticeFormTest.java I went through the list of 6 elements using the helper method &quot;selectElementFromListByText&quot; from ElementsMethods.java class&#10;- I'm working on my homework by refactoring the code using helper method classes and reusable helper methods&#10;- work in progress" />
     <MESSAGE value="&#10;- finished my homework by refactoring the code using helper method classes and reusable helper methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="&#10;- finished my homework by refactoring the code using helper method classes and reusable helper methods" />
+    <MESSAGE value="&#10;- removed extra lines of code" />
+    <option name="LAST_COMMIT_MESSAGE" value="&#10;- removed extra lines of code" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
