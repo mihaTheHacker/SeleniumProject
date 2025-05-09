@@ -2,6 +2,8 @@ package Tests;
 
 import HelperMethods.ElementsMethods;
 import HelperMethods.JavascriptMethods;
+import Pages.CommonPage;
+import Pages.HomePage;
 import java.util.ArrayList;
 import java.util.List;
 import org.openqa.selenium.By;
@@ -19,6 +21,8 @@ public class PracticeFormTest {
     public ElementsMethods elementsMethods;
     // am declarat variabila de tip JavascriptMethods
     public JavascriptMethods javascriptMethods;
+    HomePage homePage;
+    CommonPage commonPage;
 
 
     @Test
@@ -35,16 +39,19 @@ public class PracticeFormTest {
         elementsMethods = new ElementsMethods(driver);
         //initializam obiectul elementsMethods
         javascriptMethods = new JavascriptMethods(driver);
-
+        homePage = new HomePage(driver);
+        commonPage = new CommonPage(driver);
         //facem un scroll in jos apeland metoda jsScrollDown() din clasa JavascriptMethods
         javascriptMethods.jsScrollDown(0, 400);
+//
+//        // am trecut prin lista de elemente folosindu-ma de metoda ajutatoare selectElementFromListByText, am cautat si am dat click pe Forms
+//        List<WebElement> list = driver.findElements(By.xpath("//div[@class='category-cards']//div[@class=\"card mt-4 top-card\"]"));
+//        elementsMethods.selectElementFromListByText(list, "Forms");
+        homePage.goToDesiredMenu("Forms");
 
-        // am trecut prin lista de elemente folosindu-ma de metoda ajutatoare selectElementFromListByText, am cautat si am dat click pe Forms
-        List<WebElement> list = driver.findElements(By.xpath("//div[@class='category-cards']//div[@class=\"card mt-4 top-card\"]"));
-        elementsMethods.selectElementFromListByText(list, "Forms");
-
-        WebElement practiceFormElement = driver.findElement(By.xpath("//span[text()='Practice Form']"));
-        elementsMethods.clickElement(practiceFormElement);
+//        WebElement practiceFormElement = driver.findElement(By.xpath("//span[@class='text']"));
+//        elementsMethods.clickElement(practiceFormElement);
+        commonPage.goToDesiredSubMenu("Practice Form");
 
         WebElement firstNameField = driver.findElement(By.id("firstName"));
         elementsMethods.fillElement(firstNameField, "Mihaela");

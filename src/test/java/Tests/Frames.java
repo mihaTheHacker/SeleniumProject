@@ -5,6 +5,8 @@ import static org.testng.Assert.assertNotNull;
 import HelperMethods.ElementsMethods;
 import HelperMethods.FramesMethods;
 import HelperMethods.JavascriptMethods;
+import Pages.CommonPage;
+import Pages.HomePage;
 import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -14,10 +16,12 @@ import org.testng.annotations.Test;
 
 public class Frames {
 
-    public WebDriver driver;
-    public JavascriptMethods javascriptMethods;
-    public ElementsMethods elementsMethods;
-    public FramesMethods framesMethods;
+    WebDriver driver;
+    JavascriptMethods javascriptMethods;
+    ElementsMethods elementsMethods;
+    FramesMethods framesMethods;
+    CommonPage commonPage;
+    HomePage homePage;
 
     @Test
     public void automationMethod() {
@@ -27,6 +31,8 @@ public class Frames {
         javascriptMethods = new JavascriptMethods(driver);
         elementsMethods = new ElementsMethods(driver);
         framesMethods = new FramesMethods(driver);
+        commonPage = new CommonPage(driver);
+        homePage = new HomePage(driver);
 
         //accesam o pagina web
         driver.get("https://demoqa.com/");
@@ -38,13 +44,15 @@ public class Frames {
         driver.manage().window().maximize();
 
         //facem un scroll in jos
-        javascriptMethods.jsScrollDown(0, 400);
+//        javascriptMethods.jsScrollDown(0, 400);
+//
+//        WebElement alertFrameWindowElement = driver.findElement(By.xpath("//h5[text()='Alerts, Frame & Windows']"));
+//        elementsMethods.clickElement(alertFrameWindowElement);
+        homePage.goToDesiredMenu("Alerts, Frame & Windows");
 
-        WebElement alertFrameWindowElement = driver.findElement(By.xpath("//h5[text()='Alerts, Frame & Windows']"));
-        elementsMethods.clickElement(alertFrameWindowElement);
-
-        WebElement frameElement = driver.findElement(By.xpath("//span[text()='Frames']"));
-        elementsMethods.clickElement(frameElement);
+//        WebElement frameElement = driver.findElement(By.xpath("//span[text()='Frames']"));
+//        elementsMethods.clickElement(frameElement);
+        commonPage.goToDesiredSubMenu("Frames");
 
         WebElement frameElement1 = driver.findElement(By.id("frame1"));
         framesMethods.switchToFrame(frameElement1);

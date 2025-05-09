@@ -3,6 +3,8 @@ package Tests;
 import HelperMethods.AlertMethods;
 import HelperMethods.ElementsMethods;
 import HelperMethods.JavascriptMethods;
+import Pages.CommonPage;
+import Pages.HomePage;
 import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -12,10 +14,12 @@ import org.testng.annotations.Test;
 
 public class AlertTest {
 
-    public WebDriver driver;
-    public ElementsMethods elementMethods;
-    public AlertMethods alertMethods;
-    public JavascriptMethods javascriptMethods;
+    WebDriver driver;
+    ElementsMethods elementMethods;
+    AlertMethods alertMethods;
+    JavascriptMethods javascriptMethods;
+    CommonPage commonPage;
+    HomePage homePage;
 
     @Test
     public void automationMethod() {
@@ -30,15 +34,19 @@ public class AlertTest {
         elementMethods = new ElementsMethods(driver);
         alertMethods = new AlertMethods(driver);
         javascriptMethods = new JavascriptMethods(driver);
+        homePage = new HomePage(driver);
+        commonPage = new CommonPage(driver);
 
         //facem un scroll in jos
-        javascriptMethods.jsScrollDown(0, 400);
-
-        WebElement alertFrameWindowElement = driver.findElement(By.xpath("//h5[text()='Alerts, Frame & Windows']"));
-        elementMethods.clickElement(alertFrameWindowElement);
-
-        WebElement alertElement = driver.findElement(By.xpath("//span[text()='Alerts']"));
-        elementMethods.clickElement(alertElement);
+//        javascriptMethods.jsScrollDown(0, 400);
+//
+//        WebElement alertFrameWindowElement = driver.findElement(By.xpath("//h5[text()='Alerts, Frame & Windows']"));
+//        elementMethods.clickElement(alertFrameWindowElement);
+        homePage.goToDesiredMenu("Alerts, Frame & Windows");
+//
+//        WebElement alertElement = driver.findElement(By.xpath("//span[text()='Alerts']"));
+//        elementMethods.clickElement(alertElement);
+        commonPage.goToDesiredSubMenu("Alerts");
 
         WebElement alertOkElement = driver.findElement(By.id("alertButton"));
         elementMethods.clickElement(alertOkElement);

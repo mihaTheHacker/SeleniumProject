@@ -3,6 +3,8 @@ package Tests;
 import HelperMethods.ElementsMethods;
 import HelperMethods.JavascriptMethods;
 import HelperMethods.WindowsMethods;
+import Pages.CommonPage;
+import Pages.HomePage;
 import java.util.ArrayList;
 import java.util.List;
 import org.openqa.selenium.By;
@@ -13,10 +15,13 @@ import org.testng.annotations.Test;
 
 public class BrowserWindowsTab {
 
-    public WebDriver driver;
-    public JavascriptMethods javascriptMethods;
-    public ElementsMethods elementsMethods;
-    public WindowsMethods windowsMethods;
+    WebDriver driver;
+    JavascriptMethods javascriptMethods;
+    ElementsMethods elementsMethods;
+    WindowsMethods windowsMethods;
+    CommonPage commonPage;
+    HomePage homePage;
+
 
     @Test
     public void automationMethod() {
@@ -26,6 +31,8 @@ public class BrowserWindowsTab {
         javascriptMethods = new JavascriptMethods(driver);
         elementsMethods = new ElementsMethods(driver);
         windowsMethods = new WindowsMethods(driver);
+        commonPage = new CommonPage(driver);
+        homePage = new HomePage(driver);
 
         //accesam o pagina web
         driver.get("https://demoqa.com/");
@@ -34,13 +41,15 @@ public class BrowserWindowsTab {
         driver.manage().window().maximize();
 
         //facem un scroll in jos
-        javascriptMethods.jsScrollDown(0,400);
+//        javascriptMethods.jsScrollDown(0, 400);
+//
+//        WebElement alertFrameWindowElement = driver.findElement(By.xpath("//h5[text()='Alerts, Frame & Windows']"));
+//        elementsMethods.clickElement(alertFrameWindowElement);
+        homePage.goToDesiredMenu("Alerts, Frame & Windows");
 
-        WebElement alertFrameWindowElement = driver.findElement(By.xpath("//h5[text()='Alerts, Frame & Windows']"));
-        elementsMethods.clickElement(alertFrameWindowElement);
-
-        WebElement browserWindowsElement = driver.findElement(By.xpath("//span[text()='Browser Windows']"));
-        elementsMethods.clickElement(browserWindowsElement);
+//        WebElement browserWindowsElement = driver.findElement(By.xpath("//span[text()='Browser Windows']"));
+//        elementsMethods.clickElement(browserWindowsElement);
+        commonPage.goToDesiredSubMenu("Browser Windows");
 
         WebElement tabElement = driver.findElement(By.id("tabButton"));
         elementsMethods.clickElement(tabElement);
