@@ -9,6 +9,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class CommonPage {
+
     WebDriver driver;
     ElementsMethods elementsMethods;
     JavascriptMethods javascriptMethods;
@@ -20,15 +21,15 @@ public class CommonPage {
         PageFactory.initElements(driver, this);
     }
 
-        //Identificam elementele specifice pentru sub-pagini
-        @FindBy(xpath = "//span[@class='text']")
-        List<WebElement> elements;
+    //Identificam elementele specifice pentru sub-pagini
+    @FindBy(xpath = "//span[@class='text']")
+    List<WebElement> elements;
 
-        //Facem metode specifice pentru pagina
-        public void goToDesiredSubMenu(String submenu) {
-            javascriptMethods.jsScrollDown(0, 400);
-            elementsMethods.selectElementFromListByText(elements, submenu);
-        }
-
+    //Facem metode specifice pentru pagina
+    public void goToDesiredSubMenu(String submenu) {
+        javascriptMethods.jsScrollDown(0, 400);
+        elementsMethods.selectElementFromListByText(elements, submenu);
     }
+
+}
 

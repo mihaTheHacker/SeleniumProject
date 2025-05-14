@@ -23,6 +23,7 @@ public class WindowsMethods {
         } else {
             System.out.println("Indexul nu este valid");
         }
+        driver.close();
     }
 
 

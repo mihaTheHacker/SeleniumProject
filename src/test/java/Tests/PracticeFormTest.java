@@ -16,11 +16,11 @@ import org.testng.annotations.Test;
 public class PracticeFormTest {
 
     //am declarat variabila WebDriver de tip driver
-    public WebDriver driver;
+    WebDriver driver;
     // am declarat variabila de tip elementsMethods
-    public ElementsMethods elementsMethods;
+    ElementsMethods elementsMethods;
     // am declarat variabila de tip JavascriptMethods
-    public JavascriptMethods javascriptMethods;
+    JavascriptMethods javascriptMethods;
     HomePage homePage;
     CommonPage commonPage;
 
@@ -42,7 +42,7 @@ public class PracticeFormTest {
         homePage = new HomePage(driver);
         commonPage = new CommonPage(driver);
         //facem un scroll in jos apeland metoda jsScrollDown() din clasa JavascriptMethods
-        javascriptMethods.jsScrollDown(0, 400);
+//        javascriptMethods.jsScrollDown(0, 400);
 //
 //        // am trecut prin lista de elemente folosindu-ma de metoda ajutatoare selectElementFromListByText, am cautat si am dat click pe Forms
 //        List<WebElement> list = driver.findElements(By.xpath("//div[@class='category-cards']//div[@class=\"card mt-4 top-card\"]"));
