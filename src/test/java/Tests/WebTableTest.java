@@ -7,15 +7,13 @@ import Pages.HomePage;
 import Pages.WebTablePage;
 import java.util.List;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import SharedData.SharedData;
 import org.testng.annotations.Test;
 
-public class WebTableTest {
+public class WebTableTest extends SharedData {
 
-    WebDriver driver;
     JavascriptMethods javascriptMethods;
     ElementsMethods elementsMethods;
     HomePage homePage;
@@ -25,16 +23,11 @@ public class WebTableTest {
     @Test
     public void automationMethod() {
 
-        driver = new ChromeDriver();
         javascriptMethods = new JavascriptMethods(driver);
         elementsMethods = new ElementsMethods(driver);
         homePage = new HomePage(driver);
         commonPage = new CommonPage(driver);
         webTablePage = new WebTablePage(driver);
-
-        driver.get("https://demoqa.com/");
-
-        driver.manage().window().maximize();
 
         homePage.goToDesiredMenu("Elements");
 

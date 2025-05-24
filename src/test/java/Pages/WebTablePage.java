@@ -7,18 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class WebTablePage {
-
-    WebDriver driver;
-    ElementsMethods elementsMethods;
-    JavascriptMethods javascriptMethods;
-
-    public WebTablePage(WebDriver driver) {
-        this.driver = driver;
-        this.elementsMethods = new ElementsMethods(driver);
-        this.javascriptMethods = new JavascriptMethods(driver);
-        PageFactory.initElements(driver, this);
-    }
+public class WebTablePage extends CommonPage{
 
     @FindBy(id = "addNewRecordButton")
     WebElement addNewRecordButton;
@@ -36,6 +25,10 @@ public class WebTablePage {
     WebElement departmentInput;
     @FindBy(id = "submit")
     WebElement submitButton;
+
+    public WebTablePage(WebDriver driver) {
+        super(driver);
+    }
 
     public void completeRegistrationForm(String firstName, String lastName, String userEmail, String age, String salary, String department) {
         elementsMethods.clickElement(addNewRecordButton);

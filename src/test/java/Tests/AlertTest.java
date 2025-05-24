@@ -6,14 +6,14 @@ import HelperMethods.JavascriptMethods;
 import Pages.AlertTestPage;
 import Pages.CommonPage;
 import Pages.HomePage;
+import SharedData.SharedData;
 import java.time.Duration;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-public class AlertTest {
+public class AlertTest extends SharedData {
 
-    WebDriver driver;
     ElementsMethods elementMethods;
     AlertMethods alertMethods;
     JavascriptMethods javascriptMethods;
@@ -23,10 +23,7 @@ public class AlertTest {
 
     @Test
     public void automationMethod() {
-        driver = new ChromeDriver();
-        driver.get("https://demoqa.com/");
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        driver.manage().window().maximize();
+
         elementMethods = new ElementsMethods(driver);
         alertMethods = new AlertMethods(driver);
         javascriptMethods = new JavascriptMethods(driver);

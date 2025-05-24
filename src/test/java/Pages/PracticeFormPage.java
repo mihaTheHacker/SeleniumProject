@@ -9,18 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class PracticeFormPage {
-
-    WebDriver driver;
-    ElementsMethods elementsMethods;
-    JavascriptMethods javascriptMethods;
-
-    public PracticeFormPage(WebDriver driver) {
-        this.driver = driver;
-        this.elementsMethods = new ElementsMethods(driver);
-        this.javascriptMethods = new JavascriptMethods(driver);
-        PageFactory.initElements(driver, this);
-    }
+public class PracticeFormPage extends CommonPage{
 
     @FindBy(id = "firstName")
     WebElement firstNameField;
@@ -74,6 +63,10 @@ public class PracticeFormPage {
 
     @FindBy(xpath = "//label[@for='hobbies-checkbox-3']")
     WebElement MusicHobbyElement;
+
+    public PracticeFormPage(WebDriver driver) {
+        super(driver);
+    }
 
 
     public void completeFirstRegion(String firstName, String lastName, String email, String mobileNumber, String currentAddress) {
