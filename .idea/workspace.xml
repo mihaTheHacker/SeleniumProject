@@ -4,23 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7850fae8-c0be-4e42-8498-b5ab3eb1a331" name="Changes" comment="- Created a new branch RefactoringRecursivitateHomework&#10;- created a new helper class, &quot;ListMethods.java&quot; &#10;- finished my homework from lesson 11, I refactored class Recursivitate.java">
-      <change afterPath="$PROJECT_DIR$/src/test/java/HelperMethods/AssertMethods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/AlertTestPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/BrowserWindowsTabPge.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/FramesPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/PracticeFormPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/WebTablePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SharedData/SharedData.java" afterDir="false" />
+    <list default="true" id="7850fae8-c0be-4e42-8498-b5ab3eb1a331" name="Changes" comment="- Created a new branch OOPLesson 12&#10;- Created a new class SharedData.java from lesson 12&#10;- I realised I missed Lesson 11, so I went back and created new classes: FramesPage.java, WebTablePage.java, AlertTestPage.java, BrowserWindowsTabPge.java following the POM principle -">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/HelperMethods/ElementsMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HelperMethods/ElementsMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/HelperMethods/FramesMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HelperMethods/FramesMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/HelperMethods/WindowsMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HelperMethods/WindowsMethods.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests/AlertTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/AlertTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/BrowserWindowsTab.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/BrowserWindowsTab.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests/Frames.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/Frames.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests/PracticeFormTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/PracticeFormTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/Recursivitate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/Recursivitate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests/WebTableTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/WebTableTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -129,8 +117,8 @@
       <recent name="C:\Users\mibudeanu\IdeaProjects\SeleniumProject\src\test" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.WebTableTest">
-    <configuration name="Frames.automationMethod" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.PracticeFormTest">
+    <configuration name="AlertTest.automationMethod" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumProject" />
       <extension name="coverage">
         <pattern>
@@ -139,9 +127,26 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.Frames" />
+      <option name="MAIN_CLASS_NAME" value="Tests.AlertTest" />
       <option name="METHOD_NAME" value="automationMethod" />
       <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PracticeFormTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.PracticeFormTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -159,24 +164,6 @@
       <option name="PACKAGE_NAME" value="Tests" />
       <option name="MAIN_CLASS_NAME" value="Tests.WebTableTest" />
       <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WebTableTest.automationMethod (1)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.WebTableTest" />
-      <option name="METHOD_NAME" value="automationMethod" />
-      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -221,11 +208,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.PracticeFormTest" />
         <item itemvalue="TestNG.WebTableTest" />
+        <item itemvalue="TestNG.AlertTest.automationMethod" />
         <item itemvalue="TestNG.WebTableTest.automationMethod" />
         <item itemvalue="TestNG.WebTableTest.automationMethod (2)" />
-        <item itemvalue="TestNG.WebTableTest.automationMethod (1)" />
-        <item itemvalue="TestNG.Frames.automationMethod" />
       </list>
     </recent_temporary>
   </component>
@@ -282,7 +269,7 @@
       <workItem from="1747227222554" duration="231000" />
       <workItem from="1747751586497" duration="18542000" />
       <workItem from="1747980208289" duration="14714000" />
-      <workItem from="1748104302558" duration="9362000" />
+      <workItem from="1748104302558" duration="10374000" />
     </task>
     <task id="LOCAL-00001" summary="- created Selenium Project">
       <option name="closed" value="true" />
@@ -508,7 +495,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747212867706</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="- Created a new branch OOPLesson 12&#10;- Created a new class SharedData.java from lesson 12&#10;- I realised I missed Lesson 11, so I went back and created new classes: FramesPage.java, WebTablePage.java, AlertTestPage.java, BrowserWindowsTabPge.java following the POM principle -">
+      <option name="closed" value="true" />
+      <created>1748114150372</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1748114150372</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -549,7 +544,8 @@
     <MESSAGE value="&#10;- removed extra lines of code" />
     <MESSAGE value="- Created a new branch POMLesson11&#10;- Created new Object classes CommonPage.java and HomePage.java&#10;- refactored code using page objects" />
     <MESSAGE value="- Created a new branch RefactoringRecursivitateHomework&#10;- created a new helper class, &quot;ListMethods.java&quot; &#10;- finished my homework from lesson 11, I refactored class Recursivitate.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Created a new branch RefactoringRecursivitateHomework&#10;- created a new helper class, &quot;ListMethods.java&quot; &#10;- finished my homework from lesson 11, I refactored class Recursivitate.java" />
+    <MESSAGE value="- Created a new branch OOPLesson 12&#10;- Created a new class SharedData.java from lesson 12&#10;- I realised I missed Lesson 11, so I went back and created new classes: FramesPage.java, WebTablePage.java, AlertTestPage.java, BrowserWindowsTabPge.java following the POM principle -" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Created a new branch OOPLesson 12&#10;- Created a new class SharedData.java from lesson 12&#10;- I realised I missed Lesson 11, so I went back and created new classes: FramesPage.java, WebTablePage.java, AlertTestPage.java, BrowserWindowsTabPge.java following the POM principle -" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

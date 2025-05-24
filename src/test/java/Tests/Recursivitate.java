@@ -28,10 +28,8 @@ public class Recursivitate {
         homePage = new HomePage(driver);
         commonPage = new CommonPage(driver);
 
-        //accesam o pagina web
         driver.get("https://demoqa.com/");
 
-        //facem browserul in modul maximize
         driver.manage().window().maximize();
         homePage.goToDesiredMenu("Interactions");
         commonPage.goToDesiredSubMenu("Sortable");
