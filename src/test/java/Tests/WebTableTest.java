@@ -4,6 +4,7 @@ import HelperMethods.ElementsMethods;
 import HelperMethods.JavascriptMethods;
 import Pages.CommonPage;
 import Pages.HomePage;
+import Pages.WebTablePage;
 import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -14,15 +15,13 @@ import org.testng.annotations.Test;
 
 public class WebTableTest {
 
-    //am declarat driverul de tip WebDriver
+    //am declarat driverul de tip WebDriver si variabilele pentru pagini si metode
     WebDriver driver;
-    // am declarat variabila de tip JavascriptMethods
     JavascriptMethods javascriptMethods;
-    //am declarat variabila de tip ElementsMethods
     ElementsMethods elementsMethods;
     HomePage homePage;
-    //am declarat variabila de tip HomePage
     CommonPage commonPage;
+    WebTablePage webTablePage;
 
     @Test
     public void automationMethod() {
@@ -30,12 +29,11 @@ public class WebTableTest {
         //deschidem un browser de Chrome
         //initializam obiectul driver
         driver = new ChromeDriver();
-        //initializam obiectul javascriptMethods
         javascriptMethods = new JavascriptMethods(driver);
-        //initializam obiectul elementsMethods
         elementsMethods = new ElementsMethods(driver);
         homePage = new HomePage(driver);
         commonPage = new CommonPage(driver);
+        webTablePage = new WebTablePage(driver);
 
         //accesam o pagina web
         driver.get("https://demoqa.com/");
@@ -59,35 +57,43 @@ public class WebTableTest {
                 By.xpath("//div[@class='rt-tbody']/div/div[@class='rt-tr -even' or @class='rt-tr -odd']"));
         Integer actualTableSize = tableElements.size();
 
-        WebElement addNewRecordButtonField = driver.findElement(By.id("addNewRecordButton"));
-        elementsMethods.clickElement(addNewRecordButtonField);
-
-        WebElement firstNameField = driver.findElement(By.id("firstName"));
-        String firstNameValue = "Mihaela";
-        firstNameField.sendKeys(firstNameValue);
-
-        WebElement lastNameField = driver.findElement(By.id("lastName"));
-        String lastNameValue = "Test";
-        lastNameField.sendKeys(lastNameValue);
-
-        WebElement emailField = driver.findElement(By.id("userEmail"));
-        String emailValue = "tralala@gmail.com";
-        emailField.sendKeys(emailValue);
-
-        WebElement ageField = driver.findElement(By.id("age"));
+        String firstNameValue = "Miha";
+        String lastNameValue = "Pop";
+        String emailValue = "test@test.com";
         String ageValue = "30";
-        ageField.sendKeys(ageValue);
-
-        WebElement salaryField = driver.findElement(By.id("salary"));
         String salaryValue = "1000";
-        salaryField.sendKeys(salaryValue);
-
-        WebElement departmentField = driver.findElement(By.id("department"));
         String departmentValue = "QA";
-        departmentField.sendKeys(departmentValue);
+        webTablePage.completeRegistrationForm(firstNameValue, lastNameValue, emailValue, ageValue, salaryValue, departmentValue);
 
-        WebElement submitButtonField = driver.findElement(By.id("submit"));
-        elementsMethods.clickElement(submitButtonField);
+//        WebElement addNewRecordButtonField = driver.findElement(By.id("addNewRecordButton"));
+//        elementsMethods.clickElement(addNewRecordButtonField);
+//
+//        WebElement firstNameField = driver.findElement(By.id("firstName"));
+//        String firstNameValue = "Mihaela";
+//        firstNameField.sendKeys(firstNameValue);
+//
+//        WebElement lastNameField = driver.findElement(By.id("lastName"));
+//        String lastNameValue = "Test";
+//        lastNameField.sendKeys(lastNameValue);
+//
+//        WebElement emailField = driver.findElement(By.id("userEmail"));
+//        String emailValue = "tralala@gmail.com";
+//        emailField.sendKeys(emailValue);
+//
+//        WebElement ageField = driver.findElement(By.id("age"));
+//        String ageValue = "30";
+//        ageField.sendKeys(ageValue);
+//
+//        WebElement salaryField = driver.findElement(By.id("salary"));
+//        String salaryValue = "1000";
+//        salaryField.sendKeys(salaryValue);
+//
+//        WebElement departmentField = driver.findElement(By.id("department"));
+//        String departmentValue = "QA";
+//        departmentField.sendKeys(departmentValue);
+//
+//        WebElement submitButtonField = driver.findElement(By.id("submit"));
+//        elementsMethods.clickElement(submitButtonField);
 
         List<WebElement> expectedTableElements = driver.findElements(
                 By.xpath("//div[@class='rt-tbody']/div/div[@class='rt-tr -even' or @class='rt-tr -odd']"));
@@ -103,6 +109,8 @@ public class WebTableTest {
         Assert.assertTrue(actualTableValue.contains(ageValue));
         Assert.assertTrue(actualTableValue.contains(salaryValue));
         Assert.assertTrue(actualTableValue.contains(departmentValue));
+
+        driver.quit();
 
     }
 

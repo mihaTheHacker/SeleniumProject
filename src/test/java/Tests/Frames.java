@@ -6,6 +6,7 @@ import HelperMethods.ElementsMethods;
 import HelperMethods.FramesMethods;
 import HelperMethods.JavascriptMethods;
 import Pages.CommonPage;
+import Pages.FramesPage;
 import Pages.HomePage;
 import java.time.Duration;
 import org.openqa.selenium.By;
@@ -22,6 +23,7 @@ public class Frames {
     FramesMethods framesMethods;
     CommonPage commonPage;
     HomePage homePage;
+    FramesPage framesPage;
 
     @Test
     public void automationMethod() {
@@ -33,14 +35,12 @@ public class Frames {
         framesMethods = new FramesMethods(driver);
         commonPage = new CommonPage(driver);
         homePage = new HomePage(driver);
+        framesPage = new FramesPage(driver);
 
-        //accesam o pagina web
         driver.get("https://demoqa.com/");
+
         //definim un wait implicit pentru un interval maxim de timp
-
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-
-        //facem browserul in modul maximize
         driver.manage().window().maximize();
 
         //facem un scroll in jos
@@ -53,26 +53,27 @@ public class Frames {
 //        WebElement frameElement = driver.findElement(By.xpath("//span[text()='Frames']"));
 //        elementsMethods.clickElement(frameElement);
         commonPage.goToDesiredSubMenu("Frames");
+        framesPage.switchToFrame1();
 
-        WebElement frameElement1 = driver.findElement(By.id("frame1"));
-        framesMethods.switchToFrame(frameElement1);
+//        WebElement frameElement1 = driver.findElement(By.id("frame1"));
+//        framesMethods.switchToFrame(frameElement1);
 //        driver.switchTo().frame(frameElement1);
 
-        WebElement sampleHeadingFrameElement = driver.findElement(By.id("sampleHeading"));
+//        WebElement sampleHeadingFrameElement = driver.findElement(By.id("sampleHeading"));
 //        System.out.println("Textul din new frame este: " + sampleHeadingFrameElement.getText());
         //verificam daca elementul a fost gasit(nu este null)
-        assertNotNull(sampleHeadingFrameElement, "Elementul nu a fost gasit in frame-ul 1");
-        //verificam ca textul din frame este corect
-        String sampleHeading = sampleHeadingFrameElement.getText();
+//        assertNotNull(sampleHeadingFrameElement, "Elementul nu a fost gasit in frame-ul 1");
+//        //verificam ca textul din frame este corect
+//        String sampleHeading = sampleHeadingFrameElement.getText();
         String expectedText = "This is a sample page";
-        assert sampleHeading.equals(expectedText) : "Textul din frame-ul 1 nu este corect. Expected: " + expectedText + ", Actual: " + sampleHeading;
-
+//        assert sampleHeading.equals(expectedText) : "Textul din frame-ul 1 nu este corect. Expected: " + expectedText + ", Actual: " + sampleHeading;
+        framesPage.verifySampleHeadingText(expectedText);
         // revenim cu focusul la frame-ul parinte
         framesMethods.switchToDefaultFrame();
 //        driver.switchTo().defaultContent();
-
-        WebElement frameElement2 = driver.findElement(By.id("frame2"));
-        framesMethods.switchToFrame(frameElement2);
+        framesPage.switchToFrame2();
+//        WebElement frameElement2 = driver.findElement(By.id("frame2"));
+//        framesMethods.switchToFrame(frameElement2);
 //        driver.switchTo().frame(frameElement2);
 
         javascriptMethods.jsScrollDown(200, 200);

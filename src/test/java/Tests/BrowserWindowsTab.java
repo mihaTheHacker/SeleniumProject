@@ -3,6 +3,7 @@ package Tests;
 import HelperMethods.ElementsMethods;
 import HelperMethods.JavascriptMethods;
 import HelperMethods.WindowsMethods;
+import Pages.BrowserWindowsTabPge;
 import Pages.CommonPage;
 import Pages.HomePage;
 import java.util.ArrayList;
@@ -21,23 +22,22 @@ public class BrowserWindowsTab {
     WindowsMethods windowsMethods;
     CommonPage commonPage;
     HomePage homePage;
+    BrowserWindowsTabPge browserWindowsTabpge;
 
 
     @Test
     public void automationMethod() {
 
-        //deschidem un browser de Chrome
         driver = new ChromeDriver();
         javascriptMethods = new JavascriptMethods(driver);
         elementsMethods = new ElementsMethods(driver);
         windowsMethods = new WindowsMethods(driver);
         commonPage = new CommonPage(driver);
         homePage = new HomePage(driver);
+        browserWindowsTabpge = new BrowserWindowsTabPge(driver);
 
-        //accesam o pagina web
         driver.get("https://demoqa.com/");
 
-        //facem browserul in modul maximize
         driver.manage().window().maximize();
 
         //facem un scroll in jos
@@ -51,27 +51,36 @@ public class BrowserWindowsTab {
 //        elementsMethods.clickElement(browserWindowsElement);
         commonPage.goToDesiredSubMenu("Browser Windows");
 
-        WebElement tabElement = driver.findElement(By.id("tabButton"));
-        elementsMethods.clickElement(tabElement);
+        browserWindowsTabpge.doNewTabTest();
 
-        List<String> tabList = new ArrayList<>(driver.getWindowHandles());
-        driver.switchTo().window(tabList.get(1));
+//        WebElement tabElement = driver.findElement(By.id("tabButton"));
+//        elementsMethods.clickElement(tabElement);
 
-        WebElement sampleHeadingElement = driver.findElement(By.id("sampleHeading"));
-        System.out.println("Textul din new tab este:  " + sampleHeadingElement.getText());
-        windowsMethods.closeWindow();
+//        List<String> tabList = new ArrayList<>(driver.getWindowHandles());
+//        driver.switchTo().window(tabList.get(1));
 
-        driver.switchTo().window(tabList.get(0));
-        WebElement windowButtonElement = driver.findElement(By.id("windowButton"));
-        elementsMethods.clickElement(windowButtonElement);
+//        WebElement sampleHeadingElement = driver.findElement(By.id("sampleHeading"));
+//        System.out.println("Textul din new tab este:  " + sampleHeadingElement.getText());
+//        windowsMethods.closeWindow();
+//
+//        driver.switchTo().window(tabList.get(0));
+
+        browserWindowsTabpge.doNewWindowTest();
+//        WebElement windowButtonElement = driver.findElement(By.id("windowButton"));
+//        elementsMethods.clickElement(windowButtonElement);
 
 //        List<String> windowList = new ArrayList<>(driver.getWindowHandles());
 //        driver.switchTo().window(windowList.get(1));
-        windowsMethods.switchToWindowByIndex(1);
 
-        WebElement sampleHeadingWindowElement = driver.findElement(By.id("sampleHeading"));
-        System.out.println("Textul din new window este:  " + sampleHeadingWindowElement.getText());
-        windowsMethods.closeWindow();
-        windowsMethods.switchToWindowByIndex(2);
+//        WebElement windowButtonElement = driver.findElement(By.id("messageWindowButton"));
+//        elementsMethods.clickElement(windowButtonElement);
+//        windowsMethods.switchToWindowByIndex(1);
+//        WebElement bodyElement = driver.findElement(By.cssSelector("body"));
+//        System.out.println("Mesajul din new window este:  " + bodyElement.getText());
+//        windowsMethods.closeWindow();
+//        windowsMethods.switchToWindowByIndex(0);
+
+        //inchidem browserul
+        driver.quit();
     }
 }
