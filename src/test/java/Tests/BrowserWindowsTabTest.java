@@ -1,24 +1,14 @@
 package Tests;
 
-import HelperMethods.ElementsMethods;
-import HelperMethods.JavascriptMethods;
 import HelperMethods.WindowsMethods;
 import Pages.BrowserWindowsTabPge;
 import Pages.CommonPage;
 import Pages.HomePage;
-import java.util.ArrayList;
-import java.util.List;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
+import SharedData.SharedData;
 import org.testng.annotations.Test;
 
-public class BrowserWindowsTab {
+public class BrowserWindowsTabTest extends SharedData {
 
-    WebDriver driver;
-    JavascriptMethods javascriptMethods;
-    ElementsMethods elementsMethods;
     WindowsMethods windowsMethods;
     CommonPage commonPage;
     HomePage homePage;
@@ -28,17 +18,11 @@ public class BrowserWindowsTab {
     @Test
     public void automationMethod() {
 
-        driver = new ChromeDriver();
-        javascriptMethods = new JavascriptMethods(driver);
-        elementsMethods = new ElementsMethods(driver);
-        windowsMethods = new WindowsMethods(driver);
-        commonPage = new CommonPage(driver);
-        homePage = new HomePage(driver);
-        browserWindowsTabpge = new BrowserWindowsTabPge(driver);
+        windowsMethods = new WindowsMethods(getDriver());
+        commonPage = new CommonPage(getDriver());
+        homePage = new HomePage(getDriver());
+        browserWindowsTabpge = new BrowserWindowsTabPge(getDriver());
 
-        driver.get("https://demoqa.com/");
-
-        driver.manage().window().maximize();
 
         //facem un scroll in jos
 //        javascriptMethods.jsScrollDown(0, 400);
@@ -80,7 +64,5 @@ public class BrowserWindowsTab {
 //        windowsMethods.closeWindow();
 //        windowsMethods.switchToWindowByIndex(0);
 
-        //inchidem browserul
-        driver.quit();
     }
 }

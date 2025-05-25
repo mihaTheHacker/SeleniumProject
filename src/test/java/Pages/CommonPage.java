@@ -1,7 +1,11 @@
 package Pages;
 
+import HelperMethods.AlertMethods;
 import HelperMethods.ElementsMethods;
+import HelperMethods.FramesMethods;
 import HelperMethods.JavascriptMethods;
+import HelperMethods.ListMethods;
+import HelperMethods.WindowsMethods;
 import java.util.List;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,11 +17,19 @@ public class CommonPage {
     WebDriver driver;
     ElementsMethods elementsMethods;
     JavascriptMethods javascriptMethods;
+    AlertMethods alertMethods;
+    WindowsMethods windowsMethods;
+    FramesMethods framesMethods;
+    ListMethods listMethods;
 
     public CommonPage(WebDriver driver) {
         this.driver = driver;
         this.elementsMethods = new ElementsMethods(driver);
         this.javascriptMethods = new JavascriptMethods(driver);
+        this.alertMethods = new AlertMethods(driver);
+        this.windowsMethods = new WindowsMethods(driver);
+        this.framesMethods = new FramesMethods(driver);
+        this.listMethods = new ListMethods(driver);
         PageFactory.initElements(driver, this);
     }
 

@@ -8,27 +8,19 @@ import HelperMethods.JavascriptMethods;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 
-public class FramesPage {
-    WebDriver driver;
-    ElementsMethods elementsMethods;
-    JavascriptMethods javascriptMethods;
-    FramesMethods framesMethods;
+public class FramesPage extends CommonPage{
+
+    @FindBy(id="frame1")
+    private WebElement frame1;
+    @FindBy(id="frame2")
+    private WebElement frame2;
+    @FindBy(id="sampleHeading")
+    private WebElement sampleHeadingElement;
 
     public FramesPage(WebDriver driver) {
-        this.driver = driver;
-        this.elementsMethods = new ElementsMethods(driver);
-        this.javascriptMethods = new JavascriptMethods(driver);
-        this.framesMethods = new FramesMethods(driver);
-        PageFactory.initElements(driver, this);
+        super(driver);
     }
-    @FindBy(id="frame1")
-    WebElement frame1;
-    @FindBy(id="frame2")
-    WebElement frame2;
-    @FindBy(id="sampleHeading")
-    WebElement sampleHeadingElement;
 
     public void switchToFrame1() {
         framesMethods.switchToFrame(frame1);

@@ -1,38 +1,23 @@
 package Tests;
 
-import HelperMethods.AlertMethods;
-import HelperMethods.ElementsMethods;
-import HelperMethods.JavascriptMethods;
 import Pages.AlertTestPage;
 import Pages.CommonPage;
 import Pages.HomePage;
-import java.time.Duration;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import SharedData.SharedData;
 import org.testng.annotations.Test;
 
-public class AlertTest {
+public class AlertTest extends SharedData {
 
-    WebDriver driver;
-    ElementsMethods elementMethods;
-    AlertMethods alertMethods;
-    JavascriptMethods javascriptMethods;
     CommonPage commonPage;
     HomePage homePage;
     AlertTestPage alertTestPage;
 
     @Test
     public void automationMethod() {
-        driver = new ChromeDriver();
-        driver.get("https://demoqa.com/");
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        driver.manage().window().maximize();
-        elementMethods = new ElementsMethods(driver);
-        alertMethods = new AlertMethods(driver);
-        javascriptMethods = new JavascriptMethods(driver);
-        homePage = new HomePage(driver);
-        commonPage = new CommonPage(driver);
-        alertTestPage = new AlertTestPage(driver);
+
+        homePage = new HomePage(getDriver());
+        commonPage = new CommonPage(getDriver());
+        alertTestPage = new AlertTestPage(getDriver());
 
         homePage.goToDesiredMenu("Alerts, Frame & Windows");
 

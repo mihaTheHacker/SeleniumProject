@@ -1,21 +1,15 @@
 package Tests;
 
-import HelperMethods.ElementsMethods;
-import HelperMethods.JavascriptMethods;
 import Pages.CommonPage;
 import Pages.HomePage;
 import Pages.PracticeFormPage;
+import SharedData.SharedData;
 import java.util.ArrayList;
 import java.util.List;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-public class PracticeFormTest {
+public class PracticeFormTest extends SharedData {
 
-    WebDriver driver;
-    ElementsMethods elementsMethods;
-    JavascriptMethods javascriptMethods;
     HomePage homePage;
     CommonPage commonPage;
     PracticeFormPage practiceFormPage;
@@ -23,16 +17,11 @@ public class PracticeFormTest {
 
     @Test
     public void automationMethod() {
-        driver = new ChromeDriver();
 
-        driver.get("https://demoqa.com/");
+        homePage = new HomePage(getDriver());
+        commonPage = new CommonPage(getDriver());
+        practiceFormPage = new PracticeFormPage(getDriver());
 
-        driver.manage().window().maximize();
-        elementsMethods = new ElementsMethods(driver);
-        javascriptMethods = new JavascriptMethods(driver);
-        homePage = new HomePage(driver);
-        commonPage = new CommonPage(driver);
-        practiceFormPage = new PracticeFormPage(driver);
         homePage.goToDesiredMenu("Forms");
 
         commonPage.goToDesiredSubMenu("Practice Form");
