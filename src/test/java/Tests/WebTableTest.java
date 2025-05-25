@@ -14,8 +14,6 @@ import org.testng.annotations.Test;
 
 public class WebTableTest extends SharedData {
 
-    JavascriptMethods javascriptMethods;
-    ElementsMethods elementsMethods;
     HomePage homePage;
     CommonPage commonPage;
     WebTablePage webTablePage;
@@ -23,17 +21,15 @@ public class WebTableTest extends SharedData {
     @Test
     public void automationMethod() {
 
-        javascriptMethods = new JavascriptMethods(driver);
-        elementsMethods = new ElementsMethods(driver);
-        homePage = new HomePage(driver);
-        commonPage = new CommonPage(driver);
-        webTablePage = new WebTablePage(driver);
+        homePage = new HomePage(getDriver());
+        commonPage = new CommonPage(getDriver());
+        webTablePage = new WebTablePage(getDriver());
 
         homePage.goToDesiredMenu("Elements");
 
         commonPage.goToDesiredSubMenu("Web Tables");
 
-        List<WebElement> tableElements = driver.findElements(
+        List<WebElement> tableElements = getDriver().findElements(
                 By.xpath("//div[@class='rt-tbody']/div/div[@class='rt-tr -even' or @class='rt-tr -odd']"));
         Integer actualTableSize = tableElements.size();
 
@@ -45,7 +41,7 @@ public class WebTableTest extends SharedData {
         String departmentValue = "QA";
         webTablePage.completeRegistrationForm(firstNameValue, lastNameValue, emailValue, ageValue, salaryValue, departmentValue);
 
-        List<WebElement> expectedTableElements = driver.findElements(
+        List<WebElement> expectedTableElements = getDriver().findElements(
                 By.xpath("//div[@class='rt-tbody']/div/div[@class='rt-tr -even' or @class='rt-tr -odd']"));
 
         Integer expectedTableSize = actualTableSize + 1;
@@ -60,7 +56,6 @@ public class WebTableTest extends SharedData {
         Assert.assertTrue(actualTableValue.contains(salaryValue));
         Assert.assertTrue(actualTableValue.contains(departmentValue));
 
-        driver.quit();
 
     }
 

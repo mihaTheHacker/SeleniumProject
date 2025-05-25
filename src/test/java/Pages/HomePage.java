@@ -9,7 +9,7 @@ public class HomePage extends CommonPage {
 
     // Identificam WebElementele specifice pentru pagina
     @FindBy(xpath = "//h5")
-    List<WebElement> elements;
+    private List<WebElement> elements;
 
     public HomePage(WebDriver driver) {
         super(driver);

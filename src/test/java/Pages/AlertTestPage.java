@@ -8,13 +8,13 @@ public class AlertTestPage extends CommonPage {
 
 
     @FindBy(id = "alertButton")
-    public static WebElement alertButton;
+    private static WebElement alertButton;
     @FindBy(id= "timerAlertButton")
-    public static WebElement alertDelayButton;
+    private static WebElement alertDelayButton;
     @FindBy(id = "confirmButton")
-    public static WebElement alertConfirmationButton;
+    private static WebElement alertConfirmationButton;
     @FindBy(id = "promtButton")
-    public static WebElement alertPromptButton;
+    private static WebElement alertPromptButton;
 
     public AlertTestPage(WebDriver driver) {
         super(driver);

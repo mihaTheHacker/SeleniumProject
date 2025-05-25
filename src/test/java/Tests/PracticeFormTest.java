@@ -1,7 +1,5 @@
 package Tests;
 
-import HelperMethods.ElementsMethods;
-import HelperMethods.JavascriptMethods;
 import Pages.CommonPage;
 import Pages.HomePage;
 import Pages.PracticeFormPage;
@@ -12,8 +10,6 @@ import org.testng.annotations.Test;
 
 public class PracticeFormTest extends SharedData {
 
-    ElementsMethods elementsMethods;
-    JavascriptMethods javascriptMethods;
     HomePage homePage;
     CommonPage commonPage;
     PracticeFormPage practiceFormPage;
@@ -22,11 +18,9 @@ public class PracticeFormTest extends SharedData {
     @Test
     public void automationMethod() {
 
-        elementsMethods = new ElementsMethods(driver);
-        javascriptMethods = new JavascriptMethods(driver);
-        homePage = new HomePage(driver);
-        commonPage = new CommonPage(driver);
-        practiceFormPage = new PracticeFormPage(driver);
+        homePage = new HomePage(getDriver());
+        commonPage = new CommonPage(getDriver());
+        practiceFormPage = new PracticeFormPage(getDriver());
 
         homePage.goToDesiredMenu("Forms");
 

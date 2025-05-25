@@ -8,7 +8,7 @@ import org.testng.annotations.BeforeMethod;
 
 public class SharedData {
 
-    public WebDriver driver;
+    private WebDriver driver;
 
     @BeforeMethod
 
@@ -24,8 +24,10 @@ public class SharedData {
     }
     @AfterMethod
     public void closeBrowser() {
-        //inchidem browserul
         driver.quit();
     }
 
+    public WebDriver getDriver() {
+        return driver;
+    }
 }

@@ -4,16 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7850fae8-c0be-4e42-8498-b5ab3eb1a331" name="Changes" comment="">
+    <list default="true" id="7850fae8-c0be-4e42-8498-b5ab3eb1a331" name="Changes" comment="- applied inheritance">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/FramesTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Pages/AlertTestPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/AlertTestPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Pages/BrowserWindowsTabPge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/BrowserWindowsTabPge.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/CommonPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/CommonPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Pages/FramesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/FramesPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/PracticeFormPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/PracticeFormPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/WebTablePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/WebTablePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/SharedData/SharedData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SharedData/SharedData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests/AlertTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/AlertTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/BrowserWindowsTab.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/BrowserWindowsTabTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/Frames.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/Frames.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/BrowserWindowsTabTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/BrowserWindowsTabTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/Frames.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests/PracticeFormTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/PracticeFormTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests/Recursivitate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/Recursivitate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests/WebTableTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/WebTableTest.java" afterDir="false" />
@@ -74,6 +77,8 @@
     "TestNG.BrowserWindowsTabTest.executor": "Run",
     "TestNG.Frames.automationMethod.executor": "Run",
     "TestNG.Frames.executor": "Run",
+    "TestNG.FramesTest.automationMethod.executor": "Run",
+    "TestNG.FramesTest.executor": "Run",
     "TestNG.LetCodeFormsLocatorsPractice.executor": "Run",
     "TestNG.LetCodeFormsLocatorsPractice.findLocators (1).executor": "Run",
     "TestNG.LetCodeFormsLocatorsPractice.findLocators (2).executor": "Run",
@@ -125,8 +130,8 @@
       <recent name="C:\Users\mibudeanu\IdeaProjects\SeleniumProject\src\test" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.Frames">
-    <configuration name="AlertTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.FramesTest">
+    <configuration name="FramesTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumProject" />
       <extension name="coverage">
         <pattern>
@@ -135,7 +140,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.AlertTest" />
+      <option name="MAIN_CLASS_NAME" value="Tests.FramesTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -143,7 +148,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BrowserWindowsTabTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="FramesTest.automationMethod" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumProject" />
       <extension name="coverage">
         <pattern>
@@ -152,15 +157,16 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.BrowserWindowsTabTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="MAIN_CLASS_NAME" value="Tests.FramesTest" />
+      <option name="METHOD_NAME" value="automationMethod" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Frames" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="PracticeFormTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumProject" />
       <extension name="coverage">
         <pattern>
@@ -169,7 +175,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.Frames" />
+      <option name="MAIN_CLASS_NAME" value="Tests.PracticeFormTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -213,11 +219,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.Frames" />
+        <item itemvalue="TestNG.FramesTest" />
+        <item itemvalue="TestNG.FramesTest.automationMethod" />
+        <item itemvalue="TestNG.PracticeFormTest" />
         <item itemvalue="TestNG.WebTableTest" />
         <item itemvalue="TestNG.Recursivitate" />
-        <item itemvalue="TestNG.BrowserWindowsTabTest" />
-        <item itemvalue="TestNG.AlertTest" />
       </list>
     </recent_temporary>
   </component>
@@ -516,7 +522,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748115172110</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="- applied inheritance">
+      <option name="closed" value="true" />
+      <created>1748121376697</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1748121376698</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -534,7 +548,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="- created Selenium Project" />
     <MESSAGE value="- created WebTableTest" />
     <MESSAGE value="- moved resources folder from Main to Tests package&#10;- added an image to the resources folder   &#10;- declared a new element(pictureElement)&#10;- imported class File&#10;- created a File instance in order to get the absolute path" />
     <MESSAGE value="- created a new PracticeFormTest.java &#10;- opened a chrome browser&#10;- maximized browser&#10;- scrolled down on the web page&#10;- declared multiple elements" />
@@ -559,6 +572,18 @@
     <MESSAGE value="- Created a new branch RefactoringRecursivitateHomework&#10;- created a new helper class, &quot;ListMethods.java&quot; &#10;- finished my homework from lesson 11, I refactored class Recursivitate.java" />
     <MESSAGE value="- Created a new branch OOPLesson 12&#10;- Created a new class SharedData.java from lesson 12&#10;- I realised I missed Lesson 11, so I went back and created new classes: FramesPage.java, WebTablePage.java, AlertTestPage.java, BrowserWindowsTabPge.java following the POM principle -" />
     <MESSAGE value="- Cleaned all test classes - deleted comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Cleaned all test classes - deleted comments" />
+    <MESSAGE value="- applied inheritance" />
+    <option name="LAST_COMMIT_MESSAGE" value="- applied inheritance" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/Tests/FramesTest.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

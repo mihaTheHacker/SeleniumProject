@@ -1,68 +1,65 @@
 package Pages;
 
-import HelperMethods.ElementsMethods;
-import HelperMethods.JavascriptMethods;
 import java.util.ArrayList;
 import java.util.List;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 
 public class PracticeFormPage extends CommonPage{
 
     @FindBy(id = "firstName")
-    WebElement firstNameField;
+    private WebElement firstNameField;
 
     @FindBy(id = "lastName")
-    WebElement lastNameField;
+    private WebElement lastNameField;
 
     @FindBy(id = "userEmail")
-    WebElement userEmailField;
+    private WebElement userEmailField;
 
     @FindBy(id = "userNumber")
-    WebElement userNumberField;
+    private WebElement userNumberField;
 
 //    @FindBy(xpath = "//div[@id='subjectsContainer']")
 //    WebElement subjectsField;
     @FindBy(id = "subjectsInput")
-    WebElement subjectsField;
+    private WebElement subjectsField;
 
     @FindBy(css = "input[placeholder='Mobile Number']")
-    WebElement mobileNumberField;
+    private WebElement mobileNumberField;
 
     @FindBy(xpath = "//label[@for='gender-radio-1']")
-    WebElement maleElement;
+    private WebElement maleElement;
 
     @FindBy(xpath = "//label[@for='gender-radio-2']")
-    WebElement femaleElement;
+    private WebElement femaleElement;
 
     @FindBy(xpath = "//label[@for='gender-radio-3']")
-    WebElement otherElement;
+    private WebElement otherElement;
 
     @FindBy(id = "currentAddress")
-    WebElement currentAddressField;
+    private WebElement currentAddressField;
 
     @FindBy(id = "uploadPicture")
-    WebElement pictureElement;
+    private WebElement pictureElement;
 
     @FindBy(id = "react-select-3-input")
-    WebElement stateElement;
+    private WebElement stateElement;
 
     @FindBy(id = "react-select-4-input")
-    WebElement cityElement;
+    private WebElement cityElement;
 
     @FindBy(id = "submit")
-    WebElement submitButtonElement;
+    private WebElement submitButtonElement;
 
     @FindBy(xpath = "//label[@for='hobbies-checkbox-1']")
-    WebElement SportsHobbyElement;
+    private WebElement SportsHobbyElement;
 
     @FindBy(xpath = "//label[@for='hobbies-checkbox-2']")
-    WebElement ReadingHobbyElement;
+    private WebElement ReadingHobbyElement;
 
     @FindBy(xpath = "//label[@for='hobbies-checkbox-3']")
-    WebElement MusicHobbyElement;
+    private WebElement MusicHobbyElement;
 
     public PracticeFormPage(WebDriver driver) {
         super(driver);

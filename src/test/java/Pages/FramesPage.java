@@ -8,16 +8,15 @@ import HelperMethods.JavascriptMethods;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 
 public class FramesPage extends CommonPage{
 
     @FindBy(id="frame1")
-    WebElement frame1;
+    private WebElement frame1;
     @FindBy(id="frame2")
-    WebElement frame2;
+    private WebElement frame2;
     @FindBy(id="sampleHeading")
-    WebElement sampleHeadingElement;
+    private WebElement sampleHeadingElement;
 
     public FramesPage(WebDriver driver) {
         super(driver);

@@ -15,11 +15,11 @@ public class BrowserWindowsTabPge extends CommonPage{
     }
 
     @FindBy(id = "tabButton")
-    WebElement tabButton;
+    private WebElement tabButton;
     @FindBy(id = "sampleHeading")
-    WebElement sampleHeading;
+    private WebElement sampleHeading;
     @FindBy(id = "windowButton")
-    WebElement windowButton;
+    private WebElement windowButton;
 
     public void doNewTabTest() {
         elementsMethods.clickElement(tabButton);

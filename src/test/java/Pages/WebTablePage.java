@@ -10,21 +10,21 @@ import org.openqa.selenium.support.PageFactory;
 public class WebTablePage extends CommonPage{
 
     @FindBy(id = "addNewRecordButton")
-    WebElement addNewRecordButton;
+    private WebElement addNewRecordButton;
     @FindBy(id = "firstName")
-    WebElement firstNameInput;
+    private WebElement firstNameInput;
     @FindBy(id = "lastName")
-    WebElement lastNameInput;
+    private WebElement lastNameInput;
     @FindBy(id = "userEmail")
-    WebElement userEmailInput;
+    private WebElement userEmailInput;
     @FindBy(id = "age")
-    WebElement ageInput;
+    private WebElement ageInput;
     @FindBy(id = "salary")
-    WebElement salaryInput;
+    private WebElement salaryInput;
     @FindBy(id = "department")
-    WebElement departmentInput;
+    private WebElement departmentInput;
     @FindBy(id = "submit")
-    WebElement submitButton;
+    private WebElement submitButton;
 
     public WebTablePage(WebDriver driver) {
         super(driver);

@@ -1,20 +1,14 @@
 package Tests;
 
-import HelperMethods.ElementsMethods;
-import HelperMethods.JavascriptMethods;
 import HelperMethods.WindowsMethods;
 import Pages.BrowserWindowsTabPge;
 import Pages.CommonPage;
 import Pages.HomePage;
 import SharedData.SharedData;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
 public class BrowserWindowsTabTest extends SharedData {
 
-    JavascriptMethods javascriptMethods;
-    ElementsMethods elementsMethods;
     WindowsMethods windowsMethods;
     CommonPage commonPage;
     HomePage homePage;
@@ -24,14 +18,12 @@ public class BrowserWindowsTabTest extends SharedData {
     @Test
     public void automationMethod() {
 
-        javascriptMethods = new JavascriptMethods(driver);
-        elementsMethods = new ElementsMethods(driver);
-        windowsMethods = new WindowsMethods(driver);
-        commonPage = new CommonPage(driver);
-        homePage = new HomePage(driver);
-        browserWindowsTabpge = new BrowserWindowsTabPge(driver);
+        windowsMethods = new WindowsMethods(getDriver());
+        commonPage = new CommonPage(getDriver());
+        homePage = new HomePage(getDriver());
+        browserWindowsTabpge = new BrowserWindowsTabPge(getDriver());
 
-        
+
         //facem un scroll in jos
 //        javascriptMethods.jsScrollDown(0, 400);
 //
@@ -72,7 +64,5 @@ public class BrowserWindowsTabTest extends SharedData {
 //        windowsMethods.closeWindow();
 //        windowsMethods.switchToWindowByIndex(0);
 
-        //inchidem browserul
-        driver.quit();
     }
 }

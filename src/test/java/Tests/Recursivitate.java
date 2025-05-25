@@ -10,7 +10,6 @@ import org.testng.annotations.Test;
 public class Recursivitate extends SharedData {
 
     ListMethods listMethods;
-    JavascriptMethods javascriptMethods;
     HomePage homePage;
     CommonPage commonPage;
 
@@ -18,17 +17,14 @@ public class Recursivitate extends SharedData {
     @Test
     public void parcurgereLista() {
 
-        listMethods = new ListMethods(driver);
-        javascriptMethods = new JavascriptMethods(driver);
-        homePage = new HomePage(driver);
-        commonPage = new CommonPage(driver);
+        listMethods = new ListMethods(getDriver());
+        homePage = new HomePage(getDriver());
+        commonPage = new CommonPage(getDriver());
 
         homePage.goToDesiredMenu("Interactions");
         commonPage.goToDesiredSubMenu("Sortable");
         listMethods.changeListOrderByDragAndDrop();
 
-       //inchidem browserul
-        driver.quit();
     }
 
 }
