@@ -4,22 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7850fae8-c0be-4e42-8498-b5ab3eb1a331" name="Changes" comment="- applied inheritance">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/FramesTest.java" afterDir="false" />
+    <list default="true" id="7850fae8-c0be-4e42-8498-b5ab3eb1a331" name="Changes" comment="- am schimbat access controlul variabilelor de instanta in Common page &#10;- am sters niste linii neutlizate de la importuri in WebTablePage&#10;- am adaugat un nou Pachet TestNG cu un nou fisier xml">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/AlertTestPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/AlertTestPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/BrowserWindowsTabPge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/BrowserWindowsTabPge.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/FramesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/FramesPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/PracticeFormPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/PracticeFormPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/WebTablePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/WebTablePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SharedData/SharedData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SharedData/SharedData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/AlertTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/AlertTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/BrowserWindowsTabTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/BrowserWindowsTabTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/Frames.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/PracticeFormTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/PracticeFormTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/Recursivitate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/Recursivitate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/WebTableTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/WebTableTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="Lesson-13-OopPart3" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -75,6 +62,7 @@
     "TestNG.BrowserWindowsTab.automationMethod.executor": "Debug",
     "TestNG.BrowserWindowsTab.executor": "Run",
     "TestNG.BrowserWindowsTabTest.executor": "Run",
+    "TestNG.C:/Users/mibudeanu/IdeaProjects/SeleniumProject/src/test/java/TestNG/testng_pachete.xml.executor": "Run",
     "TestNG.Frames.automationMethod.executor": "Run",
     "TestNG.Frames.executor": "Run",
     "TestNG.FramesTest.automationMethod.executor": "Run",
@@ -107,7 +95,7 @@
     "TestNG.WebTableTest.automationMethod.executor": "Run",
     "TestNG.WebTableTest.executor": "Run",
     "TestNG.WebTablesTest.automationMethod.executor": "Run",
-    "git-widget-placeholder": "OOP-Lesson12-Part2",
+    "git-widget-placeholder": "Lectia-14-OOP-part-4-Selenium",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/mibudeanu/IdeaProjects/SeleniumProject/src/test/resources",
     "node.js.detected.package.eslint": "true",
@@ -130,7 +118,17 @@
       <recent name="C:\Users\mibudeanu\IdeaProjects\SeleniumProject\src\test" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.FramesTest">
+  <component name="RunManager" selected="TestNG.C:/Users/mibudeanu/IdeaProjects/SeleniumProject/src/test/java/TestNG/testng_pachete.xml">
+    <configuration name="C:/Users/mibudeanu/IdeaProjects/SeleniumProject/src/test/java/TestNG/testng_pachete.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumProject" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/TestNG/testng_pachete.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FramesTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumProject" />
       <extension name="coverage">
@@ -183,23 +181,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Recursivitate" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.Recursivitate" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="WebTableTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumProject" />
       <extension name="coverage">
@@ -219,11 +200,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/mibudeanu/IdeaProjects/SeleniumProject/src/test/java/TestNG/testng_pachete.xml" />
+        <item itemvalue="TestNG.WebTableTest" />
         <item itemvalue="TestNG.FramesTest" />
         <item itemvalue="TestNG.FramesTest.automationMethod" />
         <item itemvalue="TestNG.PracticeFormTest" />
-        <item itemvalue="TestNG.WebTableTest" />
-        <item itemvalue="TestNG.Recursivitate" />
       </list>
     </recent_temporary>
   </component>
@@ -281,6 +262,7 @@
       <workItem from="1747751586497" duration="18542000" />
       <workItem from="1747980208289" duration="14714000" />
       <workItem from="1748104302558" duration="10749000" />
+      <workItem from="1748530459977" duration="6426000" />
     </task>
     <task id="LOCAL-00001" summary="- created Selenium Project">
       <option name="closed" value="true" />
@@ -530,7 +512,23 @@
       <option name="project" value="LOCAL" />
       <updated>1748121376698</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="- changed elements access control from public to private &#10;- am aplicat conceptul de incapsulare tuturor claselor">
+      <option name="closed" value="true" />
+      <created>1748187263380</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1748187263380</updated>
+    </task>
+    <task id="LOCAL-00033" summary="- am schimbat access controlul variabilelor de instanta in Common page &#10;- am sters niste linii neutlizate de la importuri in WebTablePage&#10;- am adaugat un nou Pachet TestNG cu un nou fisier xml">
+      <option name="closed" value="true" />
+      <created>1748533702131</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1748533702131</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -548,8 +546,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="- created WebTableTest" />
-    <MESSAGE value="- moved resources folder from Main to Tests package&#10;- added an image to the resources folder   &#10;- declared a new element(pictureElement)&#10;- imported class File&#10;- created a File instance in order to get the absolute path" />
     <MESSAGE value="- created a new PracticeFormTest.java &#10;- opened a chrome browser&#10;- maximized browser&#10;- scrolled down on the web page&#10;- declared multiple elements" />
     <MESSAGE value="- declared new elements&#10;- used javascript executor to click on element&#10;- used sendKeys Enter method" />
     <MESSAGE value="- created new class parcurgereLista" />
@@ -573,14 +569,16 @@
     <MESSAGE value="- Created a new branch OOPLesson 12&#10;- Created a new class SharedData.java from lesson 12&#10;- I realised I missed Lesson 11, so I went back and created new classes: FramesPage.java, WebTablePage.java, AlertTestPage.java, BrowserWindowsTabPge.java following the POM principle -" />
     <MESSAGE value="- Cleaned all test classes - deleted comments" />
     <MESSAGE value="- applied inheritance" />
-    <option name="LAST_COMMIT_MESSAGE" value="- applied inheritance" />
+    <MESSAGE value="- changed elements access control from public to private &#10;- am aplicat conceptul de incapsulare tuturor claselor" />
+    <MESSAGE value="- am schimbat access controlul variabilelor de instanta in Common page &#10;- am sters niste linii neutlizate de la importuri in WebTablePage&#10;- am adaugat un nou Pachet TestNG cu un nou fisier xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="- am schimbat access controlul variabilelor de instanta in Common page &#10;- am sters niste linii neutlizate de la importuri in WebTablePage&#10;- am adaugat un nou Pachet TestNG cu un nou fisier xml" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/Tests/FramesTest.java</url>
-          <line>28</line>
+          <line>27</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
