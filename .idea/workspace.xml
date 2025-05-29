@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7850fae8-c0be-4e42-8498-b5ab3eb1a331" name="Changes" comment="- changed elements access control from public to private &#10;- am aplicat conceptul de incapsulare tuturor claselor">
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestNG/testng_pachete.xml" afterDir="false" />
+    <list default="true" id="7850fae8-c0be-4e42-8498-b5ab3eb1a331" name="Changes" comment="- am schimbat access controlul variabilelor de instanta in Common page &#10;- am sters niste linii neutlizate de la importuri in WebTablePage&#10;- am adaugat un nou Pachet TestNG cu un nou fisier xml">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/CommonPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/CommonPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/WebTablePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/WebTablePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/MacysWebsitePracticeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/MacysWebsitePracticeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -265,7 +262,7 @@
       <workItem from="1747751586497" duration="18542000" />
       <workItem from="1747980208289" duration="14714000" />
       <workItem from="1748104302558" duration="10749000" />
-      <workItem from="1748530459977" duration="2915000" />
+      <workItem from="1748530459977" duration="6426000" />
     </task>
     <task id="LOCAL-00001" summary="- created Selenium Project">
       <option name="closed" value="true" />
@@ -523,7 +520,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748187263380</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="- am schimbat access controlul variabilelor de instanta in Common page &#10;- am sters niste linii neutlizate de la importuri in WebTablePage&#10;- am adaugat un nou Pachet TestNG cu un nou fisier xml">
+      <option name="closed" value="true" />
+      <created>1748533702131</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1748533702131</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -541,7 +546,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="- moved resources folder from Main to Tests package&#10;- added an image to the resources folder   &#10;- declared a new element(pictureElement)&#10;- imported class File&#10;- created a File instance in order to get the absolute path" />
     <MESSAGE value="- created a new PracticeFormTest.java &#10;- opened a chrome browser&#10;- maximized browser&#10;- scrolled down on the web page&#10;- declared multiple elements" />
     <MESSAGE value="- declared new elements&#10;- used javascript executor to click on element&#10;- used sendKeys Enter method" />
     <MESSAGE value="- created new class parcurgereLista" />
@@ -566,7 +570,8 @@
     <MESSAGE value="- Cleaned all test classes - deleted comments" />
     <MESSAGE value="- applied inheritance" />
     <MESSAGE value="- changed elements access control from public to private &#10;- am aplicat conceptul de incapsulare tuturor claselor" />
-    <option name="LAST_COMMIT_MESSAGE" value="- changed elements access control from public to private &#10;- am aplicat conceptul de incapsulare tuturor claselor" />
+    <MESSAGE value="- am schimbat access controlul variabilelor de instanta in Common page &#10;- am sters niste linii neutlizate de la importuri in WebTablePage&#10;- am adaugat un nou Pachet TestNG cu un nou fisier xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="- am schimbat access controlul variabilelor de instanta in Common page &#10;- am sters niste linii neutlizate de la importuri in WebTablePage&#10;- am adaugat un nou Pachet TestNG cu un nou fisier xml" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
