@@ -1,5 +1,7 @@
 package SharedData;
 
+import configFile.ConfigFile;
+import configFile.configNode.ConfigurationNode;
 import java.time.Duration;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -13,10 +15,13 @@ public class SharedData {
     @BeforeMethod
 
     public void prepareBrowser(){
+
+        ConfigurationNode configurationNode = ConfigFile.createConfigNode(ConfigurationNode.class);
+
         //deschidem un browser de Chrome
         driver = new ChromeDriver();
         //accesam o pagina web
-        driver.get("https://demoqa.com/");
+        driver.get(configurationNode.driverConfigNode.url);
         //am apelat metoda maximize() pentru a deschide browserul in modul maximize
         driver.manage().window().maximize();
         //definim un wait implicit pentru un interval maxim de timp
