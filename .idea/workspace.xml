@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7850fae8-c0be-4e42-8498-b5ab3eb1a331" name="Changes" comment="- am adaugat maven surefire si maven compiler plugins">
+    <list default="true" id="7850fae8-c0be-4e42-8498-b5ab3eb1a331" name="Changes" comment="-added space in the run command">
+      <change afterPath="$PROJECT_DIR$/suites/SanitySuite.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -264,7 +265,7 @@
       <workItem from="1747980208289" duration="14714000" />
       <workItem from="1748104302558" duration="10749000" />
       <workItem from="1748530459977" duration="8257000" />
-      <workItem from="1748586294758" duration="6726000" />
+      <workItem from="1748586294758" duration="8198000" />
     </task>
     <task id="LOCAL-00001" summary="- created Selenium Project">
       <option name="closed" value="true" />
@@ -538,7 +539,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748546798030</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="-added space in the run command">
+      <option name="closed" value="true" />
+      <created>1748596490584</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1748596490584</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -556,7 +565,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="- declared new elements&#10;- used javascript executor to click on element&#10;- used sendKeys Enter method" />
     <MESSAGE value="- created new class parcurgereLista" />
     <MESSAGE value="- created new class MacysWebsitePracticeTest.java" />
     <MESSAGE value="- work in progress" />
@@ -581,7 +589,8 @@
     <MESSAGE value="- changed elements access control from public to private &#10;- am aplicat conceptul de incapsulare tuturor claselor" />
     <MESSAGE value="- am schimbat access controlul variabilelor de instanta in Common page &#10;- am sters niste linii neutlizate de la importuri in WebTablePage&#10;- am adaugat un nou Pachet TestNG cu un nou fisier xml" />
     <MESSAGE value="- am adaugat maven surefire si maven compiler plugins" />
-    <option name="LAST_COMMIT_MESSAGE" value="- am adaugat maven surefire si maven compiler plugins" />
+    <MESSAGE value="-added space in the run command" />
+    <option name="LAST_COMMIT_MESSAGE" value="-added space in the run command" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
