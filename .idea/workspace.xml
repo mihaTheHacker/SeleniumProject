@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7850fae8-c0be-4e42-8498-b5ab3eb1a331" name="Changes" comment="- am schimbat access controlul variabilelor de instanta in Common page &#10;- am sters niste linii neutlizate de la importuri in WebTablePage&#10;- am adaugat un nou Pachet TestNG cu un nou fisier xml">
+    <list default="true" id="7850fae8-c0be-4e42-8498-b5ab3eb1a331" name="Changes" comment="- am adaugat maven surefire si maven compiler plugins">
+      <change afterPath="$PROJECT_DIR$/suites/SmokeSuite.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/maven-publish.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/maven-publish.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestNG/testng_pachete.xml" beforeDir="false" afterPath="$PROJECT_DIR$/suites/RegressionSuite.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +26,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Lesson-13-OopPart3" />
+        <entry key="$PROJECT_DIR$" value="Lectia-14-OOP-part-4-Selenium" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -95,26 +98,28 @@
     "TestNG.WebTableTest.automationMethod.executor": "Run",
     "TestNG.WebTableTest.executor": "Run",
     "TestNG.WebTablesTest.automationMethod.executor": "Run",
-    "git-widget-placeholder": "Lectia-14-OOP-part-4-Selenium",
+    "git-widget-placeholder": "Lectia-15-CI/CD",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/mibudeanu/IdeaProjects/SeleniumProject/src/test/resources",
+    "last_opened_file_path": "C:/Users/mibudeanu/IdeaProjects/SeleniumProject/suites",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "C:/Users/mibudeanu/IdeaProjects/SeleniumProject/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\mibudeanu\IdeaProjects\SeleniumProject\suites" />
       <recent name="C:\Users\mibudeanu\IdeaProjects\SeleniumProject\src\test\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\mibudeanu\IdeaProjects\SeleniumProject\suites" />
       <recent name="C:\Users\mibudeanu\IdeaProjects\SeleniumProject\src\test" />
     </key>
   </component>
@@ -262,7 +267,8 @@
       <workItem from="1747751586497" duration="18542000" />
       <workItem from="1747980208289" duration="14714000" />
       <workItem from="1748104302558" duration="10749000" />
-      <workItem from="1748530459977" duration="6426000" />
+      <workItem from="1748530459977" duration="8257000" />
+      <workItem from="1748586294758" duration="5520000" />
     </task>
     <task id="LOCAL-00001" summary="- created Selenium Project">
       <option name="closed" value="true" />
@@ -528,7 +534,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748533702131</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="- am adaugat maven surefire si maven compiler plugins">
+      <option name="closed" value="true" />
+      <created>1748546798030</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1748546798030</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -546,7 +560,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="- created a new PracticeFormTest.java &#10;- opened a chrome browser&#10;- maximized browser&#10;- scrolled down on the web page&#10;- declared multiple elements" />
     <MESSAGE value="- declared new elements&#10;- used javascript executor to click on element&#10;- used sendKeys Enter method" />
     <MESSAGE value="- created new class parcurgereLista" />
     <MESSAGE value="- created new class MacysWebsitePracticeTest.java" />
@@ -571,7 +584,8 @@
     <MESSAGE value="- applied inheritance" />
     <MESSAGE value="- changed elements access control from public to private &#10;- am aplicat conceptul de incapsulare tuturor claselor" />
     <MESSAGE value="- am schimbat access controlul variabilelor de instanta in Common page &#10;- am sters niste linii neutlizate de la importuri in WebTablePage&#10;- am adaugat un nou Pachet TestNG cu un nou fisier xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="- am schimbat access controlul variabilelor de instanta in Common page &#10;- am sters niste linii neutlizate de la importuri in WebTablePage&#10;- am adaugat un nou Pachet TestNG cu un nou fisier xml" />
+    <MESSAGE value="- am adaugat maven surefire si maven compiler plugins" />
+    <option name="LAST_COMMIT_MESSAGE" value="- am adaugat maven surefire si maven compiler plugins" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
