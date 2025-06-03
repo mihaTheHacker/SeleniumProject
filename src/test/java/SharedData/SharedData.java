@@ -1,5 +1,6 @@
 package SharedData;
 
+import SharedData.browser.BrowserFactory;
 import configFile.ConfigFile;
 import configFile.configNode.ConfigurationNode;
 import java.time.Duration;
@@ -14,19 +15,12 @@ public class SharedData {
 
     @BeforeMethod
 
-    public void prepareBrowser(){
+    public void prepareBrowser() {
 
-        ConfigurationNode configurationNode = ConfigFile.createConfigNode(ConfigurationNode.class);
+        driver = new BrowserFactory().getBrowserFactory();
 
-        //deschidem un browser de Chrome
-        driver = new ChromeDriver();
-        //accesam o pagina web
-        driver.get(configurationNode.driverConfigNode.url);
-        //am apelat metoda maximize() pentru a deschide browserul in modul maximize
-        driver.manage().window().maximize();
-        //definim un wait implicit pentru un interval maxim de timp
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
+
     @AfterMethod
     public void closeBrowser() {
         driver.quit();
