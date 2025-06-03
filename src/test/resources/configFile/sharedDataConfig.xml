@@ -9,9 +9,11 @@
     <Extensions>--disable-extensions</Extensions>
   </DriverConfig>
   <DatabaseConfig>
+    <ServerConfig>
     <Port></Port>
     <DatabaseName></DatabaseName>
+    <Username></Username>
     <Password></Password>
-
+    </ServerConfig>
   </DatabaseConfig>
 </configuration>
