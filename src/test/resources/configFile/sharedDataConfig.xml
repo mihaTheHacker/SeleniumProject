@@ -6,6 +6,7 @@
     <Headless>--headless</Headless>
     <Resolution>window-size=1920,1080</Resolution>
     <Gpu>--disable-gpu</Gpu>
+    <Extensions>--disable-extensions</Extensions>
   </DriverConfig>
   <DatabaseConfig>
     <Port></Port>
