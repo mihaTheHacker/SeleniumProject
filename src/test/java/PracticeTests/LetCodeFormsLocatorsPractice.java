@@ -1,4 +1,4 @@
-package Tests;
+package PracticeTests;
 
 import java.util.List;
 import org.openqa.selenium.By;

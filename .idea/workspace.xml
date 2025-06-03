@@ -4,20 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7850fae8-c0be-4e42-8498-b5ab3eb1a331" name="Changes" comment="- implement xml file on local for config&#10;- finished Lesson 15">
-      <change afterPath="$PROJECT_DIR$/src/test/java/SharedData/browser/BrowserFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SharedData/browser/BrowserType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SharedData/browser/service/BrowserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SharedData/browser/service/ChromeBrowserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SharedData/browser/service/EdgeBrowserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/configFile/configNode/DatabaseConfigNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/maven-publish.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/maven-publish.yml" afterDir="false" />
+    <list default="true" id="7850fae8-c0be-4e42-8498-b5ab3eb1a331" name="Changes" comment="- finish browser service implementation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SharedData/SharedData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SharedData/SharedData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/configFile/configNode/ConfigurationNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/configFile/configNode/ConfigurationNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/configFile/configNode/DriverConfigNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/configFile/configNode/DriverConfigNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/configFile/sharedDataConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/configFile/sharedDataConfig.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,12 +121,12 @@
       <recent name="C:\Users\mibudeanu\IdeaProjects\SeleniumProject\src\test" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.AlertTest">
-    <configuration name="AlertTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.Recursivitate">
+    <configuration name="AlertTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Tests.*" />
+          <option name="PATTERN" value="PracticeTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -155,7 +143,7 @@
       <module name="SeleniumProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Tests.*" />
+          <option name="PATTERN" value="PracticeTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -168,34 +156,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Frames.automationMethod" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="BarnesAndNobleWebsitePractice" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Tests.*" />
+          <option name="PATTERN" value="PracticeTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.Frames" />
-      <option name="METHOD_NAME" value="automationMethod" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PracticeFormTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.PracticeFormTest" />
+      <option name="MAIN_CLASS_NAME" value="PracticeTests.BarnesAndNobleWebsitePractice" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -203,7 +173,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PracticeFormTest.automationMethod" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LetCodeFormsLocatorsPractice" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="PracticeTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="PracticeTests.LetCodeFormsLocatorsPractice" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Recursivitate" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumProject" />
       <extension name="coverage">
         <pattern>
@@ -212,9 +199,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.PracticeFormTest" />
-      <option name="METHOD_NAME" value="automationMethod" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="MAIN_CLASS_NAME" value="Tests.Recursivitate" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -223,11 +209,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.Recursivitate" />
+        <item itemvalue="TestNG.LetCodeFormsLocatorsPractice" />
+        <item itemvalue="TestNG.BarnesAndNobleWebsitePractice" />
         <item itemvalue="TestNG.AlertTest" />
         <item itemvalue="TestNG.AlertTest (1)" />
-        <item itemvalue="TestNG.PracticeFormTest.automationMethod" />
-        <item itemvalue="TestNG.PracticeFormTest" />
-        <item itemvalue="TestNG.Frames.automationMethod" />
       </list>
     </recent_temporary>
   </component>
@@ -287,7 +273,7 @@
       <workItem from="1748104302558" duration="10749000" />
       <workItem from="1748530459977" duration="8257000" />
       <workItem from="1748586294758" duration="8198000" />
-      <workItem from="1748852005670" duration="16944000" />
+      <workItem from="1748852005670" duration="18689000" />
     </task>
     <task id="LOCAL-00001" summary="- created Selenium Project">
       <option name="closed" value="true" />
@@ -577,7 +563,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748628032637</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="- finish browser service implementation">
+      <option name="closed" value="true" />
+      <created>1748955643712</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1748955643712</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -595,8 +589,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="- created new class MacysWebsitePracticeTest.java" />
-    <MESSAGE value="- work in progress" />
     <MESSAGE value="Resolved LetCodeFormsLocators exercise&#10;- created a new branch LetCodeFormsLocatorsPractice&#10;- created a new class LetCodeFormsLocatorsPractice.java&#10;- found the locators for the 2 WebElements countryCodeDropdown and CountryDropdown&#10;- Iterated trough both dropdown lists, selected the chosen value and then validated with the assert methods that the chosen values were selected &#10;- I also found other elements on the page" />
     <MESSAGE value="BarnesAndNobleHomeworkExercise&#10;- created a new branch BarnesAndNobleWebsitePractice&#10;- created a new class BarnesAndNobleWebsitePractice.java&#10;- Work in progress" />
     <MESSAGE value="BarnesAndNobleHomeworkExercise&#10;- added an assert to verify that we are on the selected page" />
@@ -620,7 +612,9 @@
     <MESSAGE value="- am adaugat maven surefire si maven compiler plugins" />
     <MESSAGE value="-added space in the run command" />
     <MESSAGE value="- implement xml file on local for config&#10;- finished Lesson 15" />
-    <option name="LAST_COMMIT_MESSAGE" value="- implement xml file on local for config&#10;- finished Lesson 15" />
+    <MESSAGE value="-" />
+    <MESSAGE value="- finish browser service implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="- finish browser service implementation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
