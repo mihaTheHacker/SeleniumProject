@@ -1,7 +1,5 @@
 package Tests;
 
-import HelperMethods.ElementsMethods;
-import HelperMethods.JavascriptMethods;
 import Pages.CommonPage;
 import Pages.HomePage;
 import Pages.WebTablePage;

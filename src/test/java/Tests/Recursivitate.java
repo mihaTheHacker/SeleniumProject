@@ -1,6 +1,5 @@
 package Tests;
 
-import HelperMethods.JavascriptMethods;
 import HelperMethods.ListMethods;
 import Pages.CommonPage;
 import Pages.HomePage;
