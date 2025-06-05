@@ -1,8 +1,10 @@
 package Tests;
 
+import ObjectData.PracticeFormObject;
 import Pages.CommonPage;
 import Pages.HomePage;
 import Pages.PracticeFormPage;
+import PropertyUtility.PropertyUtility;
 import SharedData.SharedData;
 import java.util.ArrayList;
 import java.util.List;
@@ -18,6 +20,8 @@ public class PracticeFormTest extends SharedData {
     @Test
     public void automationMethod() {
 
+        PropertyUtility propertyUtility = new PropertyUtility("PracticeFormTest");
+        PracticeFormObject practiceFormObject = new PracticeFormObject(propertyUtility.getData());
         homePage = new HomePage(getDriver());
         commonPage = new CommonPage(getDriver());
         practiceFormPage = new PracticeFormPage(getDriver());
@@ -26,7 +30,7 @@ public class PracticeFormTest extends SharedData {
 
         commonPage.goToDesiredSubMenu("Practice Form");
 
-        practiceFormPage.completeFirstRegion("Mary", "Poppins", "test@test.com", "1234567890", "Sun street");
+        practiceFormPage.completeFirstRegion(practiceFormObject);
 
         practiceFormPage.completeGender("Female");
         List<String> subject = new ArrayList<String>();
