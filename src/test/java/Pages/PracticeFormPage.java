@@ -1,5 +1,6 @@
 package Pages;
 
+import ObjectData.PracticeFormObject;
 import java.util.ArrayList;
 import java.util.List;
 import org.openqa.selenium.WebDriver;
@@ -66,12 +67,12 @@ public class PracticeFormPage extends CommonPage{
     }
 
 
-    public void completeFirstRegion(String firstName, String lastName, String email, String mobileNumber, String currentAddress) {
-        elementsMethods.fillElement(firstNameField, firstName);
-        elementsMethods.fillElement(lastNameField, lastName);
-        elementsMethods.fillElement(userEmailField, email);
-        elementsMethods.fillElement(userNumberField, mobileNumber);
-        elementsMethods.fillElement(currentAddressField, currentAddress);
+    public void completeFirstRegion(PracticeFormObject practiceFormObject) {
+        elementsMethods.fillElement(firstNameField, practiceFormObject.getFirstName());
+        elementsMethods.fillElement(lastNameField, practiceFormObject.getLastName());
+        elementsMethods.fillElement(userEmailField, practiceFormObject.getEmail());
+        elementsMethods.fillElement(userNumberField, practiceFormObject.getMobileNumber());
+        elementsMethods.fillElement(currentAddressField, practiceFormObject.getcurrentAddress());
 
     }
 
