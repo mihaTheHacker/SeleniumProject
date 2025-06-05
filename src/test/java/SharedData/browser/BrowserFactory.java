@@ -26,7 +26,7 @@ public class BrowserFactory {
         else {
             browser = configurationNode.driverConfigNode.localBrowser;
         }
-
+        System.out.println("UITA-TE AICI!!! " + browser);
         switch (browser){
             case BrowserType.BROWSER_CHROME:
                 ChromeBrowserService chromeService = new ChromeBrowserService();
