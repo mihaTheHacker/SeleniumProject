@@ -6,8 +6,6 @@ import Pages.HomePage;
 import Pages.PracticeFormPage;
 import PropertyUtility.PropertyUtility;
 import SharedData.SharedData;
-import java.util.ArrayList;
-import java.util.List;
 import org.testng.annotations.Test;
 
 public class PracticeFormTest extends SharedData {
@@ -32,25 +30,25 @@ public class PracticeFormTest extends SharedData {
 
         practiceFormPage.completeFirstRegion(practiceFormObject);
 
-        practiceFormPage.completeGender("Female");
-        List<String> subject = new ArrayList<String>();
-        subject.add("English");
-        subject.add("Maths");
-        subject.add("Social Studies");
+        practiceFormPage.completeGender(practiceFormObject);
+//        List<String> subject = new ArrayList<String>();
+//        subject.add("English");
+//        subject.add("Maths");
+//        subject.add("Social Studies");
+//        javascriptMethods.jsScrollDown(0,400);
+        practiceFormPage.completeSubjectWithList(practiceFormObject);
+//        List<String> hobbies = new ArrayList<String>();
+//        hobbies.add("Sports");
+//        hobbies.add("Reading");
+//        hobbies.add("Music");
 
-        practiceFormPage.completeSubjectWithList(subject);
-        List<String> hobbies = new ArrayList<String>();
-        hobbies.add("Sports");
-        hobbies.add("Reading");
-        hobbies.add("Music");
-
-        practiceFormPage.completeHobbies(hobbies);
+        practiceFormPage.completeHobbies(practiceFormObject);
 
         practiceFormPage.uploadPicture();
 
-        practiceFormPage.selectState("NCR");
+        practiceFormPage.selectState(practiceFormObject);
 
-        practiceFormPage.selectCity("Delhi");
+        practiceFormPage.selectCity(practiceFormObject);
 
 
 //        WebElement submitButtonElement = driver.findElement(By.id("submit"));

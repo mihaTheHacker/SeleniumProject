@@ -7,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class PracticeFormPage extends CommonPage{
+public class PracticeFormPage extends CommonPage {
 
     @FindBy(id = "firstName")
     private WebElement firstNameField;
@@ -21,7 +21,7 @@ public class PracticeFormPage extends CommonPage{
     @FindBy(id = "userNumber")
     private WebElement userNumberField;
 
-//    @FindBy(xpath = "//div[@id='subjectsContainer']")
+    //    @FindBy(xpath = "//div[@id='subjectsContainer']")
 //    WebElement subjectsField;
     @FindBy(id = "subjectsInput")
     private WebElement subjectsField;
@@ -76,8 +76,8 @@ public class PracticeFormPage extends CommonPage{
 
     }
 
-    public void completeGender(String gender) {
-        switch (gender) {
+    public void completeGender(PracticeFormObject practiceFormObject) {
+        switch (practiceFormObject.getGender()) {
             case "Male":
                 elementsMethods.clickElement(maleElement);
                 break;
@@ -96,18 +96,18 @@ public class PracticeFormPage extends CommonPage{
         elementsMethods.fillWithActions(subjectsField, subject);
     }
 
-    public void completeSubjectWithList(List<String> list) {
+    public void completeSubjectWithList(PracticeFormObject practiceFormObject) {
         elementsMethods.clickElement(subjectsField);
-        elementsMethods.fillMultipleValues(subjectsField, list);
+        elementsMethods.fillMultipleValues(subjectsField, practiceFormObject.getSubject());
 
     }
 
-    public void completeHobbies(List<String> hobbies) {
+    public void completeHobbies(PracticeFormObject practiceFormObject) {
         List<WebElement> hobbiesList = new ArrayList<>();
         hobbiesList.add(SportsHobbyElement);
         hobbiesList.add(ReadingHobbyElement);
         hobbiesList.add(MusicHobbyElement);
-        elementsMethods.clickMultipleValues(hobbiesList, hobbies);
+        elementsMethods.clickMultipleValues(hobbiesList, practiceFormObject.getHobbies());
     }
 
     public void fillFirstName(String firstName) {
@@ -117,22 +117,28 @@ public class PracticeFormPage extends CommonPage{
     public void fillLastName(String lastName) {
         elementsMethods.fillElement(lastNameField, lastName);
     }
+
     public void fillEmail(String email) {
         elementsMethods.fillElement(userEmailField, email);
     }
+
     public void fillMobileNumber(String mobileNumber) {
         elementsMethods.fillElement(userNumberField, mobileNumber);
     }
+
     public void fillCurrentAddress(String currentAddress) {
         elementsMethods.fillElement(currentAddressField, currentAddress);
     }
+
     public void uploadPicture() {
         elementsMethods.uploadPicture(pictureElement);
     }
-    public void selectState(String state) {
-        javascriptMethods.sendKeys(state, stateElement);
+
+    public void selectState(PracticeFormObject practiceFormObject) {
+        javascriptMethods.sendKeys(practiceFormObject.getState(), stateElement);
     }
-    public void selectCity(String city) {
-        javascriptMethods.sendKeys(city, cityElement);
+
+    public void selectCity(PracticeFormObject practiceFormObject) {
+        javascriptMethods.sendKeys(practiceFormObject.getCity(), cityElement);
     }
 }
