@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7850fae8-c0be-4e42-8498-b5ab3eb1a331" name="Changes" comment="- Lectia 18&#10;- work in progress">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/maven-publish.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/maven-publish.yml" afterDir="false" />
+    <list default="true" id="7850fae8-c0be-4e42-8498-b5ab3eb1a331" name="Changes" comment="- Lectia 18&#10;- refactoring for Lesson 17th CiCd&#10;- added githib action to install edge">
+      <change afterPath="$PROJECT_DIR$/src/test/java/ObjectData/CommonObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SharedData/browser/BrowserFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SharedData/browser/BrowserFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/configFile/sharedDataConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/configFile/sharedDataConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/HelperMethods/ElementsMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HelperMethods/ElementsMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ObjectData/PracticeFormObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ObjectData/PracticeFormObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/PracticeFormPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/PracticeFormPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/PracticeFormTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/PracticeFormTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/InputData/PracticeFormTestData.Properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/InputData/PracticeFormTestData.Properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,8 +94,8 @@
     "TestNG.PracticeFormTest.automationMethod (3).executor": "Run",
     "TestNG.PracticeFormTest.automationMethod (4).executor": "Run",
     "TestNG.PracticeFormTest.automationMethod (5).executor": "Run",
-    "TestNG.PracticeFormTest.automationMethod.executor": "Debug",
-    "TestNG.PracticeFormTest.executor": "Debug",
+    "TestNG.PracticeFormTest.automationMethod.executor": "Run",
+    "TestNG.PracticeFormTest.executor": "Run",
     "TestNG.Recursivitate.executor": "Run",
     "TestNG.Recursivitate.parcurgereLista.executor": "Run",
     "TestNG.WebTableTest.automationMethod (1).executor": "Run",
@@ -125,7 +128,7 @@
       <recent name="C:\Users\mibudeanu\IdeaProjects\SeleniumProject\src\test" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/mibudeanu/IdeaProjects/SeleniumProject/suites/RegressionSuite.xml">
+  <component name="RunManager" selected="TestNG.PracticeFormTest">
     <configuration name="AlertTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumProject" />
       <extension name="coverage">
@@ -207,11 +210,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.PracticeFormTest" />
+        <item itemvalue="TestNG.PracticeFormTest.automationMethod" />
         <item itemvalue="TestNG.C:/Users/mibudeanu/IdeaProjects/SeleniumProject/suites/RegressionSuite.xml" />
         <item itemvalue="TestNG.FramesTest" />
         <item itemvalue="TestNG.AlertTest" />
-        <item itemvalue="TestNG.PracticeFormTest" />
-        <item itemvalue="TestNG.PracticeFormTest.automationMethod" />
       </list>
     </recent_temporary>
   </component>
@@ -275,7 +278,8 @@
       <workItem from="1749016719727" duration="9000" />
       <workItem from="1749044215739" duration="4000" />
       <workItem from="1749046551349" duration="113000" />
-      <workItem from="1749131499832" duration="7274000" />
+      <workItem from="1749131499832" duration="8014000" />
+      <workItem from="1749216541552" duration="9750000" />
     </task>
     <task id="LOCAL-00001" summary="- created Selenium Project">
       <option name="closed" value="true" />
@@ -597,7 +601,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749137519131</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="- Lectia 18&#10;- refactoring for Lesson 17th CiCd&#10;- added githib action to install edge">
+      <option name="closed" value="true" />
+      <created>1749153208468</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1749153208468</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -615,7 +627,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="AirbnbHomework&#10;- created a new package&#10;- created a new branch and new class AirbnbHomework.java&#10;- started my homework with finding the cookies container and buttons, asserted they are displayed and then asserted they are no longer displayed. &#10;- work in progress" />
     <MESSAGE value="- assert lesson" />
     <MESSAGE value="- deleted some practice lines" />
     <MESSAGE value="- created AlertTest class&#10;- defined implicit wait&#10;- defined explicit wait" />
@@ -640,7 +651,8 @@
     <MESSAGE value="- created a new package and moved 3 tests" />
     <MESSAGE value="- refactoring - removed unused imports" />
     <MESSAGE value="- Lectia 18&#10;- work in progress" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Lectia 18&#10;- work in progress" />
+    <MESSAGE value="- Lectia 18&#10;- refactoring for Lesson 17th CiCd&#10;- added githib action to install edge" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Lectia 18&#10;- refactoring for Lesson 17th CiCd&#10;- added githib action to install edge" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -649,11 +661,6 @@
           <url>file://$PROJECT_DIR$/src/test/java/SharedData/browser/service/EdgeBrowserService.java</url>
           <line>25</line>
           <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/Tests/PracticeFormTest.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/SharedData/browser/BrowserFactory.java</url>

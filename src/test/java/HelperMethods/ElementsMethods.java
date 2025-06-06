@@ -61,7 +61,7 @@ public class ElementsMethods {
     public void fillMultipleValues(WebElement element, List<String> list) {
         for (String value : list) {
             element.sendKeys(value);
-            element.sendKeys(Keys.ENTER);
+//            element.sendKeys(Keys.ENTER);
 
         }
 
