@@ -4,14 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7850fae8-c0be-4e42-8498-b5ab3eb1a331" name="Changes" comment="- Lectia 18&#10;- refactoring for Lesson 17th CiCd&#10;- added githib action to install edge">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ObjectData/CommonObject.java" afterDir="false" />
+    <list default="true" id="7850fae8-c0be-4e42-8498-b5ab3eb1a331" name="Changes" comment="- Am terminat Lectia 18">
+      <change afterPath="$PROJECT_DIR$/src/test/java/SharedData/Hooks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/logger/LoggerUtility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/log4j2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/HelperMethods/ElementsMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HelperMethods/ElementsMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ObjectData/PracticeFormObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ObjectData/PracticeFormObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/PracticeFormPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/PracticeFormPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/CommonPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/CommonPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SharedData/SharedData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SharedData/SharedData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/AlertTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/AlertTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/BrowserWindowsTabTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/BrowserWindowsTabTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/FramesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/FramesTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests/PracticeFormTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/PracticeFormTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/InputData/PracticeFormTestData.Properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/InputData/PracticeFormTestData.Properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/Recursivitate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/Recursivitate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/WebTableTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/WebTableTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +36,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Lectia-16-CICD" />
+        <entry key="$PROJECT_DIR$" value="Lectia-18-Automation-web-data-driven-testing" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -56,7 +63,7 @@
     "TestNG.AlertTest (1).executor": "Run",
     "TestNG.AlertTest.automationMethod (1).executor": "Run",
     "TestNG.AlertTest.automationMethod.executor": "Run",
-    "TestNG.AlertTest.executor": "Debug",
+    "TestNG.AlertTest.executor": "Run",
     "TestNG.BarnesAndNobleWebsitePractice.barnesAndNobleAddToCartAutomationMethod (1).executor": "Run",
     "TestNG.BarnesAndNobleWebsitePractice.barnesAndNobleAddToCartAutomationMethod (2).executor": "Run",
     "TestNG.BarnesAndNobleWebsitePractice.barnesAndNobleAddToCartAutomationMethod (3).executor": "Run",
@@ -103,7 +110,7 @@
     "TestNG.WebTableTest.automationMethod.executor": "Run",
     "TestNG.WebTableTest.executor": "Run",
     "TestNG.WebTablesTest.automationMethod.executor": "Run",
-    "git-widget-placeholder": "Lectia-18-Automation-web-data-driven-testing",
+    "git-widget-placeholder": "Lectia-19-Automation-web-logging-mechanism",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/mibudeanu/IdeaProjects/SeleniumProject/suites",
     "node.js.detected.package.eslint": "true",
@@ -128,7 +135,7 @@
       <recent name="C:\Users\mibudeanu\IdeaProjects\SeleniumProject\src\test" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.PracticeFormTest">
+  <component name="RunManager" selected="TestNG.AlertTest">
     <configuration name="AlertTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumProject" />
       <extension name="coverage">
@@ -210,19 +217,19 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.AlertTest" />
         <item itemvalue="TestNG.PracticeFormTest" />
         <item itemvalue="TestNG.PracticeFormTest.automationMethod" />
         <item itemvalue="TestNG.C:/Users/mibudeanu/IdeaProjects/SeleniumProject/suites/RegressionSuite.xml" />
         <item itemvalue="TestNG.FramesTest" />
-        <item itemvalue="TestNG.AlertTest" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.25410.129" />
-        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-IU-251.25410.129" />
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.26094.121" />
+        <option value="bundled-js-predefined-d6986cc7102b-b26f3e71634d-JavaScript-IU-251.26094.121" />
       </set>
     </attachedChunks>
   </component>
@@ -279,7 +286,10 @@
       <workItem from="1749044215739" duration="4000" />
       <workItem from="1749046551349" duration="113000" />
       <workItem from="1749131499832" duration="8014000" />
-      <workItem from="1749216541552" duration="9750000" />
+      <workItem from="1749216541552" duration="10451000" />
+      <workItem from="1749566325132" duration="2143000" />
+      <workItem from="1749732859688" duration="11000" />
+      <workItem from="1750222231368" duration="14260000" />
     </task>
     <task id="LOCAL-00001" summary="- created Selenium Project">
       <option name="closed" value="true" />
@@ -609,7 +619,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749153208468</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="- Am terminat Lectia 18">
+      <option name="closed" value="true" />
+      <created>1749240787574</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1749240787574</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -627,7 +645,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="- assert lesson" />
     <MESSAGE value="- deleted some practice lines" />
     <MESSAGE value="- created AlertTest class&#10;- defined implicit wait&#10;- defined explicit wait" />
     <MESSAGE value="- created BrowserWindowsTab class" />
@@ -652,7 +669,8 @@
     <MESSAGE value="- refactoring - removed unused imports" />
     <MESSAGE value="- Lectia 18&#10;- work in progress" />
     <MESSAGE value="- Lectia 18&#10;- refactoring for Lesson 17th CiCd&#10;- added githib action to install edge" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Lectia 18&#10;- refactoring for Lesson 17th CiCd&#10;- added githib action to install edge" />
+    <MESSAGE value="- Am terminat Lectia 18" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Am terminat Lectia 18" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -5,10 +5,10 @@ import HelperMethods.FramesMethods;
 import Pages.CommonPage;
 import Pages.FramesPage;
 import Pages.HomePage;
-import SharedData.SharedData;
+import SharedData.Hooks;
 import org.testng.annotations.Test;
 
-public class FramesTest extends SharedData {
+public class FramesTest extends Hooks {
 
     HomePage homePage;
     CommonPage commonPage;

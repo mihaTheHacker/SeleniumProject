@@ -3,10 +3,10 @@ package Tests;
 import HelperMethods.ListMethods;
 import Pages.CommonPage;
 import Pages.HomePage;
-import SharedData.SharedData;
+import SharedData.Hooks;
 import org.testng.annotations.Test;
 
-public class Recursivitate extends SharedData {
+public class Recursivitate extends Hooks {
 
     ListMethods listMethods;
     HomePage homePage;
