@@ -7,10 +7,10 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
-import SharedData.SharedData;
+import SharedData.Hooks;
 import org.testng.annotations.Test;
 
-public class WebTableTest extends SharedData {
+public class WebTableTest extends Hooks {
 
     HomePage homePage;
     CommonPage commonPage;

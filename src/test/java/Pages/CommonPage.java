@@ -7,6 +7,7 @@ import HelperMethods.JavascriptMethods;
 import HelperMethods.ListMethods;
 import HelperMethods.WindowsMethods;
 import java.util.List;
+import logger.LoggerUtility;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -40,7 +41,10 @@ public class CommonPage {
     //Facem metode specifice pentru pagina
     public void goToDesiredSubMenu(String submenu) {
         javascriptMethods.jsScrollDown(0, 400);
+        LoggerUtility.infoLog("The user scrolls down the page.");
+
         elementsMethods.selectElementFromListByText(elements, submenu);
+        LoggerUtility.infoLog("The user selects from the sub-menu the option with the value: " + submenu + ".");
     }
 
 }

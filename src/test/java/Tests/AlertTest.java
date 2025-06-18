@@ -3,10 +3,10 @@ package Tests;
 import Pages.AlertTestPage;
 import Pages.CommonPage;
 import Pages.HomePage;
-import SharedData.SharedData;
+import SharedData.Hooks;
 import org.testng.annotations.Test;
 
-public class AlertTest extends SharedData {
+public class AlertTest extends Hooks {
 
     CommonPage commonPage;
     HomePage homePage;

@@ -5,10 +5,10 @@ import Pages.CommonPage;
 import Pages.HomePage;
 import Pages.PracticeFormPage;
 import PropertyUtility.PropertyUtility;
-import SharedData.SharedData;
+import SharedData.Hooks;
 import org.testng.annotations.Test;
 
-public class PracticeFormTest extends SharedData {
+public class PracticeFormTest extends Hooks {
 
     HomePage homePage;
     CommonPage commonPage;

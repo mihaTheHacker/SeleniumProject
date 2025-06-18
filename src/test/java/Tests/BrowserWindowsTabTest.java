@@ -4,10 +4,10 @@ import HelperMethods.WindowsMethods;
 import Pages.BrowserWindowsTabPge;
 import Pages.CommonPage;
 import Pages.HomePage;
-import SharedData.SharedData;
+import SharedData.Hooks;
 import org.testng.annotations.Test;
 
-public class BrowserWindowsTabTest extends SharedData {
+public class BrowserWindowsTabTest extends Hooks {
 
     WindowsMethods windowsMethods;
     CommonPage commonPage;
