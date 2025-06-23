@@ -25,7 +25,6 @@ public class PropertyUtility {
 
     }
 
-
     public HashMap<String, String> getData() {
         HashMap<String, String> testData = new HashMap<>();
 
