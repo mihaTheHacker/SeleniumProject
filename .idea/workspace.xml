@@ -4,12 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7850fae8-c0be-4e42-8498-b5ab3eb1a331" name="Changes" comment="- am inceput Lectia 19">
+    <list default="true" id="7850fae8-c0be-4e42-8498-b5ab3eb1a331" name="Changes" comment="- am terminat Lectia 19">
+      <change afterPath="$PROJECT_DIR$/src/test/java/extentUtility/ExtentUtility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/extentUtility/ReportStep.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PropertyUtility/PropertyUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PropertyUtility/PropertyUtility.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/SharedData/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SharedData/Hooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/logger/LoggerUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/logger/LoggerUtility.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/configFile/sharedDataConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/configFile/sharedDataConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/log4j2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/AlertTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/AlertTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/FramesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/FramesTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +30,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Lectia-18-Automation-web-data-driven-testing" />
+        <entry key="$PROJECT_DIR$" value="Lectia-19-Automation-web-logging-mechanism" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -73,7 +76,7 @@
     "TestNG.Frames.automationMethod.executor": "Run",
     "TestNG.Frames.executor": "Run",
     "TestNG.FramesTest.automationMethod.executor": "Run",
-    "TestNG.FramesTest.executor": "Debug",
+    "TestNG.FramesTest.executor": "Run",
     "TestNG.LetCodeFormsLocatorsPractice.executor": "Run",
     "TestNG.LetCodeFormsLocatorsPractice.findLocators (1).executor": "Run",
     "TestNG.LetCodeFormsLocatorsPractice.findLocators (2).executor": "Run",
@@ -102,7 +105,7 @@
     "TestNG.WebTableTest.automationMethod.executor": "Run",
     "TestNG.WebTableTest.executor": "Run",
     "TestNG.WebTablesTest.automationMethod.executor": "Run",
-    "git-widget-placeholder": "Lectia-19-Automation-web-logging-mechanism",
+    "git-widget-placeholder": "Lectia-20-Automation-web-reporting-mechanism",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/mibudeanu/IdeaProjects/SeleniumProject/suites",
     "node.js.detected.package.eslint": "true",
@@ -128,7 +131,7 @@
       <recent name="C:\Users\mibudeanu\IdeaProjects\SeleniumProject\src\test" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/mibudeanu/IdeaProjects/SeleniumProject/suites/RegressionSuite.xml">
+  <component name="RunManager" selected="TestNG.C:/Users/mibudeanu/IdeaProjects/SeleniumProject/suites/SmokeSuite.xml">
     <configuration name="AlertTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumProject" />
       <extension name="coverage">
@@ -166,6 +169,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FramesTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.FramesTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PracticeFormTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumProject" />
       <extension name="coverage">
@@ -183,31 +203,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PracticeFormTest.automationMethod" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.PracticeFormTest" />
-      <option name="METHOD_NAME" value="automationMethod" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.C:/Users/mibudeanu/IdeaProjects/SeleniumProject/suites/RegressionSuite.xml" />
         <item itemvalue="TestNG.C:/Users/mibudeanu/IdeaProjects/SeleniumProject/suites/SmokeSuite.xml" />
+        <item itemvalue="TestNG.FramesTest" />
+        <item itemvalue="TestNG.C:/Users/mibudeanu/IdeaProjects/SeleniumProject/suites/RegressionSuite.xml" />
         <item itemvalue="TestNG.AlertTest" />
         <item itemvalue="TestNG.PracticeFormTest" />
-        <item itemvalue="TestNG.PracticeFormTest.automationMethod" />
       </list>
     </recent_temporary>
   </component>
@@ -277,7 +279,9 @@
       <workItem from="1749732859688" duration="11000" />
       <workItem from="1750222231368" duration="14801000" />
       <workItem from="1750253423792" duration="2799000" />
-      <workItem from="1750310922078" duration="12955000" />
+      <workItem from="1750310922078" duration="14418000" />
+      <workItem from="1750419465091" duration="10063000" />
+      <workItem from="1750661436941" duration="5308000" />
     </task>
     <task id="LOCAL-00001" summary="- created Selenium Project">
       <option name="closed" value="true" />
@@ -623,7 +627,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750242785340</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="- am terminat Lectia 19">
+      <option name="closed" value="true" />
+      <created>1750337751316</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1750337751316</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -641,7 +653,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="- created AlertTest class&#10;- defined implicit wait&#10;- defined explicit wait" />
     <MESSAGE value="- created BrowserWindowsTab class" />
     <MESSAGE value="- created Frames class" />
     <MESSAGE value="- created Helper methods package&#10;- refactoring alertMethods and ElementsMethods" />
@@ -666,7 +677,8 @@
     <MESSAGE value="- Lectia 18&#10;- refactoring for Lesson 17th CiCd&#10;- added githib action to install edge" />
     <MESSAGE value="- Am terminat Lectia 18" />
     <MESSAGE value="- am inceput Lectia 18" />
-    <option name="LAST_COMMIT_MESSAGE" value="- am inceput Lectia 18" />
+    <MESSAGE value="- am terminat Lectia 19" />
+    <option name="LAST_COMMIT_MESSAGE" value="- am terminat Lectia 19" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
