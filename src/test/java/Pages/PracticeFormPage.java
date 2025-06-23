@@ -141,4 +141,8 @@ public class PracticeFormPage extends CommonPage {
     public void selectCity(PracticeFormObject practiceFormObject) {
         javascriptMethods.sendKeys(practiceFormObject.getCity(), cityElement);
     }
+
+    public void clickSubmitButton() {
+        elementsMethods.clickElement(submitButtonElement);
+    }
 }

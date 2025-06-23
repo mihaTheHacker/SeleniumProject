@@ -5,8 +5,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 public class AlertTestPage extends CommonPage {
 
-
-
     @FindBy(id = "alertButton")
     private static WebElement alertButton;
     @FindBy(id= "timerAlertButton")

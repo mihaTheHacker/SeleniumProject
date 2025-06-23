@@ -5,6 +5,8 @@ import Pages.BrowserWindowsTabPge;
 import Pages.CommonPage;
 import Pages.HomePage;
 import SharedData.Hooks;
+import extentUtility.ExtentUtility;
+import extentUtility.ReportStep;
 import org.testng.annotations.Test;
 
 public class BrowserWindowsTabTest extends Hooks {
@@ -23,46 +25,19 @@ public class BrowserWindowsTabTest extends Hooks {
         homePage = new HomePage(getDriver());
         browserWindowsTabpge = new BrowserWindowsTabPge(getDriver());
 
-
-        //facem un scroll in jos
-//        javascriptMethods.jsScrollDown(0, 400);
-//
-//        WebElement alertFrameWindowElement = driver.findElement(By.xpath("//h5[text()='Alerts, Frame & Windows']"));
-//        elementsMethods.clickElement(alertFrameWindowElement);
         homePage.goToDesiredMenu("Alerts, Frame & Windows");
+        ExtentUtility.attachLog(ReportStep.PASS_STEP, "The user enters on Alerts, Frame & Windows menu");
 
-//        WebElement browserWindowsElement = driver.findElement(By.xpath("//span[text()='Browser Windows']"));
-//        elementsMethods.clickElement(browserWindowsElement);
         commonPage.goToDesiredSubMenu("Browser Windows");
+        ExtentUtility.attachLog(ReportStep.PASS_STEP, "The user enters on Browser Windows sub-menu");
 
         browserWindowsTabpge.doNewTabTest();
-
-//        WebElement tabElement = driver.findElement(By.id("tabButton"));
-//        elementsMethods.clickElement(tabElement);
-
-//        List<String> tabList = new ArrayList<>(driver.getWindowHandles());
-//        driver.switchTo().window(tabList.get(1));
-
-//        WebElement sampleHeadingElement = driver.findElement(By.id("sampleHeading"));
-//        System.out.println("Textul din new tab este:  " + sampleHeadingElement.getText());
-//        windowsMethods.closeWindow();
-//
-//        driver.switchTo().window(tabList.get(0));
+        ExtentUtility.attachLog(ReportStep.PASS_STEP, "The user opens a new tab");
 
         browserWindowsTabpge.doNewWindowTest();
-//        WebElement windowButtonElement = driver.findElement(By.id("windowButton"));
-//        elementsMethods.clickElement(windowButtonElement);
+        ExtentUtility.attachLog(ReportStep.PASS_STEP, "The user opens a new window");
 
-//        List<String> windowList = new ArrayList<>(driver.getWindowHandles());
-//        driver.switchTo().window(windowList.get(1));
 
-//        WebElement windowButtonElement = driver.findElement(By.id("messageWindowButton"));
-//        elementsMethods.clickElement(windowButtonElement);
-//        windowsMethods.switchToWindowByIndex(1);
-//        WebElement bodyElement = driver.findElement(By.cssSelector("body"));
-//        System.out.println("Mesajul din new window este:  " + bodyElement.getText());
-//        windowsMethods.closeWindow();
-//        windowsMethods.switchToWindowByIndex(0);
 
     }
 }
