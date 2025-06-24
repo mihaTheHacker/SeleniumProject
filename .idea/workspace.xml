@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7850fae8-c0be-4e42-8498-b5ab3eb1a331" name="Changes" comment="- updated version of upload-artifact from v2 to v4" />
+    <list default="true" id="7850fae8-c0be-4e42-8498-b5ab3eb1a331" name="Changes" comment="- updated version of upload-artifact from v4 to v3">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/maven-publish.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/maven-publish.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +21,19 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="Lectia-19-Automation-web-logging-mechanism" />
@@ -276,15 +291,7 @@
       <workItem from="1750253423792" duration="2799000" />
       <workItem from="1750310922078" duration="14418000" />
       <workItem from="1750419465091" duration="10063000" />
-      <workItem from="1750661436941" duration="27178000" />
-    </task>
-    <task id="LOCAL-00001" summary="- created Selenium Project">
-      <option name="closed" value="true" />
-      <created>1733412572363</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1733412572364</updated>
+      <workItem from="1750661436941" duration="27416000" />
     </task>
     <task id="LOCAL-00002" summary="- created WebTableTest">
       <option name="closed" value="true" />
@@ -670,7 +677,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750753581005</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="- updated version of upload-artifact from v4 to v3">
+      <option name="closed" value="true" />
+      <created>1750754440873</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1750754440873</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -688,7 +703,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="&#10;- finished my homework by refactoring the code using helper method classes and reusable helper methods" />
     <MESSAGE value="&#10;- removed extra lines of code" />
     <MESSAGE value="- Created a new branch POMLesson11&#10;- Created new Object classes CommonPage.java and HomePage.java&#10;- refactored code using page objects" />
     <MESSAGE value="- Created a new branch RefactoringRecursivitateHomework&#10;- created a new helper class, &quot;ListMethods.java&quot; &#10;- finished my homework from lesson 11, I refactored class Recursivitate.java" />
@@ -713,7 +727,8 @@
     <MESSAGE value="- work in progress session 20&#10;- created a new Object class &quot;WebTableObject&quot;&#10;- created a new file &quot;WebTableTestData.properties&quot;&#10;- refactored &quot;WebTablePage&quot; class, used encapsulation - used WebTableObject&#10;- refactored Test classes by adding logs to the extentReports" />
     <MESSAGE value="- finished session 20&#10;- refactored &quot;AlertTestPage&quot; and &quot;FramesPage&quot; classes by adding logs to the extentReports&#10;- finished report utility and improved logs" />
     <MESSAGE value="- updated version of upload-artifact from v2 to v4" />
-    <option name="LAST_COMMIT_MESSAGE" value="- updated version of upload-artifact from v2 to v4" />
+    <MESSAGE value="- updated version of upload-artifact from v4 to v3" />
+    <option name="LAST_COMMIT_MESSAGE" value="- updated version of upload-artifact from v4 to v3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
