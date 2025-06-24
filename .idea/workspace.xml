@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7850fae8-c0be-4e42-8498-b5ab3eb1a331" name="Changes" comment="- updated version of upload-artifact from v4 to v3">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/maven-publish.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/maven-publish.yml" afterDir="false" />
-    </list>
+    <list default="true" id="7850fae8-c0be-4e42-8498-b5ab3eb1a331" name="Changes" comment="- updated version of upload-artifact from v3 to v4" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -291,15 +289,7 @@
       <workItem from="1750253423792" duration="2799000" />
       <workItem from="1750310922078" duration="14418000" />
       <workItem from="1750419465091" duration="10063000" />
-      <workItem from="1750661436941" duration="27416000" />
-    </task>
-    <task id="LOCAL-00002" summary="- created WebTableTest">
-      <option name="closed" value="true" />
-      <created>1733418998488</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1733418998488</updated>
+      <workItem from="1750661436941" duration="28031000" />
     </task>
     <task id="LOCAL-00003" summary="- created WebTableTest">
       <option name="closed" value="true" />
@@ -685,7 +675,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750754440873</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="- updated version of upload-artifact from v3 to v4">
+      <option name="closed" value="true" />
+      <created>1750754624896</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1750754624896</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -703,7 +701,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="&#10;- removed extra lines of code" />
     <MESSAGE value="- Created a new branch POMLesson11&#10;- Created new Object classes CommonPage.java and HomePage.java&#10;- refactored code using page objects" />
     <MESSAGE value="- Created a new branch RefactoringRecursivitateHomework&#10;- created a new helper class, &quot;ListMethods.java&quot; &#10;- finished my homework from lesson 11, I refactored class Recursivitate.java" />
     <MESSAGE value="- Created a new branch OOPLesson 12&#10;- Created a new class SharedData.java from lesson 12&#10;- I realised I missed Lesson 11, so I went back and created new classes: FramesPage.java, WebTablePage.java, AlertTestPage.java, BrowserWindowsTabPge.java following the POM principle -" />
@@ -728,7 +725,8 @@
     <MESSAGE value="- finished session 20&#10;- refactored &quot;AlertTestPage&quot; and &quot;FramesPage&quot; classes by adding logs to the extentReports&#10;- finished report utility and improved logs" />
     <MESSAGE value="- updated version of upload-artifact from v2 to v4" />
     <MESSAGE value="- updated version of upload-artifact from v4 to v3" />
-    <option name="LAST_COMMIT_MESSAGE" value="- updated version of upload-artifact from v4 to v3" />
+    <MESSAGE value="- updated version of upload-artifact from v3 to v4" />
+    <option name="LAST_COMMIT_MESSAGE" value="- updated version of upload-artifact from v3 to v4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
