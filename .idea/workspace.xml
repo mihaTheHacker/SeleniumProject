@@ -4,17 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7850fae8-c0be-4e42-8498-b5ab3eb1a331" name="Changes" comment="- started Session 20&#10;- added extent reporting">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ObjectData/WebTableObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/InputData/WebTableTestData.Properties" afterDir="false" />
+    <list default="true" id="7850fae8-c0be-4e42-8498-b5ab3eb1a331" name="Changes" comment="- work in progress session 20&#10;- created a new Object class &quot;WebTableObject&quot;&#10;- created a new file &quot;WebTableTestData.properties&quot;&#10;- refactored &quot;WebTablePage&quot; class, used encapsulation - used WebTableObject&#10;- refactored Test classes by adding logs to the extentReports">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/maven-publish.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/maven-publish.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Pages/AlertTestPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/AlertTestPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/PracticeFormPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/PracticeFormPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/WebTablePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/WebTablePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/BrowserWindowsTabTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/BrowserWindowsTabTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/PracticeFormTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/PracticeFormTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/Recursivitate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/Recursivitate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/WebTableTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/WebTableTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/FramesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/FramesPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -287,7 +281,7 @@
       <workItem from="1750253423792" duration="2799000" />
       <workItem from="1750310922078" duration="14418000" />
       <workItem from="1750419465091" duration="10063000" />
-      <workItem from="1750661436941" duration="20790000" />
+      <workItem from="1750661436941" duration="25978000" />
     </task>
     <task id="LOCAL-00001" summary="- created Selenium Project">
       <option name="closed" value="true" />
@@ -649,7 +643,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750666827839</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="- work in progress session 20&#10;- created a new Object class &quot;WebTableObject&quot;&#10;- created a new file &quot;WebTableTestData.properties&quot;&#10;- refactored &quot;WebTablePage&quot; class, used encapsulation - used WebTableObject&#10;- refactored Test classes by adding logs to the extentReports">
+      <option name="closed" value="true" />
+      <created>1750692464707</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1750692464707</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -667,7 +669,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="- created Frames class" />
     <MESSAGE value="- created Helper methods package&#10;- refactoring alertMethods and ElementsMethods" />
     <MESSAGE value="- created Helper methods package and classes &#10;- did my homework, in class PracticeFormTest.java I went through the list of 6 elements using the helper method &quot;selectElementFromListByText&quot; from ElementsMethods.java class&#10;- I'm working on my homework by refactoring the code using helper method classes and reusable helper methods&#10;- work in progress" />
     <MESSAGE value="&#10;- finished my homework by refactoring the code using helper method classes and reusable helper methods" />
@@ -692,7 +693,8 @@
     <MESSAGE value="- am inceput Lectia 18" />
     <MESSAGE value="- am terminat Lectia 19" />
     <MESSAGE value="- started Session 20&#10;- added extent reporting" />
-    <option name="LAST_COMMIT_MESSAGE" value="- started Session 20&#10;- added extent reporting" />
+    <MESSAGE value="- work in progress session 20&#10;- created a new Object class &quot;WebTableObject&quot;&#10;- created a new file &quot;WebTableTestData.properties&quot;&#10;- refactored &quot;WebTablePage&quot; class, used encapsulation - used WebTableObject&#10;- refactored Test classes by adding logs to the extentReports" />
+    <option name="LAST_COMMIT_MESSAGE" value="- work in progress session 20&#10;- created a new Object class &quot;WebTableObject&quot;&#10;- created a new file &quot;WebTableTestData.properties&quot;&#10;- refactored &quot;WebTablePage&quot; class, used encapsulation - used WebTableObject&#10;- refactored Test classes by adding logs to the extentReports" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
