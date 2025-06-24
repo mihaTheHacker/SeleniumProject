@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7850fae8-c0be-4e42-8498-b5ab3eb1a331" name="Changes" comment="- removed extra empty space">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/maven-publish.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/maven-publish.yml" afterDir="false" />
+    <list default="true" id="7850fae8-c0be-4e42-8498-b5ab3eb1a331" name="Changes" comment="- changed target log path name">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -292,23 +291,7 @@
       <workItem from="1750253423792" duration="2799000" />
       <workItem from="1750310922078" duration="14418000" />
       <workItem from="1750419465091" duration="10063000" />
-      <workItem from="1750661436941" duration="28999000" />
-    </task>
-    <task id="LOCAL-00004" summary="- moved resources folder from Main to Tests package&#10;- added an image to the resources folder   &#10;- declared a new element(pictureElement)&#10;- imported class File&#10;- created a File instance in order to get the absolute path">
-      <option name="closed" value="true" />
-      <created>1734612841491</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1734612841491</updated>
-    </task>
-    <task id="LOCAL-00005" summary="- created a new PracticeFormTest.java &#10;- opened a chrome browser&#10;- maximized browser&#10;- scrolled down on the web page&#10;- declared multiple elements">
-      <option name="closed" value="true" />
-      <created>1737034103220</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1737034103220</updated>
+      <workItem from="1750661436941" duration="30482000" />
     </task>
     <task id="LOCAL-00006" summary="- declared new elements&#10;- used javascript executor to click on element&#10;- used sendKeys Enter method">
       <option name="closed" value="true" />
@@ -686,7 +669,23 @@
       <option name="project" value="LOCAL" />
       <updated>1750755515389</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="- renamed path">
+      <option name="closed" value="true" />
+      <created>1750756330840</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1750756330840</updated>
+    </task>
+    <task id="LOCAL-00054" summary="- changed target log path name">
+      <option name="closed" value="true" />
+      <created>1750756930447</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1750756930447</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -704,8 +703,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="- Created a new branch RefactoringRecursivitateHomework&#10;- created a new helper class, &quot;ListMethods.java&quot; &#10;- finished my homework from lesson 11, I refactored class Recursivitate.java" />
-    <MESSAGE value="- Created a new branch OOPLesson 12&#10;- Created a new class SharedData.java from lesson 12&#10;- I realised I missed Lesson 11, so I went back and created new classes: FramesPage.java, WebTablePage.java, AlertTestPage.java, BrowserWindowsTabPge.java following the POM principle -" />
     <MESSAGE value="- Cleaned all test classes - deleted comments" />
     <MESSAGE value="- applied inheritance" />
     <MESSAGE value="- changed elements access control from public to private &#10;- am aplicat conceptul de incapsulare tuturor claselor" />
@@ -729,7 +726,9 @@
     <MESSAGE value="- updated version of upload-artifact from v4 to v3" />
     <MESSAGE value="- updated version of upload-artifact from v3 to v4" />
     <MESSAGE value="- removed extra empty space" />
-    <option name="LAST_COMMIT_MESSAGE" value="- removed extra empty space" />
+    <MESSAGE value="- renamed path" />
+    <MESSAGE value="- changed target log path name" />
+    <option name="LAST_COMMIT_MESSAGE" value="- changed target log path name" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
