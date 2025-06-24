@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7850fae8-c0be-4e42-8498-b5ab3eb1a331" name="Changes" comment="- updated version of upload-artifact from v3 to v4" />
+    <list default="true" id="7850fae8-c0be-4e42-8498-b5ab3eb1a331" name="Changes" comment="- removed extra empty space">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/maven-publish.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/maven-publish.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -289,15 +292,7 @@
       <workItem from="1750253423792" duration="2799000" />
       <workItem from="1750310922078" duration="14418000" />
       <workItem from="1750419465091" duration="10063000" />
-      <workItem from="1750661436941" duration="28031000" />
-    </task>
-    <task id="LOCAL-00003" summary="- created WebTableTest">
-      <option name="closed" value="true" />
-      <created>1734608305953</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1734608305953</updated>
+      <workItem from="1750661436941" duration="28999000" />
     </task>
     <task id="LOCAL-00004" summary="- moved resources folder from Main to Tests package&#10;- added an image to the resources folder   &#10;- declared a new element(pictureElement)&#10;- imported class File&#10;- created a File instance in order to get the absolute path">
       <option name="closed" value="true" />
@@ -683,7 +678,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750754624896</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="- removed extra empty space">
+      <option name="closed" value="true" />
+      <created>1750755515389</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1750755515389</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -701,7 +704,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="- Created a new branch POMLesson11&#10;- Created new Object classes CommonPage.java and HomePage.java&#10;- refactored code using page objects" />
     <MESSAGE value="- Created a new branch RefactoringRecursivitateHomework&#10;- created a new helper class, &quot;ListMethods.java&quot; &#10;- finished my homework from lesson 11, I refactored class Recursivitate.java" />
     <MESSAGE value="- Created a new branch OOPLesson 12&#10;- Created a new class SharedData.java from lesson 12&#10;- I realised I missed Lesson 11, so I went back and created new classes: FramesPage.java, WebTablePage.java, AlertTestPage.java, BrowserWindowsTabPge.java following the POM principle -" />
     <MESSAGE value="- Cleaned all test classes - deleted comments" />
@@ -726,7 +728,8 @@
     <MESSAGE value="- updated version of upload-artifact from v2 to v4" />
     <MESSAGE value="- updated version of upload-artifact from v4 to v3" />
     <MESSAGE value="- updated version of upload-artifact from v3 to v4" />
-    <option name="LAST_COMMIT_MESSAGE" value="- updated version of upload-artifact from v3 to v4" />
+    <MESSAGE value="- removed extra empty space" />
+    <option name="LAST_COMMIT_MESSAGE" value="- removed extra empty space" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
