@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7850fae8-c0be-4e42-8498-b5ab3eb1a331" name="Changes" comment="- work in progress session 20&#10;- created a new Object class &quot;WebTableObject&quot;&#10;- created a new file &quot;WebTableTestData.properties&quot;&#10;- refactored &quot;WebTablePage&quot; class, used encapsulation - used WebTableObject&#10;- refactored Test classes by adding logs to the extentReports">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/maven-publish.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/maven-publish.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/AlertTestPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/AlertTestPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/FramesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/FramesPage.java" afterDir="false" />
-    </list>
+    <list default="true" id="7850fae8-c0be-4e42-8498-b5ab3eb1a331" name="Changes" comment="- updated version of upload-artifact from v2 to v4" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -281,7 +276,7 @@
       <workItem from="1750253423792" duration="2799000" />
       <workItem from="1750310922078" duration="14418000" />
       <workItem from="1750419465091" duration="10063000" />
-      <workItem from="1750661436941" duration="25978000" />
+      <workItem from="1750661436941" duration="26378000" />
     </task>
     <task id="LOCAL-00001" summary="- created Selenium Project">
       <option name="closed" value="true" />
@@ -651,7 +646,23 @@
       <option name="project" value="LOCAL" />
       <updated>1750692464707</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="- finished session 20&#10;- refactored &quot;AlertTestPage&quot; and &quot;FramesPage&quot; classes by adding logs to the extentReports&#10;- finished report utility and improved logs">
+      <option name="closed" value="true" />
+      <created>1750753218311</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1750753218311</updated>
+    </task>
+    <task id="LOCAL-00048" summary="- updated version of upload-artifact from v2 to v4">
+      <option name="closed" value="true" />
+      <created>1750753497217</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1750753497217</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -669,8 +680,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="- created Helper methods package&#10;- refactoring alertMethods and ElementsMethods" />
-    <MESSAGE value="- created Helper methods package and classes &#10;- did my homework, in class PracticeFormTest.java I went through the list of 6 elements using the helper method &quot;selectElementFromListByText&quot; from ElementsMethods.java class&#10;- I'm working on my homework by refactoring the code using helper method classes and reusable helper methods&#10;- work in progress" />
     <MESSAGE value="&#10;- finished my homework by refactoring the code using helper method classes and reusable helper methods" />
     <MESSAGE value="&#10;- removed extra lines of code" />
     <MESSAGE value="- Created a new branch POMLesson11&#10;- Created new Object classes CommonPage.java and HomePage.java&#10;- refactored code using page objects" />
@@ -694,7 +703,9 @@
     <MESSAGE value="- am terminat Lectia 19" />
     <MESSAGE value="- started Session 20&#10;- added extent reporting" />
     <MESSAGE value="- work in progress session 20&#10;- created a new Object class &quot;WebTableObject&quot;&#10;- created a new file &quot;WebTableTestData.properties&quot;&#10;- refactored &quot;WebTablePage&quot; class, used encapsulation - used WebTableObject&#10;- refactored Test classes by adding logs to the extentReports" />
-    <option name="LAST_COMMIT_MESSAGE" value="- work in progress session 20&#10;- created a new Object class &quot;WebTableObject&quot;&#10;- created a new file &quot;WebTableTestData.properties&quot;&#10;- refactored &quot;WebTablePage&quot; class, used encapsulation - used WebTableObject&#10;- refactored Test classes by adding logs to the extentReports" />
+    <MESSAGE value="- finished session 20&#10;- refactored &quot;AlertTestPage&quot; and &quot;FramesPage&quot; classes by adding logs to the extentReports&#10;- finished report utility and improved logs" />
+    <MESSAGE value="- updated version of upload-artifact from v2 to v4" />
+    <option name="LAST_COMMIT_MESSAGE" value="- updated version of upload-artifact from v2 to v4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
