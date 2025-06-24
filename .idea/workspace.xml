@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7850fae8-c0be-4e42-8498-b5ab3eb1a331" name="Changes" comment="- am terminat Lectia 19">
-      <change afterPath="$PROJECT_DIR$/src/test/java/extentUtility/ExtentUtility.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/extentUtility/ReportStep.java" afterDir="false" />
+    <list default="true" id="7850fae8-c0be-4e42-8498-b5ab3eb1a331" name="Changes" comment="- work in progress session 20&#10;- created a new Object class &quot;WebTableObject&quot;&#10;- created a new file &quot;WebTableTestData.properties&quot;&#10;- refactored &quot;WebTablePage&quot; class, used encapsulation - used WebTableObject&#10;- refactored Test classes by adding logs to the extentReports">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/maven-publish.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/maven-publish.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PropertyUtility/PropertyUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PropertyUtility/PropertyUtility.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SharedData/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SharedData/Hooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/AlertTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/AlertTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/FramesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/FramesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/AlertTestPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/AlertTestPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/FramesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/FramesPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +65,7 @@
     "TestNG.BrowserWindowsTab.automationMethod (3).executor": "Run",
     "TestNG.BrowserWindowsTab.automationMethod.executor": "Debug",
     "TestNG.BrowserWindowsTab.executor": "Run",
+    "TestNG.BrowserWindowsTabTest.automationMethod.executor": "Run",
     "TestNG.BrowserWindowsTabTest.executor": "Run",
     "TestNG.C:/Users/mibudeanu/IdeaProjects/SeleniumProject/src/test/java/TestNG/testng_pachete.xml.executor": "Run",
     "TestNG.C:/Users/mibudeanu/IdeaProjects/SeleniumProject/suites/RegressionSuite.xml.executor": "Run",
@@ -107,7 +104,7 @@
     "TestNG.WebTablesTest.automationMethod.executor": "Run",
     "git-widget-placeholder": "Lectia-20-Automation-web-reporting-mechanism",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/mibudeanu/IdeaProjects/SeleniumProject/suites",
+    "last_opened_file_path": "C:/Users/mibudeanu/IdeaProjects/SeleniumProject/src/test/resources/InputData",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -123,6 +120,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\mibudeanu\IdeaProjects\SeleniumProject\src\test\resources\InputData" />
       <recent name="C:\Users\mibudeanu\IdeaProjects\SeleniumProject\suites" />
       <recent name="C:\Users\mibudeanu\IdeaProjects\SeleniumProject\src\test\resources" />
     </key>
@@ -131,24 +129,7 @@
       <recent name="C:\Users\mibudeanu\IdeaProjects\SeleniumProject\src\test" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/mibudeanu/IdeaProjects/SeleniumProject/suites/SmokeSuite.xml">
-    <configuration name="AlertTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.AlertTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.C:/Users/mibudeanu/IdeaProjects/SeleniumProject/suites/RegressionSuite.xml">
     <configuration name="C:/Users/mibudeanu/IdeaProjects/SeleniumProject/suites/RegressionSuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumProject" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/suites/RegressionSuite.xml" />
@@ -169,24 +150,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FramesTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.FramesTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PracticeFormTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="PracticeFormTest.automationMethod" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumProject" />
       <extension name="coverage">
         <pattern>
@@ -196,7 +160,43 @@
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
       <option name="MAIN_CLASS_NAME" value="Tests.PracticeFormTest" />
+      <option name="METHOD_NAME" value="automationMethod" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebTableTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.WebTableTest" />
       <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebTableTest.automationMethod" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.WebTableTest" />
+      <option name="METHOD_NAME" value="automationMethod" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -205,11 +205,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.C:/Users/mibudeanu/IdeaProjects/SeleniumProject/suites/SmokeSuite.xml" />
-        <item itemvalue="TestNG.FramesTest" />
         <item itemvalue="TestNG.C:/Users/mibudeanu/IdeaProjects/SeleniumProject/suites/RegressionSuite.xml" />
-        <item itemvalue="TestNG.AlertTest" />
-        <item itemvalue="TestNG.PracticeFormTest" />
+        <item itemvalue="TestNG.WebTableTest" />
+        <item itemvalue="TestNG.C:/Users/mibudeanu/IdeaProjects/SeleniumProject/suites/SmokeSuite.xml" />
+        <item itemvalue="TestNG.WebTableTest.automationMethod" />
+        <item itemvalue="TestNG.PracticeFormTest.automationMethod" />
       </list>
     </recent_temporary>
   </component>
@@ -281,7 +281,7 @@
       <workItem from="1750253423792" duration="2799000" />
       <workItem from="1750310922078" duration="14418000" />
       <workItem from="1750419465091" duration="10063000" />
-      <workItem from="1750661436941" duration="5308000" />
+      <workItem from="1750661436941" duration="25978000" />
     </task>
     <task id="LOCAL-00001" summary="- created Selenium Project">
       <option name="closed" value="true" />
@@ -635,7 +635,23 @@
       <option name="project" value="LOCAL" />
       <updated>1750337751316</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="- started Session 20&#10;- added extent reporting">
+      <option name="closed" value="true" />
+      <created>1750666827838</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1750666827839</updated>
+    </task>
+    <task id="LOCAL-00046" summary="- work in progress session 20&#10;- created a new Object class &quot;WebTableObject&quot;&#10;- created a new file &quot;WebTableTestData.properties&quot;&#10;- refactored &quot;WebTablePage&quot; class, used encapsulation - used WebTableObject&#10;- refactored Test classes by adding logs to the extentReports">
+      <option name="closed" value="true" />
+      <created>1750692464707</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1750692464707</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -653,8 +669,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="- created BrowserWindowsTab class" />
-    <MESSAGE value="- created Frames class" />
     <MESSAGE value="- created Helper methods package&#10;- refactoring alertMethods and ElementsMethods" />
     <MESSAGE value="- created Helper methods package and classes &#10;- did my homework, in class PracticeFormTest.java I went through the list of 6 elements using the helper method &quot;selectElementFromListByText&quot; from ElementsMethods.java class&#10;- I'm working on my homework by refactoring the code using helper method classes and reusable helper methods&#10;- work in progress" />
     <MESSAGE value="&#10;- finished my homework by refactoring the code using helper method classes and reusable helper methods" />
@@ -678,7 +692,9 @@
     <MESSAGE value="- Am terminat Lectia 18" />
     <MESSAGE value="- am inceput Lectia 18" />
     <MESSAGE value="- am terminat Lectia 19" />
-    <option name="LAST_COMMIT_MESSAGE" value="- am terminat Lectia 19" />
+    <MESSAGE value="- started Session 20&#10;- added extent reporting" />
+    <MESSAGE value="- work in progress session 20&#10;- created a new Object class &quot;WebTableObject&quot;&#10;- created a new file &quot;WebTableTestData.properties&quot;&#10;- refactored &quot;WebTablePage&quot; class, used encapsulation - used WebTableObject&#10;- refactored Test classes by adding logs to the extentReports" />
+    <option name="LAST_COMMIT_MESSAGE" value="- work in progress session 20&#10;- created a new Object class &quot;WebTableObject&quot;&#10;- created a new file &quot;WebTableTestData.properties&quot;&#10;- refactored &quot;WebTablePage&quot; class, used encapsulation - used WebTableObject&#10;- refactored Test classes by adding logs to the extentReports" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -692,6 +708,16 @@
           <url>file://$PROJECT_DIR$/src/test/java/SharedData/browser/BrowserFactory.java</url>
           <line>35</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/Tests/PracticeFormTest.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ObjectData/WebTableObject.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

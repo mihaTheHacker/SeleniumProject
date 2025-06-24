@@ -1,12 +1,12 @@
 package Tests;
 
+import ObjectData.WebTableObject;
 import Pages.CommonPage;
 import Pages.HomePage;
 import Pages.WebTablePage;
-import java.util.List;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.testng.Assert;
+import PropertyUtility.PropertyUtility;
+import extentUtility.ExtentUtility;
+import extentUtility.ReportStep;
 import SharedData.Hooks;
 import org.testng.annotations.Test;
 
@@ -19,41 +19,20 @@ public class WebTableTest extends Hooks {
     @Test
     public void automationMethod() {
 
+        PropertyUtility propertyUtility = new PropertyUtility("WebTableTest");
+        WebTableObject webTableObject = new WebTableObject(propertyUtility.getData());
+
         homePage = new HomePage(getDriver());
         commonPage = new CommonPage(getDriver());
         webTablePage = new WebTablePage(getDriver());
 
+
         homePage.goToDesiredMenu("Elements");
-
+        ExtentUtility.attachLog(ReportStep.PASS_STEP, "The user enters on Elements menu");
         commonPage.goToDesiredSubMenu("Web Tables");
-
-        List<WebElement> tableElements = getDriver().findElements(
-                By.xpath("//div[@class='rt-tbody']/div/div[@class='rt-tr -even' or @class='rt-tr -odd']"));
-        Integer actualTableSize = tableElements.size();
-
-        String firstNameValue = "Miha";
-        String lastNameValue = "Pop";
-        String emailValue = "test@test.com";
-        String ageValue = "30";
-        String salaryValue = "1000";
-        String departmentValue = "QA";
-        webTablePage.completeRegistrationForm(firstNameValue, lastNameValue, emailValue, ageValue, salaryValue, departmentValue);
-
-        List<WebElement> expectedTableElements = getDriver().findElements(
-                By.xpath("//div[@class='rt-tbody']/div/div[@class='rt-tr -even' or @class='rt-tr -odd']"));
-
-        Integer expectedTableSize = actualTableSize + 1;
-        Assert.assertEquals(expectedTableElements.size(), expectedTableSize);
-
-        String actualTableValue = expectedTableElements.get(3).getText();
-        Assert.assertTrue(actualTableValue.contains(firstNameValue));
-        Assert.assertTrue(actualTableValue.contains(lastNameValue));
-        Assert.assertTrue(actualTableValue.contains(emailValue));
-        Assert.assertTrue(actualTableValue.contains(ageValue));
-        Assert.assertTrue(actualTableValue.contains(ageValue));
-        Assert.assertTrue(actualTableValue.contains(salaryValue));
-        Assert.assertTrue(actualTableValue.contains(departmentValue));
-
+        ExtentUtility.attachLog(ReportStep.PASS_STEP, "The user enters on Web Tables sub-menu");
+        webTablePage.completeRegistrationForm(webTableObject);
+        ExtentUtility.attachLog(ReportStep.PASS_STEP, "The user fills in the registration form");
 
     }
 
