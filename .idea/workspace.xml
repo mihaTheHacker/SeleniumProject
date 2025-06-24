@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7850fae8-c0be-4e42-8498-b5ab3eb1a331" name="Changes" comment="- changed target log path name">
+    <list default="true" id="7850fae8-c0be-4e42-8498-b5ab3eb1a331" name="Changes" comment="- refactored path for regressionLogs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -291,15 +291,7 @@
       <workItem from="1750253423792" duration="2799000" />
       <workItem from="1750310922078" duration="14418000" />
       <workItem from="1750419465091" duration="10063000" />
-      <workItem from="1750661436941" duration="30482000" />
-    </task>
-    <task id="LOCAL-00006" summary="- declared new elements&#10;- used javascript executor to click on element&#10;- used sendKeys Enter method">
-      <option name="closed" value="true" />
-      <created>1738176758012</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1738176758012</updated>
+      <workItem from="1750661436941" duration="31181000" />
     </task>
     <task id="LOCAL-00007" summary="- created new class parcurgereLista">
       <option name="closed" value="true" />
@@ -685,7 +677,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750756930447</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="- refactored path for regressionLogs">
+      <option name="closed" value="true" />
+      <created>1750760265176</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1750760265176</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -703,7 +703,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="- Cleaned all test classes - deleted comments" />
     <MESSAGE value="- applied inheritance" />
     <MESSAGE value="- changed elements access control from public to private &#10;- am aplicat conceptul de incapsulare tuturor claselor" />
     <MESSAGE value="- am schimbat access controlul variabilelor de instanta in Common page &#10;- am sters niste linii neutlizate de la importuri in WebTablePage&#10;- am adaugat un nou Pachet TestNG cu un nou fisier xml" />
@@ -728,7 +727,8 @@
     <MESSAGE value="- removed extra empty space" />
     <MESSAGE value="- renamed path" />
     <MESSAGE value="- changed target log path name" />
-    <option name="LAST_COMMIT_MESSAGE" value="- changed target log path name" />
+    <MESSAGE value="- refactored path for regressionLogs" />
+    <option name="LAST_COMMIT_MESSAGE" value="- refactored path for regressionLogs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
